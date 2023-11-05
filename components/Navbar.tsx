@@ -5,22 +5,32 @@ import { Logo } from ".";
 import { useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
+import { LinksProps } from "@/types";
 
 const poppins = Poppins({
+  subsets: ["latin"],
   weight: ["400"],
-  preload: false,
 });
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const links: LinksProps[] = [
+    { href: "/", title: "Home" },
+    { href: "/", title: "About" },
+    { href: "/", title: "Skills" },
+    { href: "/", title: "Projects" },
+    { href: "/", title: "Contact" },
+  ];
 
   return (
     <>
       <nav className={`${poppins.className}`}>
         <div
-          className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 text-dark-grey 
-      ">
-          <div className="flex items-center justify-between h-16">
+          className="mx-auto w-full px-4 text-dark-grey sm:px-6 lg:px-8
+      "
+        >
+          <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <Logo />
@@ -29,77 +39,49 @@ const Navbar = () => {
 
             <div className="hidden md:block">
               <div className="ml-4 flex items-center space-x-4 text-2xl text-dark-grey">
-                <Link
-                  href="/"
-                  className="hover:text-secondary-red transition-colors cursor-pointer ">
-                  Home
-                </Link>
-                <Link
-                  href="/"
-                  className="hover:text-secondary-red transition-colors cursor-pointer">
-                  About
-                </Link>
-                <Link
-                  href="/"
-                  className="hover:text-secondary-red transition-colors cursor-pointer">
-                  Skills
-                </Link>
-                <Link
-                  href="/"
-                  className="hover:text-secondary-red transition-colors cursor-pointer">
-                  Projects
-                </Link>
-                <Link
-                  href="/"
-                  className="hover:text-secondary-red transition-colors cursor-pointer">
-                  Contact
-                </Link>
+                {links.map((link) => (
+                  <Link
+                    href={link.href}
+                    key={link.title}
+                    className="cursor-pointer transition-colors hover:text-secondary-red"
+                  >
+                    {link.title}
+                  </Link>
+                ))}
               </div>
             </div>
 
-            <div className="md:hidden text-2xl flex items-center">
+            <div className="flex items-center text-2xl md:hidden">
               <button
                 className="inline-flex items-center justify-center p-2"
-                onClick={() => setIsOpen(!isOpen)}>
+                onClick={() => setIsOpen(!isOpen)}
+              >
                 {isOpen ? <RxCross1 /> : <RxHamburgerMenu />}
               </button>
             </div>
           </div>
-        </div>
 
-        {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pb-3 pt-2 pl-4 space-y-1 sm:px-3">
-              <Link
-                href="/"
-                className="hover:text-secondary-red block transition-colors cursor-pointer ">
-                Home
-              </Link>
-              <Link
-                href="/"
-                className="hover:text-secondary-red block transition-colors cursor-pointer">
-                About
-              </Link>
-              <Link
-                href="/"
-                className="hover:text-secondary-red block transition-colors cursor-pointer">
-                Skills
-              </Link>
-              <Link
-                href="/"
-                className="hover:text-secondary-red block transition-colors cursor-pointer">
-                Projects
-              </Link>
-              <Link
-                href="/"
-                className="hover:text-secondary-red block transition-colors cursor-pointer">
-                Contact
-              </Link>
+          {isOpen && (
+            <div className="md:hidden">
+              <div className="space-y-2 px-2 pb-3 pl-4 pt-2 sm:px-3 ">
+                {links.map((link) => (
+                  <>
+                    <Link
+                      href={link.href}
+                      key={link.title}
+                      className="block cursor-pointer transition-colors hover:text-secondary-red "
+                    >
+                      {link.title}
+                    </Link>
+                    <hr />
+                  </>
+                ))}
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </div>
       </nav>
-      <hr />
+      <hr className={`${isOpen ? "hidden" : ""}`} />
     </>
   );
 };
