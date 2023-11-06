@@ -1,46 +1,3 @@
-// import Image from "next/image";
-// import Button from "./Button";
-
-// const Hero = () => {
-//   return (
-//     <section className="mx-auto mt-20 flex max-w-[1440px] gap-10">
-//       <div className="ml-4 2xl:ml-10">
-//         <div className="text-5xl">
-//           <h1>
-//             <span className="text-secondary-red">Hi,</span> I&apos;m Waqar
-//           </h1>
-//           <h2 className="mt-8">A Front-End Developer.</h2>
-//           <p className="mt-4 w-full text-lg font-light leading-8 text-light-grey md:h-[169px] md:w-[535px]">
-//             I enjoy solving complex problems. Frequently praised as
-//             detail-oriented by my peers, I can be relied upon to help your
-//             company achieve its goals by providing sustainable and scalable
-//             solutions.
-//           </p>
-//         </div>
-
-//         <div className="flex gap-4 mt-6">
-//           <Button title="Get in touch" variation="primary" />
-//           <Button title="See my work" variation="secondary" />
-//         </div>
-//       </div>
-
-//       <div className="">
-//         <Image
-//           src="/hero_image.png"
-//           priority
-//           quality={100}
-//           width={400}
-//           height={400}
-//           alt="hero image"
-//           className="hidden lg:block "
-//         />
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Hero;
-
 import Image from "next/image";
 import Button from "./Button";
 import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
@@ -58,7 +15,7 @@ const icons: IconLinksProps[] = [
 
 const Hero = () => {
   return (
-    <section className="mx-auto mt-10 flex max-w-7xl flex-col gap-10 px-4 lg:mt-20 lg:flex-row lg:px-0">
+    <section className="mx-auto mt-10 flex max-w-7xl flex-col gap-10 px-4 text-dark-grey lg:mt-20 lg:flex-row lg:px-0">
       <div className="lg:ml-10">
         <div className="text-4xl lg:text-5xl">
           <h1>
@@ -88,7 +45,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="mt-10 hidden lg:ml-auto lg:mt-0 lg:block">
+      <div className="relative mt-10 hidden lg:ml-auto lg:mt-0 lg:block">
         <Image
           src="/hero_image.png"
           priority
@@ -96,8 +53,10 @@ const Hero = () => {
           width={800}
           height={800}
           alt="hero image"
+          className=""
         />
       </div>
+
     </section>
   );
 };

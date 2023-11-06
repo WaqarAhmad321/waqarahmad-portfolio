@@ -43,7 +43,7 @@ const Navbar = () => {
                   <Link
                     href={link.href}
                     key={link.title}
-                    className="cursor-pointer transition-colors hover:text-secondary-red"
+                    className="cursor-pointer transition-colors hover:text-secondary-red duration-300 ease-linear"
                   >
                     {link.title}
                   </Link>
