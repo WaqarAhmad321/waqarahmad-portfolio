@@ -1,6 +1,13 @@
-export type LinksProps = {
+import { ReactElement } from "react";
+
+export type NavLinksProps = {
   href: string;
   title: string;
+};
+
+export type IconLinksProps = {
+  href: string;
+  icon: ReactElement;
 };
 
 export type ButtonProps = {

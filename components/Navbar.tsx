@@ -5,7 +5,7 @@ import { Logo } from ".";
 import { useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
-import { LinksProps } from "@/types";
+import { NavLinksProps } from "@/types";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,7 +15,7 @@ const poppins = Poppins({
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
-  const links: LinksProps[] = [
+  const links: NavLinksProps[] = [
     { href: "/", title: "Home" },
     { href: "/", title: "About" },
     { href: "/", title: "Skills" },

@@ -1,11 +1,11 @@
 import { ButtonProps } from "@/types";
 import React from "react";
 
-const Buttons = ({ title, variation }: ButtonProps) => {
+const Button = ({ title, variation }: ButtonProps) => {
   const variations = {
-    primary: "rounded-sm bg-dark-grey p-5 capitalize text-white",
+    primary: "rounded-sm bg-dark-grey p-3 md:p-5 capitalize text-white",
     secondary:
-      "rounded-sm border border-secondary-red p-5 capitalize  text-secondary-red transition-colors duration-300 ease-in hover:bg-secondary-red hover:text-white",
+      "rounded-sm border border-secondary-red p-3 md:p-5 capitalize  text-secondary-red transition-colors duration-300 ease-in hover:bg-secondary-red hover:text-white",
   };
 
   return (
@@ -19,4 +19,4 @@ const Buttons = ({ title, variation }: ButtonProps) => {
   );
 };
 
-export default Buttons;
+export default Button;
