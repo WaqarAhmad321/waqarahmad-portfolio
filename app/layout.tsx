@@ -16,10 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#F4FFFD]`}>
+      <body className={`${inter.className} scrollbar-thumb-rose-500`}>
         <Navbar />
 
         {children}
+
       </body>
     </html>
   );

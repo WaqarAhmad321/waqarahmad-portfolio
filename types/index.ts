@@ -19,4 +19,6 @@ export type IconLinksProps = {
 export type SkillIconsProps = {
   src: string;
   title: string;
+  width?: number;
+  height?: number;
 };
