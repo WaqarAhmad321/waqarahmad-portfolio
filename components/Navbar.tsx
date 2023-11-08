@@ -1,11 +1,11 @@
 "use client";
 
-import { Poppins } from "next/font/google";
 import { Logo } from ".";
 import { useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
 import { NavLinksProps } from "@/types";
+import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -17,15 +17,17 @@ const Navbar = () => {
 
   const links: NavLinksProps[] = [
     { href: "/", title: "Home" },
-    { href: "/", title: "About" },
     { href: "/", title: "Skills" },
     { href: "/", title: "Projects" },
+    { href: "/", title: "About" },
     { href: "/", title: "Contact" },
   ];
 
   return (
     <>
-      <nav className={`${poppins.className}`}>
+      <nav
+        className={`${poppins.className} bg-background-white sticky top-0 z-10`}
+      >
         <div
           className="mx-auto w-full px-4 text-dark-grey sm:px-6 lg:px-8
       "
@@ -43,7 +45,7 @@ const Navbar = () => {
                   <Link
                     href={link.href}
                     key={link.title}
-                    className="cursor-pointer transition-colors hover:text-secondary-red duration-300 ease-linear"
+                    className="cursor-pointer transition-colors duration-300 ease-linear hover:text-secondary-red"
                   >
                     {link.title}
                   </Link>
@@ -63,25 +65,24 @@ const Navbar = () => {
 
           {isOpen && (
             <div className="md:hidden">
-              <div className="space-y-2 px-2 pb-3 pl-4 pt-2 sm:px-3 ">
+              <div className="h-screen space-y-2 text-2xl px-2 pb-3 pl-4 pt-2 sm:px-3 ">
                 {links.map((link) => (
-                  <>
+                  <div key={link.title}>
                     <Link
                       href={link.href}
-                      key={link.title}
                       className="block cursor-pointer transition-colors hover:text-secondary-red "
                     >
                       {link.title}
                     </Link>
-                    <hr />
-                  </>
+                    <hr className="mt-2" />
+                  </div>
                 ))}
               </div>
             </div>
           )}
         </div>
+        <hr className={`${isOpen ? "hidden" : ""} shadow-lg`} />
       </nav>
-      <hr className={`${isOpen ? "hidden" : ""}`} />
     </>
   );
 };

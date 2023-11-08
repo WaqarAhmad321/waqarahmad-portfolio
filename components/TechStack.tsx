@@ -1,9 +1,8 @@
 import { SkillIconsProps } from "@/types";
-import { Roboto } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 
-const roboto = Roboto({ subsets: ["latin"], weight: "300" });
+
 
 const skillIcons: SkillIconsProps[] = [
   { src: "/typescript.svg", title: "TypeScript", width: 50, height: 50 },
@@ -19,16 +18,21 @@ const skillIcons: SkillIconsProps[] = [
 const TechStack = () => {
   return (
     <div className="flex flex-col items-center md:flex-row  md:gap-10">
-      {" "}
-      <div className="mb-10 ml-12 md:mb-0">
-        <Image src="/code.png" alt="tech stack" width={400} height={500} />
+      <div className="order-last mb-10 mt-4 md:order-first md:mb-0 md:ml-12">
+        <Image
+          src="/coder.svg"
+          alt="tech stack"
+          width={700}
+          height={500}
+          className="block"
+        />
       </div>
-      <div className={`w-full text-center text-5xl ${roboto.className}`}>
+      <div className={`w-full text-center text-5xl font-light`}>
         My Tech Stack
         <div className="mt-5 grid grid-flow-row grid-cols-4">
           {skillIcons.map((icon) => (
             <div className="m-2 flex flex-col items-center" key={icon.src}>
-              <p className="mb-2 mt-2 text-sm text-light-grey">{icon.title}</p>
+              <p className="mb-2 mt-2 text-sm text-light-grey font-extrathin">{icon.title}</p>
               <Image
                 src={icon.src}
                 alt={`${icon.title} icon`}

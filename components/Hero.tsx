@@ -15,7 +15,7 @@ const icons: IconLinksProps[] = [
 
 const Hero = () => {
   return (
-    <section className="mx-auto mt-10 flex max-w-7xl flex-col gap-10 px-4 text-dark-grey lg:mt-20 lg:flex-row lg:px-0">
+    <header className="mx-auto mt-10 flex max-w-7xl flex-col gap-10 bg-[url('/public/blob-scene.svg')] px-4 text-dark-grey lg:mt-20 lg:flex-row lg:px-0">
       <div className="lg:ml-10">
         <div className="text-4xl lg:text-5xl">
           <h1>
@@ -53,11 +53,9 @@ const Hero = () => {
           width={800}
           height={800}
           alt="hero image"
-          className=""
         />
       </div>
-
-    </section>
+    </header>
   );
 };
 

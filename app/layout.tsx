@@ -15,8 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} scrollbar-thumb-rose-500`}>
+    <html lang="en" className="!smooth-scroll">
+      <body
+        className={`${inter.className} bg-background-white scrollbar-thumb-rose-500`}
+      >
         <Navbar />
 
         {children}

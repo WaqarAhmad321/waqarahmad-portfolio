@@ -12,9 +12,7 @@ const config: Config = {
         "dark-grey": "#011936",
         "light-grey": "#465362",
         "secondary-red": "#ED254E",
-      },
-      backgroundImage: {
-        "blob-scene": "url('/public/blob.svg')",
+        "background-white": "#F4FFFD",
       },
     },
   },
