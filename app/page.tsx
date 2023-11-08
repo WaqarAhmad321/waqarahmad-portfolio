@@ -7,7 +7,7 @@ export default function Home() {
     <main className="overflow-hidden">
       <Hero />
 
-      <div className="mx-auto mt-52  max-w-[1440px] px-6 sm:px-16">
+      <div className="mt-16 px-6 sm:px-16">
         <TechStack />
 
         <div className="mt-36">

@@ -14,11 +14,22 @@ const icons: IconLinksProps[] = [
 ];
 
 const Hero = () => {
+  const path = "/blob-scene.svg";
+
   return (
-    <header className="mx-auto mt-10 flex max-w-7xl flex-col gap-10 bg-[url('/public/blob-scene.svg')] px-4 text-dark-grey lg:mt-20 lg:flex-row lg:px-0">
+    <header
+      className="flex h-screen flex-col px-4 pt-10 text-dark-grey lg:flex-row lg:gap-10 lg:px-36 lg:pt-20"
+      style={{
+        backgroundImage: `url(${path})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "left",
+        minHeight: "100vh"
+      }}
+    >
       <div className="lg:ml-10">
-        <div className="text-4xl lg:text-5xl">
-          <h1>
+        <div className="flex flex-col justify-center">
+          <h1 className="text-4xl lg:text-5xl">
             <span className="text-secondary-red">Hi,</span> I&apos;m Waqar
           </h1>
           <h2 className="mt-4 text-3xl lg:mt-8 lg:text-5xl">
@@ -34,24 +45,30 @@ const Hero = () => {
 
         <div className="mt-5 flex flex-row gap-5 text-4xl ">
           {icons.map((icon) => (
-            <Link key={icon.href} href={icon.href} target="__blank">
+            <Link
+              key={icon.href}
+              href={icon.href}
+              target="__blank"
+              className="hover:rounded-full hover:bg-white"
+            >
               {icon.icon}
             </Link>
           ))}
         </div>
+
         <div className="mt-6 flex gap-4">
-          <Button title="Get in touch" variation="primary" />
+          <Button title="Contact Me" variation="primary" />
           <Button title="<> See my work" variation="secondary" />
         </div>
       </div>
 
-      <div className="relative mt-10 hidden lg:ml-auto lg:mt-0 lg:block">
+      <div className="relative mt-10 hidden lg:mt-0 lg:block">
         <Image
-          src="/hero_image.png"
+          src="/codertyping.svg"
           priority
           quality={100}
-          width={800}
-          height={800}
+          width={1200}
+          height={100}
           alt="hero image"
         />
       </div>
