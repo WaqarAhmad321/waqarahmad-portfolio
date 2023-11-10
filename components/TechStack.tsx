@@ -16,6 +16,7 @@ const TechStack = () => {
     logos.supabase,
     logos.redux,
     logos.reactRouter,
+    logos.git,
   ];
 
   return (
@@ -32,7 +33,7 @@ const TechStack = () => {
 
       <div className={`w-full text-center text-5xl font-light leading-snug`}>
         My Tech Stack
-        <div className="mt-5 grid grid-cols-4">
+        <div className="mt-5 grid grid-cols-6">
           {iconsArray.map((icon) => (
             <TechIcons
               label={icon.label}
