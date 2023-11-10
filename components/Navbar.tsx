@@ -4,7 +4,7 @@ import { Logo } from ".";
 import { useState } from "react";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 import Link from "next/link";
-import { NavLinksProps } from "@/types";
+import { NavLinksProps } from "@/lib";
 import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`${poppins.className} bg-background-white sticky top-0 z-10`}
+        className={`${poppins.className} sticky top-0 z-10 bg-background-white`}
       >
         <div
           className="mx-auto w-full px-4 text-dark-grey sm:px-6 lg:px-8
@@ -65,7 +65,7 @@ const Navbar = () => {
 
           {isOpen && (
             <div className="md:hidden">
-              <div className="h-screen space-y-2 text-2xl px-2 pb-3 pl-4 pt-2 sm:px-3 ">
+              <div className="h-screen space-y-2 px-2 pb-3 pl-4 pt-2 text-2xl sm:px-3 ">
                 {links.map((link) => (
                   <div key={link.title}>
                     <Link

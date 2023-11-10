@@ -1,20 +1,18 @@
-import { Hero } from "@/components";
-import { TechStack } from "@/components";
-import Projects from "@/components/Projects";
+import { Hero, TechStack, Projects } from "@/components";
 
 export default function Home() {
   return (
     <main className="overflow-hidden">
       <Hero />
 
-      <div className="mt-16 px-6 sm:px-16">
+      <section className="mt-16 px-6 sm:px-16">
         <TechStack />
+      </section>
 
-        <div className="mt-36">
-          <h1 className="text-center text-8xl font-light">Featured Projects</h1>
-          <Projects />
-        </div>
-      </div>
+      <section className="mt-36">
+        <h1 className="text-center text-7xl font-light">Featured Projects</h1>
+        {/* <Projects /> */}
+      </section>
     </main>
   );
 }

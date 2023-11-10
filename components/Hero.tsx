@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Button from "./Button";
-import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
 import Link from "next/link";
-import { IconLinksProps } from "@/types";
+import Image from "next/image";
+import { Button } from "@/components";
+import { IconLinksProps } from "@/lib";
+import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
 
 const icons: IconLinksProps[] = [
   { href: "https://github.com/WaqarAhmad321", icon: <RxGithubLogo /> },
@@ -14,7 +14,7 @@ const icons: IconLinksProps[] = [
 ];
 
 const Hero = () => {
-  const path = "/blob-scene.svg";
+  const path = "/background/blob-scene.svg";
 
   return (
     <header
@@ -24,7 +24,7 @@ const Hero = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "left",
-        minHeight: "100vh"
+        minHeight: "100vh",
       }}
     >
       <div className="lg:ml-10">
@@ -49,7 +49,7 @@ const Hero = () => {
               key={icon.href}
               href={icon.href}
               target="__blank"
-              className="hover:rounded-full hover:bg-white"
+              className="transition-colors hover:rounded-full hover:text-[#0B2447]"
             >
               {icon.icon}
             </Link>
@@ -64,7 +64,7 @@ const Hero = () => {
 
       <div className="relative mt-10 hidden lg:mt-0 lg:block">
         <Image
-          src="/codertyping.svg"
+          src="/hero-image.svg"
           priority
           quality={100}
           width={1200}

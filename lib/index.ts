@@ -16,9 +16,9 @@ export type IconLinksProps = {
   icon: ReactElement;
 };
 
-export type SkillIconsProps = {
+export type TechIconsProps = {
+  label: string;
   src: string;
-  title: string;
-  width?: number;
-  height?: number;
+  width: number;
+  height: number;
 };

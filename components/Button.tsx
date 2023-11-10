@@ -1,4 +1,4 @@
-import { ButtonProps } from "@/types";
+import { ButtonProps } from "@/lib";
 import React from "react";
 
 const Button = ({ title, variation }: ButtonProps) => {
