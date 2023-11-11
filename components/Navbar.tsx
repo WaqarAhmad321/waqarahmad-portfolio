@@ -25,9 +25,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
-        className={`${poppins.className} sticky top-0 z-10 bg-background-white`}
-      >
+      <nav className={`${poppins.className} bg-mint-cream sticky top-0 z-10`}>
         <div
           className="mx-auto w-full px-4 text-dark-grey sm:px-6 lg:px-8
       "
@@ -45,7 +43,7 @@ const Navbar = () => {
                   <Link
                     href={link.href}
                     key={link.title}
-                    className="cursor-pointer transition-colors duration-300 ease-linear hover:text-secondary-red"
+                    className="hover:text-red-crayola cursor-pointer transition-colors duration-300 ease-linear"
                   >
                     {link.title}
                   </Link>
@@ -70,7 +68,7 @@ const Navbar = () => {
                   <div key={link.title}>
                     <Link
                       href={link.href}
-                      className="block cursor-pointer transition-colors hover:text-secondary-red "
+                      className="hover:text-red-crayola block cursor-pointer transition-colors "
                     >
                       {link.title}
                     </Link>

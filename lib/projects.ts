@@ -1,7 +1,7 @@
 import { TechIconsProps } from ".";
 import logos from "./logos";
 
-type projectNames =
+type ProjectNames =
   | "theWildOasis"
   | "worldWise"
   | "fastReactPizza"
@@ -18,6 +18,7 @@ export type ProjectType = {
   description: string[];
   image: {
     main?: { src: string; width: number; height: number };
+    mp4?: string;
     webm?: string;
     poster?: string;
     vidHeight?: number;
@@ -27,9 +28,9 @@ export type ProjectType = {
   stack: TechIconsProps[];
 };
 
-type Projects = { [K in projectNames]: ProjectType };
+type Projects = { [K in ProjectNames]: ProjectType };
 
-const projects: Projects = {
+const allProjects: Projects = {
   theWildOasis: {
     title: "The Wild Oasis",
     description: [
@@ -119,4 +120,4 @@ const projects: Projects = {
     links: { github: "/", demo: "/" },
   },
 };
-export default projects;
+export default allProjects;

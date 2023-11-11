@@ -1,11 +1,5 @@
 import { ReactElement } from "react";
 
-export type ButtonProps = {
-  title: string;
-  variation: "primary" | "secondary";
-  onClick?: () => void;
-};
-
 export type NavLinksProps = {
   href: string;
   title: string;

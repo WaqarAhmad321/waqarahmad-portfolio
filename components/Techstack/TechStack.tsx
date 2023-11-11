@@ -24,7 +24,8 @@ const TechStack = () => {
       <div className="order-last mb-10 mt-4 md:order-first md:mb-0 ">
         <Image
           src="/coder.svg"
-          alt="tech stack"
+          priority
+          alt="A coder having headphones placed between his neck coding on computer placed on table with github's developers activity in background"
           width={700}
           height={700}
           className="block"
@@ -33,7 +34,7 @@ const TechStack = () => {
 
       <div className={`w-full text-center text-5xl font-light leading-snug`}>
         My Tech Stack
-        <div className="mt-5 grid grid-cols-6">
+        <div className="mt-5 grid grid-cols-4 lg:grid lg:grid-cols-6">
           {iconsArray.map((icon) => (
             <TechIcons
               label={icon.label}

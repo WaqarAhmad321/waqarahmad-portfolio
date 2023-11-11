@@ -1,8 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components";
 import { IconLinksProps } from "@/lib";
-import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
+import {
+  RxActivityLog,
+  RxCode,
+  RxCodesandboxLogo,
+  RxGithubLogo,
+  RxLinkedinLogo,
+  RxTwitterLogo,
+} from "react-icons/rx";
+import { Button } from "@/components";
+import Balancer from "react-wrap-balancer";
 
 const icons: IconLinksProps[] = [
   { href: "https://github.com/WaqarAhmad321", icon: <RxGithubLogo /> },
@@ -30,16 +38,22 @@ const Hero = () => {
       <div className="lg:ml-10">
         <div className="flex flex-col justify-center">
           <h1 className="text-4xl lg:text-5xl">
-            <span className="text-secondary-red">Hi,</span> I&apos;m Waqar
+            <Balancer>
+              <span className="text-red-crayola">Hi,</span> I&apos;m Waqar
+            </Balancer>
           </h1>
+
           <h2 className="mt-4 text-3xl lg:mt-8 lg:text-5xl">
             A Front-End Developer.
           </h2>
-          <p className="mt-4 w-full text-base font-light leading-6 text-light-grey lg:mt-8 lg:w-3/4 lg:text-lg lg:leading-8 xl:w-2/3">
-            I enjoy solving complex problems. Frequently praised as
-            detail-oriented by my peers, I can be relied upon to help your
-            company achieve its goals by providing sustainable and scalable
-            solutions.
+
+          <p className="text-grey mt-4 w-full text-base font-light leading-6 lg:mt-8 lg:w-3/4 lg:text-lg lg:leading-8 xl:w-2/3">
+            <Balancer>
+              I enjoy solving complex problems. Frequently praised as
+              detail-oriented by my peers, I can be relied upon to help your
+              company achieve its goals by providing sustainable and scalable
+              solutions.
+            </Balancer>
           </p>
         </div>
 
@@ -57,8 +71,12 @@ const Hero = () => {
         </div>
 
         <div className="mt-6 flex gap-4">
-          <Button title="Contact Me" variation="primary" />
-          <Button title="<> See my work" variation="secondary" />
+          <Button variant="primary" size="lg">
+            Contact Me
+          </Button>
+          <Button variant="outlined" size="lg">
+            See my work
+          </Button>
         </div>
       </div>
 
