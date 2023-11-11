@@ -1,16 +1,22 @@
 "use client";
 
-import { Logo } from ".";
 import { useState } from "react";
-import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
+
 import Link from "next/link";
-import { NavLinksProps } from "@/lib";
 import { Poppins } from "next/font/google";
+import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
+
+import { Logo } from ".";
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400"],
 });
+
+type NavLinksProps = {
+  href: string;
+  title: string;
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -25,9 +31,9 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`${poppins.className} bg-mint-cream sticky top-0 z-10`}>
+      <nav className={`${poppins.className} sticky top-0 z-10 bg-mint-cream`}>
         <div
-          className="mx-auto w-full px-4 text-dark-grey sm:px-6 lg:px-8
+          className="text-dark-grey mx-auto w-full px-4 sm:px-6 lg:px-8
       "
         >
           <div className="flex h-16 items-center justify-between">
@@ -38,12 +44,12 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:block">
-              <div className="ml-4 flex items-center space-x-4 text-2xl text-dark-grey">
+              <div className="text-dark-grey ml-4 flex items-center space-x-4 text-2xl">
                 {links.map((link) => (
                   <Link
                     href={link.href}
                     key={link.title}
-                    className="hover:text-red-crayola cursor-pointer transition-colors duration-300 ease-linear"
+                    className="cursor-pointer transition-colors ease-linear hover:text-red-crayola"
                   >
                     {link.title}
                   </Link>
@@ -68,7 +74,7 @@ const Navbar = () => {
                   <div key={link.title}>
                     <Link
                       href={link.href}
-                      className="hover:text-red-crayola block cursor-pointer transition-colors "
+                      className="block cursor-pointer transition-colors hover:text-red-crayola "
                     >
                       {link.title}
                     </Link>

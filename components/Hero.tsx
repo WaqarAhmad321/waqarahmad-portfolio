@@ -1,16 +1,16 @@
+import { ReactElement } from "react";
+
+import Balancer from "react-wrap-balancer";
+
 import Link from "next/link";
 import Image from "next/image";
-import { IconLinksProps } from "@/lib";
-import {
-  RxActivityLog,
-  RxCode,
-  RxCodesandboxLogo,
-  RxGithubLogo,
-  RxLinkedinLogo,
-  RxTwitterLogo,
-} from "react-icons/rx";
 import { Button } from "@/components";
-import Balancer from "react-wrap-balancer";
+import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
+
+type IconLinksProps = {
+  href: string;
+  icon: ReactElement;
+};
 
 const icons: IconLinksProps[] = [
   { href: "https://github.com/WaqarAhmad321", icon: <RxGithubLogo /> },
@@ -26,7 +26,7 @@ const Hero = () => {
 
   return (
     <header
-      className="flex h-screen flex-col px-4 pt-10 text-dark-grey lg:flex-row lg:gap-10 lg:px-36 lg:pt-20"
+      className="text-dark-grey flex h-screen flex-col px-4 pt-10 lg:flex-row lg:gap-10 lg:px-36 lg:pt-20"
       style={{
         backgroundImage: `url(${path})`,
         backgroundRepeat: "no-repeat",

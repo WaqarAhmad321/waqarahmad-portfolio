@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!smooth-scroll">
       <body
-        className={`${inter.className} bg-min-cream scrollbar-thumb-rose-500 bg-charcoal`}
+        className={`${inter.className} bg-mint-cream scrollbar-thin scrollbar-thumb-slate-400 scrollbar-track-mint-cream `}
       >
         <Navbar />
 

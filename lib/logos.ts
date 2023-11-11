@@ -10,7 +10,9 @@ type logoNames =
   | "supabase"
   | "redux"
   | "reactRouter"
-  | "git";
+  | "git"
+  | "styledComponents"
+  | "cssModules";
 
 type Logos = {
   [K in logoNames]: {
@@ -41,7 +43,7 @@ const logos: Logos = {
     height: 50,
   },
   javascript: {
-    label: "TypeScript",
+    label: "JavaScript",
     src: "/techstack/javascript.svg",
     width: 50,
     height: 50,
@@ -91,6 +93,18 @@ const logos: Logos = {
   git: {
     label: "Git",
     src: "/techstack/git.svg",
+    width: 55,
+    height: 30,
+  },
+  styledComponents: {
+    label: "Styled Components",
+    src: "/techstack/styled-components.png",
+    width: 55,
+    height: 30,
+  },
+  cssModules: {
+    label: "Css Modules",
+    src: "/techstack/css-modules.webp",
     width: 55,
     height: 30,
   },

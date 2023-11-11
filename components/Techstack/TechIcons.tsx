@@ -1,4 +1,4 @@
-import { TechIconsProps } from "@/lib";
+import { TechIconsProps } from "@/lib/types";
 import Image from "next/image";
 
 const TechIcons = ({ label, src, width, height }: TechIconsProps) => {

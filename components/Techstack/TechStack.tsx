@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { TechIconsProps } from "@/lib";
-import TechIcons from "./TechIcons";
 import logos from "@/lib/logos";
+import { TechIconsProps } from "@/lib/types";
+
+import TechIcons from "./TechIcons";
 
 const TechStack = () => {
   const iconsArray: TechIconsProps[] = [

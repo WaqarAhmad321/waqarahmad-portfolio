@@ -5,9 +5,10 @@ export default function Home() {
   const projectsArray: ProjectType[] = [
     allProjects.theWildOasis,
     allProjects.worldWise,
-    allProjects.fastReactPizza,
-    allProjects.usePopCorn,
+    allProjects.carHub,
+    allProjects.fastReactPizza,,
     allProjects.thisWebsite,
+    allProjects.usePopCorn,
   ];
   return (
     <main className="overflow-hidden">
