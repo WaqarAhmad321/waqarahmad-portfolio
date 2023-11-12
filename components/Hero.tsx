@@ -57,7 +57,7 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="mt-5 flex flex-row gap-5 text-4xl ">
+        <div className="mt-5 flex flex-row gap-5 text-4xl">
           {icons.map((icon) => (
             <Link
               key={icon.href}

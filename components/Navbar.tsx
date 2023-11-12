@@ -69,12 +69,12 @@ const Navbar = () => {
 
           {isOpen && (
             <div className="md:hidden">
-              <div className="h-screen space-y-2 px-2 pb-3 pl-4 pt-2 text-2xl sm:px-3 ">
+              <div className="h-screen space-y-2 px-2 pb-3 pl-4 pt-2 text-2xl sm:px-3">
                 {links.map((link) => (
                   <div key={link.title}>
                     <Link
                       href={link.href}
-                      className="block cursor-pointer transition-colors hover:text-red-crayola "
+                      className="block cursor-pointer transition-colors hover:text-red-crayola"
                     >
                       {link.title}
                     </Link>

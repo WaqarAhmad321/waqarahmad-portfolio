@@ -1,15 +1,18 @@
 import { Hero, TechStack, Projects } from "@/components";
+import ProjectsTitle from "@/components/Projects/ProjectsTitle";
 import allProjects, { ProjectType } from "@/lib/projects";
+import Image from "next/image";
 
 export default function Home() {
   const projectsArray: ProjectType[] = [
     allProjects.theWildOasis,
     allProjects.worldWise,
     allProjects.carHub,
-    allProjects.fastReactPizza,,
+    allProjects.fastReactPizza,
     allProjects.thisWebsite,
     allProjects.usePopCorn,
   ];
+
   return (
     <main className="overflow-hidden">
       <Hero />
@@ -19,10 +22,10 @@ export default function Home() {
       </section>
 
       <section className="mt-36">
-        <h1 className="text-center text-7xl font-light">Featured Projects</h1>
+        <ProjectsTitle text="featured projects" />
       </section>
 
-      <section>
+      <section className="mt-12">
         <Projects projects={projectsArray} />
       </section>
     </main>

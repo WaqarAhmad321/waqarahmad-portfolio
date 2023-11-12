@@ -4,9 +4,10 @@ import Image from "next/image";
 const TechIcons = ({ label, src, width, height }: TechIconsProps) => {
   return (
     <div className="m-2 flex flex-col items-center">
-      <p className="font-extrathin text-grey mb-2 mt-2 whitespace-nowrap text-sm">
+      <p className="mb-2 mt-2 whitespace-nowrap text-sm">
         {label}
       </p>
+
       <Image
         src={src}
         alt={`${label} icon`}
