@@ -3,7 +3,7 @@ import { Project } from "..";
 
 const Projects = ({ projects }: { projects: ProjectType[] }) => {
   return (
-    <div className="w-full">
+    <>
       {projects.map(({ title, description, image, links, stack }, index) => (
         <Project
           key={index}
@@ -15,7 +15,7 @@ const Projects = ({ projects }: { projects: ProjectType[] }) => {
           stack={stack}
         />
       ))}
-    </div>
+    </>
   );
 };
 
