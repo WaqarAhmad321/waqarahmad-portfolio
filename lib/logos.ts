@@ -27,8 +27,8 @@ const logos: Logos = {
   typescript: {
     label: "TypeScript",
     src: "/techstack/typescript.svg",
-    width: 30,
-    height: 3,
+    width: 60,
+    height: 60,
   },
   react: {
     label: "React",

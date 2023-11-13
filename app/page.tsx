@@ -1,7 +1,6 @@
 import { Hero, TechStack, Projects } from "@/components";
 import ProjectsTitle from "@/components/Projects/ProjectsTitle";
 import allProjects, { ProjectType } from "@/lib/projects";
-import Image from "next/image";
 
 export default function Home() {
   const projectsArray: ProjectType[] = [

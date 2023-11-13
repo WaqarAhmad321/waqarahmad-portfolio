@@ -1,4 +1,4 @@
-import React from "react";
+import Balancer from "react-wrap-balancer";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -6,11 +6,12 @@ import { ProjectType } from "@/lib/projects";
 
 import { Button, Wave } from "..";
 import TechIcons from "../Techstack/TechIcons";
-import Balancer from "react-wrap-balancer";
+import ReactMarkdown from "react-markdown";
 
 interface ProjectProps extends ProjectType {
   index: number;
 }
+
 
 const Project = ({
   index,
@@ -22,22 +23,32 @@ const Project = ({
 }: ProjectProps) => {
   const odd = index % 2 === 1 ? true : false;
 
+  const renderDescription = () => {
+    return (
+      <div className="mt-5 mb-2 lg:mt-0">
+        {description.map((desc, index) => (
+          <ReactMarkdown key={index} className="mt-3">
+            {desc}
+          </ReactMarkdown>
+        ))}
+      </div>
+    );
+  };
+  
   const renderProjects = () => {
     return (
-      <div className={`flex flex-col ${odd ? "bg-[#CEE0DF]" : ""}`}>
+      <div className={`flex flex-col gap-2 ${odd ? "bg-[#CEE0DF]" : ""}`}>
         <div className="w-full">
           <h1 className="text-center text-5xl">{title}</h1>
         </div>
 
         <div className="m-16 mt-6 flex flex-col lg:grid lg:grid-cols-2">
-          <div className="flex flex-col gap-24 lg:order-first">
-            <span>
-              <Balancer>{description}</Balancer>
-            </span>
+          <div className="flex flex-col lg:order-first">
+            {renderDescription()}
 
             <div className="flex gap-3">
               <Link href={links.github}>
-                <Button variant="secondary" size="md">
+                <Button variant="secondary" size="md" className="w-full">
                   Source Code
                 </Button>
               </Link>
@@ -61,12 +72,13 @@ const Project = ({
             </div>
           </div>
 
-          <div className="order-first">
+          <div className="order-first md:mt-0">
             <Image
               src={image?.main?.src}
               alt="image"
               width={image?.main?.width}
               height={image?.main?.height}
+              layout="responsive"
             />
           </div>
         </div>
