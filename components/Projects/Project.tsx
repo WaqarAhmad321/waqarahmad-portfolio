@@ -73,13 +73,13 @@ const Project = ({
             </div>
 
             <div className="order-first md:mt-0">
-              <Image
+              {/* <Image
                 src={image?.main?.src || "/main.webp"}
                 alt="image"
                 width={image?.main?.width}
                 height={image?.main?.height}
                 layout="responsive"
-              />
+              /> */}
             </div>
           </div>
         </div>
