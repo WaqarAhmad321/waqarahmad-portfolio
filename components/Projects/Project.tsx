@@ -74,7 +74,7 @@ const Project = ({
 
             <div className="order-first md:mt-0">
               <Image
-                src={image?.main?.src}
+                src={image?.main?.src || "/main.webp"}
                 alt="image"
                 width={image?.main?.width}
                 height={image?.main?.height}
