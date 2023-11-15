@@ -1,5 +1,4 @@
-import { Hero, TechStack, Projects } from "@/components";
-import ProjectsTitle from "@/components/Projects/ProjectsTitle";
+import { Hero, TechStack, Projects, ProjectsTitle, Footer } from "@/components";
 import allProjects, { ProjectType } from "@/lib/projects";
 
 export default function Home() {
@@ -27,6 +26,8 @@ export default function Home() {
       <section className="mt-12">
         <Projects projects={projectsArray} />
       </section>
+
+      <Footer />
     </main>
   );
 }

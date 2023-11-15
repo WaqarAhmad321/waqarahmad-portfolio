@@ -105,8 +105,8 @@ const logos: Logos = {
   cssModules: {
     label: "Css Modules",
     src: "/techstack/css-modules.webp",
-    width: 55,
-    height: 30,
+    width: 70,
+    height: 70,
   },
 };
 

@@ -1,25 +1,8 @@
-import { ReactElement } from "react";
-
 import Balancer from "react-wrap-balancer";
 
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components";
-import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
-
-type IconLinksProps = {
-  href: string;
-  icon: ReactElement;
-};
-
-const icons: IconLinksProps[] = [
-  { href: "https://github.com/WaqarAhmad321", icon: <RxGithubLogo /> },
-  {
-    href: "https://www.linkedin.com/in/waqar-ahmad321/",
-    icon: <RxLinkedinLogo />,
-  },
-  { href: "/", icon: <RxTwitterLogo /> },
-];
+import { Button, ContactIcons } from "@/components";
 
 const Hero = () => {
   const path = "/background/blob-scene.svg";
@@ -58,16 +41,7 @@ const Hero = () => {
         </div>
 
         <div className="mt-5 flex flex-row gap-5 text-4xl">
-          {icons.map((icon) => (
-            <Link
-              key={icon.href}
-              href={icon.href}
-              target="__blank"
-              className="transition-colors hover:rounded-full hover:text-[#0B2447]"
-            >
-              {icon.icon}
-            </Link>
-          ))}
+          <ContactIcons />
         </div>
 
         <div className="mt-6 flex gap-4">

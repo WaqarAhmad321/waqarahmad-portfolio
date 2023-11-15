@@ -9,7 +9,7 @@ const buttonVariants = cva("transition-colors duration-300 capitalize", {
       secondary: "bg-[#F9DC5C] rounded-full text-black hover:bg-[#ffe77b] w-40",
       outlined:
         "border border-red-crayola rounded-sm text-red-crayola ease-in hover:bg-red-crayola hover:text-white",
-    },
+    }, 
     size: {
       md: "p-1 md:p-3",
       lg: "p-3 md:p-5",

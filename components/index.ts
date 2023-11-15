@@ -5,8 +5,11 @@ import Footer from "./Footer";
 import Button from "./Button";
 import Project from "./Projects/Project";
 import Projects from "./Projects/Projects";
+import ProjectsTitle from "./Projects/ProjectsTitle";
 import Wave from "./Projects/Wave";
 import TechStack from "./Techstack/TechStack";
+import TechIcons from "./Techstack/TechIcons";
+import ContactIcons from "./ContactIcons";
 
 export {
   Navbar,
@@ -14,8 +17,11 @@ export {
   Logo,
   Hero,
   TechStack,
+  TechIcons,
   Projects,
+  ProjectsTitle,
   Button,
   Project,
   Wave,
+  ContactIcons,
 };
