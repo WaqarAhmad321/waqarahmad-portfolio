@@ -23,7 +23,7 @@ export default function Home() {
         <ProjectsTitle text="featured projects" />
       </section>
 
-      <section className="mt-12">
+      <section className="mt-24 md:mt-12">
         <Projects projects={projectsArray} />
       </section>
 

@@ -14,6 +14,7 @@ const config: Config = {
         "mint-cream": "#F4FFFD",
         "naples-yellow": "#F9DC5C",
         "charcoal": "#465362",
+        "wave-color": "#CEE0DF"
       },
     },
   },

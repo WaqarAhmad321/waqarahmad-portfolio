@@ -20,6 +20,7 @@ const buttonVariants = cva("transition-colors duration-300 capitalize", {
     size: "lg",
   },
 });
+
 interface ButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {

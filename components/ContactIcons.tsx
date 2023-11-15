@@ -17,7 +17,6 @@ const icons: IconLinksProps[] = [
 ];
 
 const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
-
   return (
     <>
       {icons.map((icon) => (
@@ -27,7 +26,10 @@ const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
           target="__blank"
           className="transition-colors hover:rounded-full hover:text-[#0B2447]"
         >
-          {icon.icon} {displayTitle && icon.title}
+          {icon.icon}{" "}
+          <span className="flex flex-row text-xl hover:text-blue-800">
+            {displayTitle && icon.title}
+          </span>
         </Link>
       ))}
     </>

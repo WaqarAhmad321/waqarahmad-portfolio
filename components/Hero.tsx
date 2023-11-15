@@ -1,6 +1,5 @@
 import Balancer from "react-wrap-balancer";
 
-import Link from "next/link";
 import Image from "next/image";
 import { Button, ContactIcons } from "@/components";
 

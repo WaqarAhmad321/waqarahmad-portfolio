@@ -1,4 +1,4 @@
-import Balancer from "react-wrap-balancer";
+import ReactMarkdown from "react-markdown";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -6,7 +6,6 @@ import { ProjectType } from "@/lib/projects";
 
 import { Button, Wave } from "..";
 import TechIcons from "../Techstack/TechIcons";
-import ReactMarkdown from "react-markdown";
 
 interface ProjectProps extends ProjectType {
   index: number;
@@ -36,7 +35,7 @@ const Project = ({
 
   const renderProjects = () => {
     return (
-      <div className={`flex flex-col gap-2 ${odd ? "bg-[#CEE0DF]" : ""}`}>
+      <div className={`flex flex-col gap-2 ${odd ? "bg-wave-color" : ""}`}>
         <div className="w-full">
           <h1 className="text-center text-5xl">{title}</h1>
         </div>
@@ -89,7 +88,17 @@ const Project = ({
     return <Wave>{renderProjects()}</Wave>;
   }
 
-  return renderProjects();
+  return (
+    <>
+      {renderProjects()}
+      <Image
+        src="/background/footer-wave-dark.svg"
+        alt="Waves Image"
+        width={1440}
+        height={1440}
+      />
+    </>
+  );
 };
 
 export default Project;

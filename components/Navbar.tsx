@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`${poppins.className} sticky top-0 z-10 bg-mint-cream`}>
+      <nav className={`sticky top-0 z-10 bg-mint-cream`}>
         <div
           className="text-dark-grey mx-auto w-full px-4 sm:px-6 lg:px-8
       "
