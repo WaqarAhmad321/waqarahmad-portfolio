@@ -10,7 +10,7 @@ export default function Home() {
     allProjects.thisWebsite,
     allProjects.usePopCorn,
   ];
-
+  
   return (
     <main className="overflow-hidden">
       <Hero />
@@ -19,7 +19,7 @@ export default function Home() {
         <TechStack />
       </section>
 
-      <section className="mt-36">
+      <section className="mt-8">
         <ProjectsTitle text="featured projects" />
       </section>
 

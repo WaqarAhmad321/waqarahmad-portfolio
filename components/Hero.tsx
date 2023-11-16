@@ -1,6 +1,7 @@
 import Balancer from "react-wrap-balancer";
 
 import Image from "next/image";
+import heroImage from "@/public/hero-image.svg";
 import { Button, ContactIcons } from "@/components";
 
 const Hero = () => {
@@ -53,14 +54,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="relative mt-10 hidden lg:mt-0 lg:block">
+      <div className="mt-10 hidden lg:mt-0 xl:block">
         <Image
-          src="/hero-image.svg"
+          src={heroImage}
           priority
           quality={100}
-          width={1200}
-          height={100}
           alt="hero image"
+          className="h-25 w-[75rem]"
         />
       </div>
     </header>

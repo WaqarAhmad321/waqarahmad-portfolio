@@ -25,7 +25,7 @@ const Project = ({
     return (
       <div className="mb-2 mt-5 lg:mt-0">
         {description.map((desc, index) => (
-          <ReactMarkdown key={index} className="mt-3">
+          <ReactMarkdown key={index} className="mb-3">
             {desc}
           </ReactMarkdown>
         ))}
@@ -74,7 +74,7 @@ const Project = ({
           <div className="order-first md:mt-0">
             <Image
               src={image?.main?.src || "/main.webp"}
-              alt="image"
+              alt="Project Image"
               width={image?.main?.width}
               height={image?.main?.height}
             />
@@ -88,17 +88,7 @@ const Project = ({
     return <Wave>{renderProjects()}</Wave>;
   }
 
-  return (
-    <>
-      {renderProjects()}
-      <Image
-        src="/background/footer-wave-dark.svg"
-        alt="Waves Image"
-        width={1440}
-        height={1440}
-      />
-    </>
-  );
+  return renderProjects();
 };
 
 export default Project;
