@@ -10,7 +10,7 @@ export default function Home() {
     allProjects.thisWebsite,
     allProjects.usePopCorn,
   ];
-  
+
   return (
     <main className="overflow-hidden">
       <Hero />
@@ -20,7 +20,7 @@ export default function Home() {
       </section>
 
       <section className="mt-8">
-        <ProjectsTitle text="featured projects" />
+        <ProjectsTitle title="featured projects" />
       </section>
 
       <section className="mt-24 md:mt-12">

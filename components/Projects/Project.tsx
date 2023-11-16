@@ -37,7 +37,7 @@ const Project = ({
     return (
       <div className={`flex flex-col gap-2 ${odd ? "bg-wave-color" : ""}`}>
         <div className="w-full">
-          <h1 className="text-center text-5xl">{title}</h1>
+          <h1 className="text-center text-5xl font-light">{title}</h1>
         </div>
 
         <div className="m-16 mt-6 flex flex-col lg:grid lg:grid-cols-2">
