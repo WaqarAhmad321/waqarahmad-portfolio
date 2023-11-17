@@ -5,7 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Poppins } from "next/font/google";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
-
+import { motion } from "framer-motion";
 import { Logo } from ".";
 
 const poppins = Poppins({
@@ -25,12 +25,15 @@ const Navbar = () => {
     { href: "/", title: "Home" },
     { href: "/", title: "Skills" },
     { href: "/", title: "Projects" },
-    { href: "/", title: "About" },
-    { href: "/", title: "Contact" },
+    { href: "/", title: "Contact Me" },
   ];
 
   return (
-    <nav className={`${poppins.className} sticky top-0 z-10 bg-mint-cream`}>
+    <motion.nav
+      className={`${poppins.className} sticky top-0 z-10 bg-mint-cream`}
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+    >
       <div
         className="text-dark-grey mx-auto w-full px-4 sm:px-6 lg:px-8
       "
@@ -43,7 +46,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:block">
-            <div className="text-dark-grey ml-4 flex items-center space-x-4 text-2xl">
+            <div className="text-dark-grey ml-4 flex items-center space-x-6 text-2xl">
               {links.map((link) => (
                 <Link
                   href={link.href}
@@ -67,7 +70,11 @@ const Navbar = () => {
         </div>
 
         {isOpen && (
-          <div className="md:hidden">
+          <motion.div
+            className="md:hidden"
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+          >
             <div className="h-screen space-y-2 px-2 pb-3 pl-4 pt-2 text-2xl sm:px-3">
               {links.map((link) => (
                 <div key={link.title}>
@@ -81,11 +88,11 @@ const Navbar = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         )}
       </div>
       <hr className={`${isOpen ? "hidden" : ""} shadow-lg`} />
-    </nav>
+    </motion.nav>
   );
 };
 

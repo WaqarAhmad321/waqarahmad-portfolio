@@ -61,7 +61,6 @@ const Project = ({
               {stack.map((icon, index) => (
                 <div key={index} className="w-1/6 md:w-1/6">
                   <TechIcons
-                    // label={icon.label}
                     src={icon.src}
                     width={icon.width}
                     height={icon.height}

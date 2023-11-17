@@ -1,15 +1,21 @@
+"use client";
+
 import Balancer from "react-wrap-balancer";
 
 import Image from "next/image";
 import heroImage from "@/public/hero-image.svg";
 import { Button, ContactIcons } from "@/components";
-import { RxArrowDown, RxThickArrowDown } from "react-icons/rx";
+import { RxArrowDown } from "react-icons/rx";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const path = "/background/blob-scene.svg";
 
   return (
-    <header>
+    <motion.header
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+    >
       <div
         className="text-dark-grey flex h-screen flex-col px-4 pt-10 lg:flex-row lg:gap-10 lg:px-36 lg:pt-20"
         style={{
@@ -65,11 +71,11 @@ const Hero = () => {
             className="h-25 w-[75rem]"
           />
         </div>
-          <div className="flex h-36 items-end justify-end text-2xl">
-            <RxArrowDown />
-          </div>
+        <div className="flex h-36 items-end justify-end text-2xl">
+          <RxArrowDown />
+        </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 

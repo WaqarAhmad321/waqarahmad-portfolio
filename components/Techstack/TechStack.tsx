@@ -22,15 +22,6 @@ const TechStack = () => {
 
   return (
     <div className="flex flex-col items-center md:flex-row">
-      <div className="order-last mb-10 mt-4 md:order-first md:mb-0">
-        <Image
-          src={coderImage}
-          priority
-          alt="A coder having headphones placed between his neck coding on computer placed on table with github's developers activity in background"
-          className="w-[43.75rem]"
-        />
-      </div>
-
       <div className={`w-full text-center text-6xl font-light leading-snug`}>
         <h2 className="text-center">My Tech Stack</h2>
         <div className="mt-5 grid grid-cols-4 lg:ml-36 lg:grid lg:grid-cols-6">
@@ -46,6 +37,15 @@ const TechStack = () => {
           ))}
         </div>
       </div>
+      <div className="order-last mb-10 mt-4 md:order-first md:mb-0">
+        <Image
+          src={coderImage}
+          priority
+          alt="A coder having headphones placed between his neck coding on computer placed on table with github's developers activity in background"
+          className="w-[43.75rem]"
+        />
+      </div>
+
     </div>
   );
 };
