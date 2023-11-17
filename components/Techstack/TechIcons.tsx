@@ -27,9 +27,9 @@ const TechIcons = ({ index, label, src, width, height }: TechIconsProps) => {
         <Image
           src={src}
           alt={`${label} icon`}
-          width={width}
-          height={height}
-          className="transition-transform hover:scale-125"
+          width={100}
+          height={100}
+          className={`transition-transform hover:scale-125`}
         />
       </div>
     );
