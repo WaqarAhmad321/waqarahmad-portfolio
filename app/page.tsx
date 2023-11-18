@@ -22,13 +22,15 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden">
-      <Hero />
+      <section id="home" className="scroll-mb-0">
+        <Hero />
+      </section>
 
-      <section className="mt-16 px-6 sm:px-16">
+      <section id="techstack" className="mt-16 scroll-mt-20 px-6 sm:px-16">
         <TechStack />
       </section>
 
-      <section className="mt-8">
+      <section id="projects" className="mt-8 scroll-mt-20">
         <ProjectsTitle title="featured projects" />
       </section>
 
@@ -49,7 +51,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section>
+      <section id="footer">
         <Footer />
       </section>
     </main>

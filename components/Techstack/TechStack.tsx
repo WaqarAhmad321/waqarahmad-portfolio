@@ -16,7 +16,7 @@ const TechStack = () => {
     logos.redux,
     logos.reactRouter,
     logos.git,
-    logos.html,
+    logos.framerMotion,
     logos.css,
   ];
 
@@ -45,7 +45,6 @@ const TechStack = () => {
           className="w-[43.75rem]"
         />
       </div>
-
     </div>
   );
 };

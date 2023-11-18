@@ -22,18 +22,14 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const links: NavLinksProps[] = [
-    { href: "/", title: "Home" },
-    { href: "/", title: "Skills" },
-    { href: "/", title: "Projects" },
-    { href: "/", title: "Contact Me" },
+    { href: "#home", title: "Home" },
+    { href: "#techstack", title: "Skills" },
+    { href: "#projects", title: "Projects" },
+    { href: "#footer", title: "Contact Me" },
   ];
 
   return (
-    <motion.nav
-      className={`${poppins.className} sticky top-0 z-10 bg-mint-cream`}
-      initial={{ opacity: 0, x: 100 }}
-      animate={{ opacity: 1, x: 0 }}
-    >
+    <nav className={`${poppins.className} sticky top-0 z-10 bg-mint-cream`}>
       <div
         className="text-dark-grey mx-auto w-full px-4 sm:px-6 lg:px-8
       "
@@ -92,7 +88,7 @@ const Navbar = () => {
         )}
       </div>
       <hr className={`${isOpen ? "hidden" : ""} shadow-lg`} />
-    </motion.nav>
+    </nav>
   );
 };
 
