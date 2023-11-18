@@ -39,8 +39,8 @@ const logos: Logos = {
   nextjs: {
     label: "Next.js",
     src: "/techstack/nextjs.svg",
-    width: 80,
-    height: 80,
+    width: 60,
+    height: 60,
   },
   javascript: {
     label: "JavaScript",
@@ -93,8 +93,8 @@ const logos: Logos = {
   css: {
     label: "CSS",
     src: "/techstack/css.svg",
-    width: 70,
-    height: 70,
+    width: 50,
+    height: 50,
   },
   styledComponents: {
     label: "Styled Components",
