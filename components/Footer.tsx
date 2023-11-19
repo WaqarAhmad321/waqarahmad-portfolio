@@ -5,7 +5,7 @@ import mailBallonsImage from "@/public/message-icon.svg";
 
 const Footer = () => {
   return (
-    <>
+    <footer>
       <Image
         src={footerWaveImage}
         alt="Waves Image"
@@ -39,7 +39,7 @@ const Footer = () => {
           </form>
         </div>
       </div>
-    </>
+    </footer>
   );
 };
 

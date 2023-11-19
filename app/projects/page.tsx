@@ -15,10 +15,12 @@ const allProjectsPage = () => {
   ];
 
   return (
-    <div className="mt-10">
+    <section className="mt-10">
       <ProjectsTitle title="Projects I have worked on" />
-      <Projects projects={allProjectsArray} />
-    </div>
+      <div className="mt-24 md:mt-10">
+        <Projects projects={allProjectsArray} />
+      </div>
+    </section>
   );
 };
 
