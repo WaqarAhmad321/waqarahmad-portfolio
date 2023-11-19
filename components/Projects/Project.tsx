@@ -6,7 +6,7 @@ import { ProjectType } from "@/lib/projects";
 
 import { Button, Wave } from "..";
 import TechIcons from "../Techstack/TechIcons";
-import { RxExternalLink, RxGithubLogo, RxLink1 } from "react-icons/rx";
+import { RxExternalLink, RxGithubLogo } from "react-icons/rx";
 
 interface ProjectProps extends ProjectType {
   index: number;
@@ -36,49 +36,48 @@ const Project = ({
 
   const renderProjects = () => {
     return (
-      <div className={`flex flex-col gap-2 ${odd && "bg-wave-color"}`}>
+      <div className={`flex flex-col gap-6 ${odd && "bg-wave-color"}`}>
         <div className="w-full">
           <h3 className="text-center text-5xl font-light">{title}</h3>
         </div>
 
-        <div className="m-16 mt-6 flex flex-col lg:grid lg:grid-cols-2 lg:gap-10">
+        <div className="mx-6 flex flex-col lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-4">
           <div className={`flex flex-col ${odd && "lg:order-first"}`}>
-            {renderDescription()}
+            {renderDescription()} 
 
-            <div className="mt-4 flex justify-around gap-3 sm:justify-normal">
-              <Link href={links.github}>
-                <Button variant="secondary" size="md">
+            <div className="flex justify-center gap-3 sm:justify-normal">
+              <Link href={links.github} target="__blank">
+                <Button variant="secondary" size="sm">
                   Source Code
                   <RxGithubLogo className="text-2xl" />
                 </Button>
               </Link>
               <Link href={links.demo}>
-                <Button variant="secondary" size="md">
+                <Button variant="secondary" size="sm">
                   Live Demo
                   <RxExternalLink className="text-2xl" />
                 </Button>
               </Link>
             </div>
 
-            <div className="mt-4 flex">
+            <div className="mb-24 flex md:mb-0">
               {stack.map((icon, index) => (
-                <div key={index} className="w-1/6 md:w-1/6">
-                  <TechIcons
-                    label={icon.label}
-                    src={icon.src}
-                    displayLabel={false}
-                  />
-                </div>
+                <TechIcons
+                  key={index}
+                  label={icon.label}
+                  src={icon.src}
+                  displayLabel={false}
+                />
               ))}
             </div>
           </div>
 
-          <div className="order-first md:mt-0">
+          <div className="order-first">
             <Image
               src={image?.main?.src || "/main.webp"}
               alt="Project Image"
-              width={image?.main?.width}
-              height={image?.main?.height}
+              width={1440}
+              height={732}
             />
           </div>
         </div>
@@ -86,11 +85,7 @@ const Project = ({
     );
   };
 
-  if (odd) {
-    return <Wave>{renderProjects()}</Wave>;
-  }
-
-  return renderProjects();
+  return odd ? <Wave>{renderProjects()}</Wave> : renderProjects();
 };
 
 export default Project;

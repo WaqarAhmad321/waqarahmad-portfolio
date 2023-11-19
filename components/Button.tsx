@@ -9,12 +9,12 @@ const buttonVariants = cva(
       variant: {
         primary: "bg-oxford-blue rounded-sm text-[#F4FFFD] hover:bg-[#0B2447]",
         secondary:
-          "bg-[#F9DC5C] rounded-full text-black hover:bg-[#ffe77b] w-40",
+          "bg-[#F9DC5C] rounded-full text-black hover:bg-[#ffe77b] w-40 xs:w-52 md:w-40",
         outlined:
           "border border-red-crayola rounded-sm text-red-crayola ease-in hover:bg-red-crayola hover:text-white",
       },
       size: {
-        md: "p-1 md:p-3",
+        sm: "p-1 md:p-2",
         lg: "p-3 md:p-5",
       },
     },

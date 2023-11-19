@@ -10,8 +10,6 @@ const allProjectsPage = () => {
     allProjects.thisWebsite,
     allProjects.usePopCorn,
     allProjects.travelList,
-    allProjects.reactQuiz,
-    allProjects.eatNSplit,
   ];
 
   return (

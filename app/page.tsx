@@ -22,7 +22,7 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden">
-      <section id="home" className="scroll-mb-0">
+      <section className="scroll-mb-0">
         <Hero />
       </section>
 
@@ -36,9 +36,9 @@ export default function Home() {
 
       <section className="mt-24 md:mt-12">
         <Projects projects={projectsArray} />
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-12">
           <Link href="/projects">
-            <Button variant="outlined" size="lg">
+            <Button variant="outlined" size="sm">
               View All Projects
               <RxArrowRight />
             </Button>
