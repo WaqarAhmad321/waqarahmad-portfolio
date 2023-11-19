@@ -6,6 +6,7 @@ import { ProjectType } from "@/lib/projects";
 
 import { Button, Wave } from "..";
 import TechIcons from "../Techstack/TechIcons";
+import { RxExternalLink, RxGithubLogo, RxLink1 } from "react-icons/rx";
 
 interface ProjectProps extends ProjectType {
   index: number;
@@ -35,35 +36,37 @@ const Project = ({
 
   const renderProjects = () => {
     return (
-      <div className={`flex flex-col gap-2 ${odd ? "bg-wave-color" : ""}`}>
+      <div className={`flex flex-col gap-2 ${odd && "bg-wave-color"}`}>
         <div className="w-full">
           <h1 className="text-center text-5xl font-light">{title}</h1>
         </div>
 
-        <div className="m-16 mt-6 flex flex-col lg:grid lg:grid-cols-2">
-          <div className="flex flex-col lg:order-first">
+        <div className="m-16 mt-6 flex flex-col lg:grid lg:grid-cols-2 lg:gap-10">
+          <div className={`flex flex-col ${odd && "lg:order-first"}`}>
             {renderDescription()}
 
             <div className="mt-4 flex justify-around gap-3 sm:justify-normal">
               <Link href={links.github}>
                 <Button variant="secondary" size="md">
                   Source Code
+                  <RxGithubLogo className="text-2xl" />
                 </Button>
               </Link>
               <Link href={links.demo}>
                 <Button variant="secondary" size="md">
                   Live Demo
+                  <RxExternalLink className="text-2xl" />
                 </Button>
               </Link>
             </div>
 
-            <div className="flex max-w-full flex-wrap gap-2">
+            <div className="mt-4 flex">
               {stack.map((icon, index) => (
                 <div key={index} className="w-1/6 md:w-1/6">
                   <TechIcons
+                    label={icon.label}
                     src={icon.src}
-                    width={icon.width}
-                    height={icon.height}
+                    displayLabel={false}
                   />
                 </div>
               ))}

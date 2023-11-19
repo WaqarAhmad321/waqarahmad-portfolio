@@ -1,6 +1,6 @@
 "use client";
 
-import { TechIconsProps } from "@/lib/types";
+import { TechIconProps } from "@/lib/types";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -18,11 +18,17 @@ const fadeInAnimationVariants = {
   }),
 };
 
-const TechIcons = ({ index, label, src, width, height }: TechIconsProps) => {
+const TechIcons = ({ index, label, src, displayLabel }: TechIconProps) => {
   const renderIcons = () => {
     return (
-      <div className="m-2 flex flex-col items-center">
-        <p className="mb-2 mt-2 whitespace-nowrap text-xs sm:text-sm">
+      <div className="group m-2 flex flex-col items-center">
+        <p
+          className={`mb-2 mt-2 whitespace-nowrap text-xs sm:text-sm ${
+            displayLabel
+              ? ""
+              : "invisible transition-transform group-hover:visible"
+          }`}
+        >
           {label}
         </p>
 
@@ -38,14 +44,14 @@ const TechIcons = ({ index, label, src, width, height }: TechIconsProps) => {
               label?.toLowerCase() === "tailwind"
                 ? "w-24 sm:w-32"
                 : "w-12 sm:w-20"
-            } transition-transform hover:scale-125`}
+            } transition-transform group-hover:scale-125`}
           />
         </div>
       </div>
     );
   };
 
-  if (label)
+  if (displayLabel)
     return (
       <motion.div
         className="m-2 flex flex-col items-center"

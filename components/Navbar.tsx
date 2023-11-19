@@ -47,7 +47,7 @@ const Navbar = () => {
                 <Link
                   href={link.href}
                   key={link.title}
-                  className="cursor-pointer transition-colors ease-linear hover:text-red-crayola"
+                  className="cursor-pointer transition-colors ease-linear hover:text-red-crayola duration-250"
                 >
                   {link.title}
                 </Link>
@@ -56,12 +56,13 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center text-2xl md:hidden">
-            <button
+            <motion.button
               className="inline-flex items-center justify-center p-2"
               onClick={() => setIsOpen(!isOpen)}
+              animate={{ rotate: isOpen ? 90 : 0 }}
             >
               {isOpen ? <RxCross1 /> : <RxHamburgerMenu />}
-            </button>
+            </motion.button>
           </div>
         </div>
 
@@ -77,6 +78,7 @@ const Navbar = () => {
                   <Link
                     href={link.href}
                     className="block cursor-pointer transition-colors hover:text-red-crayola"
+                    onClick={() => setIsOpen(false)}
                   >
                     {link.title}
                   </Link>
@@ -87,7 +89,7 @@ const Navbar = () => {
           </motion.div>
         )}
       </div>
-      <hr className={`${isOpen ? "hidden" : ""} shadow-lg`} />
+      <hr className={`${isOpen && "hidden"} shadow-lg`} />
     </nav>
   );
 };

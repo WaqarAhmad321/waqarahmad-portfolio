@@ -1,11 +1,9 @@
 import { ReactElement } from "react";
 
-export type TechIconsProps = {
+export type TechStackProps = {
   index?: number;
   label?: string;
   src: string;
-  width: number;
-  height: number;
 };
 
 export type IconLinksProps = {
@@ -13,3 +11,7 @@ export type IconLinksProps = {
   icon: ReactElement;
   title: string;
 };
+
+export interface TechIconProps extends TechStackProps {
+  displayLabel: boolean;
+}

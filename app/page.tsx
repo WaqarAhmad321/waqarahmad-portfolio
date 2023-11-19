@@ -1,14 +1,14 @@
+import Link from "next/link";
+import { RxArrowRight } from "react-icons/rx";
+import allProjects, { ProjectType } from "@/lib/projects";
 import {
+  Button,
+  Footer,
   Hero,
-  TechStack,
   Projects,
   ProjectsTitle,
-  Footer,
-  Button,
+  TechStack,
 } from "@/components";
-import allProjects, { ProjectType } from "@/lib/projects";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   const projectsArray: ProjectType[] = [
@@ -37,15 +37,10 @@ export default function Home() {
       <section className="mt-24 md:mt-12">
         <Projects projects={projectsArray} />
         <div className="flex justify-center">
-          <Link href="/">
+          <Link href="/projects">
             <Button variant="outlined" size="lg">
               View All Projects
-              <Image
-                src="/public/arrow_right.svg"
-                alt="Right Arrow"
-                width={24}
-                height={24}
-              />
+              <RxArrowRight />
             </Button>
           </Link>
         </div>

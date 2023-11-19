@@ -6,7 +6,11 @@ import mailBallonsImage from "@/public/message-icon.svg";
 const Footer = () => {
   return (
     <>
-      <Image src={footerWaveImage} alt="Waves Image" className="h-96 w-full" />
+      <Image
+        src={footerWaveImage}
+        alt="Waves Image"
+        className="h-96 md:w-full"
+      />
 
       <div className="flex w-screen flex-col bg-wave-color md:flex-row md:justify-around">
         <div className="flex flex-col">

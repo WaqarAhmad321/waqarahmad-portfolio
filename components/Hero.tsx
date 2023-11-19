@@ -5,6 +5,7 @@ import Balancer from "react-wrap-balancer";
 import Image from "next/image";
 import heroImage from "@/public/hero-image.svg";
 import { Button, ContactIcons } from "@/components";
+import Link from "next/link";
 
 const Hero = () => {
   const path = "/background/blob-scene.svg";
@@ -47,12 +48,16 @@ const Hero = () => {
         </div>
 
         <div className="mt-6 flex gap-4">
-          <Button variant="primary" size="lg">
-            Contact Me
-          </Button>
-          <Button variant="outlined" size="lg">
-            See my work
-          </Button>
+          <Link href="#footer">
+            <Button variant="primary" size="lg">
+              Contact Me
+            </Button>
+          </Link>
+          <Link href="/projects">
+            <Button variant="outlined" size="lg">
+              See my work
+            </Button>
+          </Link>
         </div>
       </div>
 

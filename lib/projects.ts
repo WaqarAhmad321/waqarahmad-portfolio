@@ -1,5 +1,5 @@
 import logos from "./logos";
-import { TechIconsProps } from "./types";
+import { TechStackProps } from "./types";
 
 type ProjectNames =
   | "theWildOasis"
@@ -24,7 +24,7 @@ export type ProjectType = {
     vidWidth?: number;
   };
   links: { github: string; demo: string };
-  stack: TechIconsProps[];
+  stack: TechStackProps[];
 };
 
 type Projects = { [K in ProjectNames]: ProjectType };
@@ -38,7 +38,7 @@ const allProjects: Projects = {
       "There is also a state-wise table of covid data which can be sorted by any column.",
       "The app also features historical data using **charts** made using **[chartjs](https://www.chartjs.com)**, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
       "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
-    ],  
+    ],
     image: { main: { src: "/main.webp", width: 800, height: 400 } },
     stack: [
       logos.react,
@@ -57,7 +57,7 @@ const allProjects: Projects = {
       "There is also a state-wise table of covid data which can be sorted by any column.",
       "The app also features historical data using **charts** made using **[chartjs](https://www.chartjs.com)**, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
       "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
-    ],  
+    ],
     image: { main: { src: "/main.webp", width: 800, height: 390 } },
     stack: [logos.react, logos.reactRouter, logos.javascript, logos.cssModules],
     links: { github: "/", demo: "/" },
@@ -70,7 +70,7 @@ const allProjects: Projects = {
       "There is also a state-wise table of covid data which can be sorted by any column.",
       "The app also features historical data using **charts** made using **[chartjs](https://www.chartjs.com)**, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
       "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
-    ],  
+    ],
     image: { main: { src: "/main.webp", width: 800, height: 390 } },
     stack: [logos.nextjs, logos.react, logos.typescript, logos.tailwind],
     links: { github: "/", demo: "/" },
@@ -83,7 +83,7 @@ const allProjects: Projects = {
       "There is also a state-wise table of covid data which can be sorted by any column.",
       "The app also features historical data using **charts** made using **[chartjs](https://www.chartjs.com)**, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
       "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
-    ],  
+    ],
     image: { main: { src: "/main.webp", width: 800, height: 390 } },
     stack: [logos.react, logos.redux, logos.reactRouter],
     links: { github: "/", demo: "/" },
@@ -96,7 +96,7 @@ const allProjects: Projects = {
       "There is also a state-wise table of covid data which can be sorted by any column.",
       "The app also features historical data using **charts** made using **[chartjs](https://www.chartjs.com)**, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
       "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
-    ],  
+    ],
     image: { main: { src: "/main.webp", width: 800, height: 390 } },
     stack: [logos.nextjs, logos.typescript, logos.tailwind],
     links: { github: "/", demo: "/" },
@@ -109,7 +109,7 @@ const allProjects: Projects = {
       "There is also a state-wise table of covid data which can be sorted by any column.",
       "The app also features historical data using **charts** made using **[chartjs](https://www.chartjs.com)**, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
       "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
-    ],  
+    ],
     image: { main: { src: "/main.webp", width: 800, height: 390 } },
     stack: [logos.react, logos.javascript],
     links: { github: "/", demo: "/" },
@@ -122,7 +122,7 @@ const allProjects: Projects = {
       "There is also a state-wise table of covid data which can be sorted by any column.",
       "The app also features historical data using **charts** made using **[chartjs](https://www.chartjs.com)**, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
       "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
-    ],  
+    ],
     image: { main: { src: "/main.webp", width: 800, height: 390 } },
     stack: [logos.react, logos.git],
     links: { github: "/", demo: "/" },
@@ -135,7 +135,7 @@ const allProjects: Projects = {
       "There is also a state-wise table of covid data which can be sorted by any column.",
       "The app also features historical data using **charts** made using **[chartjs](https://www.chartjs.com)**, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
       "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
-    ],  
+    ],
     image: { main: { src: "/main.webp", width: 800, height: 390 } },
     stack: [logos.react],
     links: { github: "/", demo: "/" },
@@ -148,7 +148,7 @@ const allProjects: Projects = {
       "There is also a state-wise table of covid data which can be sorted by any column.",
       "The app also features historical data using **charts** made using **[chartjs](https://www.chartjs.com)**, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
       "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
-    ],  
+    ],
     image: { main: { src: "/main.webp", width: 800, height: 390 } },
     stack: [logos.react],
     links: { github: "/", demo: "/" },
