@@ -1,5 +1,20 @@
+"use client";
+
 import { Projects, ProjectsTitle } from "@/components";
 import allProjects, { ProjectType } from "@/lib/projects";
+import { AnimatePresence, motion } from "framer-motion";
+
+const variants = {
+  initial: {
+    x: 100,
+  },
+  animate: {
+    x: 0,
+  },
+  exitState: {
+    x: 100,
+  },
+};
 
 const allProjectsPage = () => {
   const allProjectsArray: ProjectType[] = [
@@ -13,12 +28,20 @@ const allProjectsPage = () => {
   ];
 
   return (
-    <section className="mt-10">
-      <ProjectsTitle title="Projects I have worked on" />
-      <div className="mt-24 md:mt-10">
-        <Projects projects={allProjectsArray} />
-      </div>
-    </section>
+    <AnimatePresence>
+      <motion.section
+        className="mt-10"
+        initial="initial"
+        animate="animate"
+        exit="exitState"
+        variants={variants}
+      >
+        <ProjectsTitle title="Projects I have worked on" />
+        <div className="mt-24 md:mt-10">
+          <Projects projects={allProjectsArray} />
+        </div>
+      </motion.section>
+    </AnimatePresence>
   );
 };
 

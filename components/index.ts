@@ -10,6 +10,7 @@ import Wave from "./Projects/Wave";
 import TechStack from "./Techstack/TechStack";
 import TechIcons from "./Techstack/TechIcons";
 import ContactIcons from "./ContactIcons";
+import ScrollLink from "./ScrollLink";
 
 export {
   Navbar,
@@ -24,4 +25,5 @@ export {
   Project,
   Wave,
   ContactIcons,
+  ScrollLink,
 };

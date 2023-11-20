@@ -22,21 +22,21 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden">
-      <section className="scroll-mb-0">
+      <section id="home">
         <Hero />
       </section>
 
-      <section id="techstack" className="mt-16 scroll-mt-20 px-6 sm:px-16">
+      <section id="techstack" className="mt-16 px-6 sm:px-16">
         <TechStack />
       </section>
 
-      <section id="projects" className="mt-8 scroll-mt-20">
+      <section id="projects" className="mt-8">
         <ProjectsTitle title="featured projects" />
       </section>
 
       <section className="mt-24 md:mt-12">
         <Projects projects={projectsArray} />
-        <div className="flex justify-center mt-12">
+        <div className="mt-12 flex justify-center">
           <Link href="/projects">
             <Button variant="outlined" size="sm">
               View All Projects
