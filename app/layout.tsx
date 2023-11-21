@@ -1,6 +1,6 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import { Navbar } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-mint-cream scrollbar-thin scrollbar-track-mint-cream scrollbar-thumb-slate-400`}
+        className={`${inter.className} bg-mint-cream antialiased scrollbar-thin scrollbar-track-mint-cream scrollbar-thumb-slate-400`}
       >
         <Navbar />
 

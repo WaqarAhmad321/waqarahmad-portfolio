@@ -3,13 +3,15 @@
 import { useState } from "react";
 
 import { motion } from "framer-motion";
-import { Link as ScrollLink, scroller } from "react-scroll";
+import { scroller } from "react-scroll";
 
+import Router from "next/router";
+import { cn } from "@/lib/utils";
 import { Poppins } from "next/font/google";
+import { usePathname, useRouter } from "next/navigation";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 
 import { Logo } from ".";
-import { usePathname, useRouter } from "next/navigation";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -61,11 +63,13 @@ const Navbar = () => {
                           spy: true,
                         });
                       } else {
-                        router.push("/");
-
-                        scroller.scrollTo(link.href, {
-                          delay: 300,
-                          smooth: "easeInOutQuad",
+                        Router.push("/").then(() => {
+                          scroller.scrollTo(link.href, {
+                            delay: 300,
+                            smooth: "easeInOutQuad",
+                            offset: -100,
+                            duration: 800,
+                          });
                         });
                       }
                     }}
@@ -97,18 +101,29 @@ const Navbar = () => {
               <div className="h-screen space-y-2 px-2 pb-3 pl-4 pt-2 text-2xl sm:px-3">
                 {links.map((link) => (
                   <div key={link.title}>
-                    <ScrollLink
-                      to={link.href}
-                      key={link.title}
-                      smooth={true}
-                      spy={true}
-                      offset={-720}
-                      duration={800}
+                    <button
+                      onClick={() => {
+                        setIsOpen(false);
+                        if (pathname === "/") {
+                          scroller.scrollTo(link.href, {
+                            smooth: "easeInOutQuad",
+                            offset: -720,
+                            duration: 800,
+                            spy: true,
+                          });
+                        } else {
+                          router.push("/");
+
+                          scroller.scrollTo(link.href, {
+                            delay: 300,
+                            smooth: "easeInOutQuad",
+                          });
+                        }
+                      }}
                       className="duration-250 cursor-pointer transition-colors ease-linear hover:text-red-crayola"
-                      onClick={() => setIsOpen(false)}
                     >
                       {link.title}
-                    </ScrollLink>
+                    </button>
                     <hr className="mt-2" />
                   </div>
                 ))}
@@ -116,7 +131,7 @@ const Navbar = () => {
             </motion.div>
           )}
         </div>
-        <hr className={`${isOpen && "hidden"} shadow-lg`} />
+        <hr className={cn("shadow-lg", isOpen && "hidden")} />
       </nav>
     </header>
   );

@@ -40,6 +40,8 @@ const TechStack = () => {
         <Image
           src={coderImage}
           priority
+          width={1144}
+          height={617}
           alt="A coder having headphones placed between his neck coding on computer placed on table with github's developers activity in background"
           className="w-[43.75rem]"
         />

@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div
       className="text-dark-grey flex h-screen flex-col px-4 pt-10 lg:flex-row lg:gap-10 lg:px-36 lg:pt-20"
-      style={{
+      style={{  
         backgroundImage: `url(${path})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -63,8 +63,9 @@ const Hero = () => {
       <div className="mt-10 hidden lg:mt-0 xl:block">
         <Image
           src={heroImage}
+          width={152}
+          height={101}
           priority
-          quality={100}
           alt="hero image"
           className="h-25 w-[75rem]"
         />

@@ -7,6 +7,7 @@ import { ProjectType } from "@/lib/projects";
 import { Button, Wave } from "..";
 import TechIcons from "../Techstack/TechIcons";
 import { RxExternalLink, RxGithubLogo } from "react-icons/rx";
+import { cn } from "@/lib/utils";
 
 interface ProjectProps extends ProjectType {
   index: number;
@@ -36,14 +37,14 @@ const Project = ({
 
   const renderProjects = () => {
     return (
-      <div className={`flex flex-col gap-6 ${odd && "bg-wave-color"}`}>
+      <div className={cn("flex flex-col gap-6", odd && "bg-wave-color")}>
         <div className="w-full">
           <h3 className="text-center text-5xl font-light">{title}</h3>
         </div>
 
         <div className="mx-6 flex flex-col lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-4">
-          <div className={`flex flex-col ${odd && "lg:order-first"}`}>
-            {renderDescription()} 
+          <div className={cn("flex flex-col", odd && "lg:order-first")}>
+            {renderDescription()}
 
             <div className="flex justify-center gap-3 sm:justify-normal">
               <Link href={links.github} target="__blank">

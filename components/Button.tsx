@@ -11,7 +11,7 @@ const buttonVariants = cva(
         secondary:
           "bg-[#F9DC5C] rounded-full text-black hover:bg-[#ffe77b] w-40 xs:w-52 md:w-40",
         outlined:
-          "border border-red-crayola rounded-sm text-red-crayola ease-in hover:bg-red-crayola hover:text-white",
+          "border border-red-crayola rounded-sm text-red-crayola ease-in-out md:ease-in hover:bg-red-crayola hover:text-white",
       },
       size: {
         sm: "p-1 md:p-2",
