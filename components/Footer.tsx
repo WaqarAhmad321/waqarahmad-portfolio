@@ -12,7 +12,7 @@ const Footer = () => {
         className="h-96 md:w-full"
       />
 
-      <div className="flex w-screen flex-col bg-wave-color md:flex-row md:justify-around">
+      <div className="flex w-screen flex-col md:flex-row md:justify-around">
         <div className="flex flex-col">
           <h3 className="text-5xl">Connect through</h3>
           <div className="flex flex-row">

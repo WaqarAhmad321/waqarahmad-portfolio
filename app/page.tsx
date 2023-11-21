@@ -9,6 +9,12 @@ import {
   ProjectsTitle,
   TechStack,
 } from "@/components";
+import { Barlow } from "next/font/google";
+
+const barlow = Barlow({
+  weight: ["400", "600", "500", "700"],
+  subsets: ["latin"],
+});
 
 export default function Home() {
   const projectsArray: ProjectType[] = [
@@ -21,7 +27,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="overflow-hidden">
+    <main className={`overflow-hidden ${barlow.className}`}>
       <section id="home">
         <Hero />
       </section>
@@ -38,7 +44,7 @@ export default function Home() {
         <Projects projects={projectsArray} />
         <div className="mt-12 flex justify-center">
           <Link href="/projects">
-            <Button variant="outlined" size="sm">
+            <Button variant="outlined" size="md">
               View All Projects
               <RxArrowRight />
             </Button>

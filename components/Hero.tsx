@@ -4,14 +4,17 @@ import Link from "next/link";
 import Image from "next/image";
 import heroImage from "@/public/hero-image.svg";
 import { Button, ContactIcons, ScrollLink } from "@/components";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ weight: ["300"], subsets: ["latin"] });
 
 const Hero = () => {
   const path = "/background/blob-scene.svg";
 
   return (
     <div
-      className="text-dark-grey flex h-screen flex-col px-4 pt-10 lg:flex-row lg:gap-10 lg:px-36 lg:pt-20"
-      style={{  
+      className="flex h-screen flex-col px-4 pt-10 lg:flex-row lg:px-24 lg:pt-20"
+      style={{
         backgroundImage: `url(${path})`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -21,22 +24,26 @@ const Hero = () => {
     >
       <div className="lg:ml-10">
         <div className="flex flex-col justify-center">
-          <h1 className="text-4xl lg:text-5xl">
-            <Balancer>
-              <span className="text-red-crayola">Hi,</span> I&apos;m Waqar
-            </Balancer>
-          </h1>
+          <div className="font-bold text-gray-900">
+            <h1 className="text-4xl md:text-8xl">
+              <Balancer>
+                <span className="text-special">Hi, </span> I&apos;m Waqar
+              </Balancer>
+            </h1>
 
-          <h2 className="mt-4 text-3xl lg:mt-8 lg:text-5xl">
-            A Front-End Developer.
-          </h2>
+            <h2 className="mt-4 text-3xl lg:mt-8 md:text-5xl">
+              A Front-End Developer.
+            </h2>
+          </div>
 
-          <p className="text-grey mt-4 w-full text-base font-light leading-6 lg:mt-8 lg:w-3/4 lg:text-lg lg:leading-8 xl:w-2/3">
+          <p
+            className={`font-e mt-4 w-full text-xl leading-9 lg:mt-8 lg:w-3/4 lg:text-2xl lg:leading-9 xl:w-2/3 ${inter.className}`}
+          >
             <Balancer>
-              I enjoy solving complex problems. Frequently praised as
-              detail-oriented by my peers, I can be relied upon to help your
-              company achieve its goals by providing sustainable and scalable
-              solutions.
+              I enjoy solving complex problems. Frequently praised as{" "}
+              <span className="font-bold text-gray-700">detail-oriented</span>{" "}
+              by my peers, I can be relied upon to help your company achieve its
+              goals by providing sustainable and scalable solutions.
             </Balancer>
           </p>
         </div>

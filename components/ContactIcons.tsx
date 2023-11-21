@@ -24,7 +24,7 @@ const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
           key={icon.href}
           href={icon.href}
           target="__blank"
-          className="transition-colors hover:rounded-full hover:text-[#0B2447]"
+          className="transition-colors hover:rounded-full"
         >
           {icon.icon}{" "}
           <span className="flex flex-row text-xl hover:text-blue-800">

@@ -7,13 +7,13 @@ import { scroller } from "react-scroll";
 
 import Router from "next/router";
 import { cn } from "@/lib/utils";
-import { Poppins } from "next/font/google";
+import { Barlow } from "next/font/google";
 import { usePathname, useRouter } from "next/navigation";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 
 import { Logo } from ".";
 
-const poppins = Poppins({
+const barlow = Barlow({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -36,10 +36,10 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-10">
-      <nav className={`${poppins.className} bg-mint-cream`}>
+    <header className={`${barlow.className} sticky top-0 z-10 text-gray-800`}>
+      <nav className="bg-white">
         <div
-          className="text-dark-grey mx-auto w-full px-4 sm:px-6 lg:px-8
+          className="mx-auto w-full px-4 sm:px-6 lg:px-8
         "
         >
           <div className="flex h-16 items-center justify-between">
@@ -50,7 +50,7 @@ const Navbar = () => {
             </div>
 
             <div className="hidden md:block">
-              <div className="text-dark-grey ml-4 flex items-center space-x-6 text-2xl">
+              <div className="ml-4 flex items-center space-x-6 text-2xl">
                 {links.map((link) => (
                   <button
                     key={link.title}
@@ -73,7 +73,7 @@ const Navbar = () => {
                         });
                       }
                     }}
-                    className="duration-250 cursor-pointer transition-colors ease-linear hover:text-red-crayola"
+                    className="duration-250 cursor-pointer transition-colors ease-linear hover:text-indigo-600"
                   >
                     {link.title}
                   </button>
@@ -120,7 +120,7 @@ const Navbar = () => {
                           });
                         }
                       }}
-                      className="duration-250 cursor-pointer transition-colors ease-linear hover:text-red-crayola"
+                      className="duration-250 cursor-pointer transition-colors ease-linear hover:text-indigo-600"
                     >
                       {link.title}
                     </button>

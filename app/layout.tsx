@@ -1,9 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { Navbar } from "@/components";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Waqar Ahmad",
@@ -16,9 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} bg-mint-cream antialiased scrollbar-thin scrollbar-track-mint-cream scrollbar-thumb-slate-400`}
-      >
+      <body className="bg-[#F7FAFC] text-gray-700 antialiased">
         <Navbar />
 
         {children}

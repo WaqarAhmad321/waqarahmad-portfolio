@@ -1,7 +1,8 @@
 import Image from "next/image";
 import logos from "@/lib/logos";
-import { TechStackProps } from "@/lib/types";
 import coderImage from "@/public/coder.svg";
+import { TechStackProps } from "@/lib/types";
+
 import TechIcons from "./TechIcons";
 
 const TechStack = () => {
@@ -23,7 +24,7 @@ const TechStack = () => {
   return (
     <div className="flex flex-col items-center md:flex-row">
       <div className="w-full text-center text-6xl font-light leading-snug">
-        <h2 className="text-center">My Tech Stack</h2>
+        <h2 className="text-center font-bold text-gray-900">My Tech Stack</h2>
         <div className="lg:ml-26 mt-5 grid grid-cols-4 lg:grid lg:grid-cols-6">
           {iconsArray.map((icon, index) => (
             <TechIcons
