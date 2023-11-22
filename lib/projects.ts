@@ -108,7 +108,7 @@ const allProjects: Projects = {
       "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
     ],
     image: { main: { src: "/main.webp", width: 800, height: 390 } },
-    stack: [logos.nextjs, logos.typescript, logos.tailwind],
+    stack: [logos.nextjs, logos.typescript, logos.tailwind, logos.framerMotion],
     links: {
       github: "https://github.com/WaqarAhmad321/waqarahmad-portfolio",
       demo: "https://waqarahmad-portfolio.vercel.app",
