@@ -1,3 +1,5 @@
+"use client";
+
 import ReactMarkdown from "react-markdown";
 
 import Link from "next/link";
@@ -5,7 +7,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { ProjectType } from "@/lib/projects";
 import { RxExternalLink, RxGithubLogo } from "react-icons/rx";
-
+import { motion } from "framer-motion";
 import { Button, Wave } from "..";
 import { TechIcons } from "@/components";
 
@@ -63,7 +65,7 @@ const Project = ({
               </Link>
             </div>
 
-            <div className="mb-24 flex md:gap-6 md:mb-0">
+            <div className="mb-24 flex md:mb-0 md:gap-6">
               {stack.map((icon, index) => (
                 <TechIcons
                   key={index}
@@ -75,7 +77,7 @@ const Project = ({
             </div>
           </div>
 
-          <div className="order-first">
+          <motion.div className="order-first">
             <Image
               src={image?.main?.src || "/main.webp"}
               alt="Project Image"
@@ -83,7 +85,7 @@ const Project = ({
               height={732}
               className="rounded-lg shadow-xl"
             />
-          </div>
+          </motion.div>
         </div>
       </div>
     );
