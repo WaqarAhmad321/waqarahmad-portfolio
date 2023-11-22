@@ -1,3 +1,5 @@
+"use client";
+
 import Balancer from "react-wrap-balancer";
 
 import Link from "next/link";
@@ -5,6 +7,7 @@ import Image from "next/image";
 import heroImage from "@/public/hero-image.svg";
 import { Button, ContactIcons, ScrollLink } from "@/components";
 import { Inter } from "next/font/google";
+import { motion } from "framer-motion";
 
 const inter = Inter({ weight: ["300"], subsets: ["latin"] });
 
@@ -12,7 +15,7 @@ const Hero = () => {
   const path = "/background/blob-scene.svg";
 
   return (
-    <div
+    <motion.div
       className="flex h-screen flex-col px-4 pt-10 lg:flex-row lg:px-24 lg:pt-20"
       style={{
         backgroundImage: `url(${path})`,
@@ -21,6 +24,10 @@ const Hero = () => {
         backgroundPosition: "left",
         minHeight: "100vh",
       }}
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: 1, x: 0 }}
+      // transition={{ duration: 0.5 }}
+      exit={{ opacity: 0, x: -100 }}
     >
       <div className="lg:ml-10">
         <div className="flex flex-col justify-center">
@@ -31,7 +38,7 @@ const Hero = () => {
               </Balancer>
             </h1>
 
-            <h2 className="mt-4 text-3xl lg:mt-8 md:text-5xl">
+            <h2 className="mt-4 text-3xl md:text-5xl lg:mt-8">
               A Front-End Developer.
             </h2>
           </div>
@@ -77,7 +84,7 @@ const Hero = () => {
           className="h-25 w-[75rem]"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

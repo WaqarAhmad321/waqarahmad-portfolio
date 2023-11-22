@@ -107,7 +107,7 @@ const Navbar = () => {
                         if (pathname === "/") {
                           scroller.scrollTo(link.href, {
                             smooth: "easeInOutQuad",
-                            offset: -720,
+                            offset: -830,
                             duration: 800,
                             spy: true,
                           });
