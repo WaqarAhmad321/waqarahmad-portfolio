@@ -15,8 +15,8 @@ const Hero = () => {
   const path = "/background/blob-scene.svg";
 
   return (
-    <motion.div
-      className="flex h-screen flex-col px-4 pt-10 lg:flex-row lg:px-24 lg:pt-20"
+    <div
+      className="flex h-screen flex-col px-4 pt-10 will-change-transform md:will-change-auto lg:flex-row lg:px-24 lg:pt-20"
       style={{
         backgroundImage: `url(${path})`,
         backgroundRepeat: "no-repeat",
@@ -24,10 +24,9 @@ const Hero = () => {
         backgroundPosition: "left",
         minHeight: "100vh",
       }}
-      initial={{ opacity: 0, x: -100 }}
-      animate={{ opacity: 1, x: 0 }}
-      // transition={{ duration: 0.5 }}
-      exit={{ opacity: 0, x: -100 }}
+      // initial={{ opacity: 0, x: -100 }}
+      // animate={{ opacity: 1, x: 0 }}
+      // exit={{ opacity: 0, x: -100 }}
     >
       <div className="lg:ml-10">
         <div className="flex flex-col justify-center">
@@ -84,7 +83,7 @@ const Hero = () => {
           className="h-25 w-[75rem]"
         />
       </div>
-    </motion.div>
+    </div>
   );
 };
 

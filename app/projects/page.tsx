@@ -30,7 +30,7 @@ const allProjectsPage = () => {
   return (
     <AnimatePresence>
       <motion.section
-        className="mt-10"
+        className="mt-10 will-change-transform md:will-change-auto"
         initial="initial"
         animate="animate"
         exit="exitState"

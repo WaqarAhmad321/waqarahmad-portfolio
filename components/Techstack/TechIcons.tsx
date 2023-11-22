@@ -69,7 +69,7 @@ const TechIcons = ({ index, label, src, displayLabel }: TechIconProps) => {
 
   return displayLabel ? (
     <motion.div
-      className="m-2 flex flex-col items-center"
+      className="m-2 flex flex-col items-center will-change-transform md:will-change-auto"
       variants={fadeInAnimationVariants}
       initial="initial"
       whileInView="animate"
