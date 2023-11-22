@@ -7,12 +7,14 @@ import { cn } from "@/lib/utils";
 
 const fadeInAnimationVariants = {
   initial: {
+    opacity: 0,
     scale: 0,
   },
   animate: (index: number) => ({
+    opacity: 1,
     scale: 1,
     transition: {
-      // type: "spring",
+      type: "spring",
       delay: 0.05 * index,
       ease: "linear",
     },
