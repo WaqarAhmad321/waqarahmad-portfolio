@@ -83,7 +83,7 @@ const Navbar = () => {
 
             <div className="flex items-center text-2xl md:hidden">
               <motion.button
-                className="inline-flex items-center justify-center p-2 will-change-transform md:will-change-auto"
+                className="inline-flex items-center justify-center p-2 will-change-transform"
                 onClick={() => setIsOpen(!isOpen)}
                 animate={{ rotate: isOpen ? 90 : 0 }}
               >

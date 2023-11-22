@@ -16,7 +16,7 @@ const Hero = () => {
 
   return (
     <div
-      className="flex h-screen flex-col px-4 pt-10 will-change-transform md:will-change-auto lg:flex-row lg:px-24 lg:pt-20"
+      className="flex h-screen flex-col px-4 pt-10 will-change-transform lg:flex-row lg:px-24 lg:pt-20"
       style={{
         backgroundImage: `url(${path})`,
         backgroundRepeat: "no-repeat",
