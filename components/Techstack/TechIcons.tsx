@@ -13,10 +13,10 @@ const fadeInAnimationVariants = {
   animate: (index: number) => ({
     opacity: 1,
     scale: 1,
-    frames: [0, 1],
+    // frames: [0, 1],
     transition: {
       type: "spring",
-      delay: 0.05 * index,
+      // delay: 0.05 * index,
       ease: "linear",
     },
   }),
