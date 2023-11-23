@@ -6,17 +6,11 @@ import { motion } from "framer-motion";
 import { scroller } from "react-scroll";
 
 import Router from "next/router";
-import { cn } from "@/lib/utils";
-import { Barlow } from "next/font/google";
+import { barlow, cn } from "@/lib/utils";
 import { usePathname, useRouter } from "next/navigation";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 
 import { Logo } from ".";
-
-const barlow = Barlow({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 type NavLinksProps = {
   href: string;

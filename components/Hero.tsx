@@ -2,11 +2,9 @@ import Balancer from "react-wrap-balancer";
 
 import Link from "next/link";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import heroImage from "@/public/hero-image.svg";
 import { Button, ContactIcons, ScrollLink } from "@/components";
-
-const inter = Inter({ weight: ["300"], subsets: ["latin"] });
+import { inter } from "@/lib/utils";
 
 const Hero = () => {
   const path = "/background/blob-scene.svg";
@@ -60,7 +58,11 @@ const Hero = () => {
           </ScrollLink>
 
           <Link href="projects">
-            <Button variant="outlined" size="lg" className="focus:outline-4 focus:ring  focus: ring-indigo-500 focus:ring-offset-2">
+            <Button
+              variant="outlined"
+              size="lg"
+              className="focus: ring-indigo-500  focus:outline-4 focus:ring focus:ring-offset-2"
+            >
               See my work
             </Button>
           </Link>

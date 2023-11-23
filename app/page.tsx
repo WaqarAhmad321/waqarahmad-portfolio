@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Barlow } from "next/font/google";
 import { RxArrowRight } from "react-icons/rx";
 import allProjects, { ProjectType } from "@/lib/projects";
 import {
@@ -10,11 +9,7 @@ import {
   ProjectsTitle,
   TechStack,
 } from "@/components";
-
-const barlow = Barlow({
-  weight: ["400", "600", "500", "700"],
-  subsets: ["latin"],
-});
+import { barlow } from "@/lib/utils";
 
 export default function Home() {
   const projectsArray: ProjectType[] = [
