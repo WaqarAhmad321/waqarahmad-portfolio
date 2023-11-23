@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ContactIcons } from ".";
-import footerWaveImage from "@/public/background/footer-wave-dark.svg";
+import footerWaveImage from "@/public/background/footer-wave.svg";
 import mailBallonsImage from "@/public/message-icon.svg";
 import { FC } from "react";
 
