@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { FC, useState } from "react";
 
 import { motion } from "framer-motion";
 import { scroller } from "react-scroll";
@@ -23,7 +23,7 @@ type NavLinksProps = {
   title: string;
 };
 
-const Navbar = () => {
+const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const router = useRouter();
   const pathname = usePathname();
@@ -58,16 +58,15 @@ const Navbar = () => {
                       if (pathname === "/") {
                         scroller.scrollTo(link.href, {
                           smooth: "easeInOutQuad",
-                          offset: -100,
                           duration: 800,
                           spy: true,
+                          offset: -60,
                         });
                       } else {
                         Router.push("/").then(() => {
                           scroller.scrollTo(link.href, {
                             delay: 300,
                             smooth: "easeInOutQuad",
-                            offset: -100,
                             duration: 800,
                           });
                         });
@@ -83,7 +82,7 @@ const Navbar = () => {
 
             <div className="flex items-center text-2xl md:hidden">
               <motion.button
-                className="inline-flex items-center justify-center p-2 will-change-transform"
+                className="inline-flex items-center justify-center p-2 will-change-transform md:will-change-auto"
                 onClick={() => setIsOpen(!isOpen)}
                 animate={{ rotate: isOpen ? 90 : 0 }}
               >
@@ -94,7 +93,7 @@ const Navbar = () => {
 
           {isOpen && (
             <motion.div
-              className="md:hidden"
+              className="will-change-transform md:hidden md:will-change-auto"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
             >
@@ -107,9 +106,9 @@ const Navbar = () => {
                         if (pathname === "/") {
                           scroller.scrollTo(link.href, {
                             smooth: "easeInOutQuad",
-                            offset: -830,
                             duration: 800,
                             spy: true,
+                            // offset: -770,
                           });
                         } else {
                           router.push("/");

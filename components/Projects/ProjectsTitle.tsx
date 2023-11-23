@@ -1,8 +1,8 @@
-import React from "react";
+import React, { FC } from "react";
 
-const ProjectsTitle = ({ title }: { title: string }) => {
+const ProjectsTitle: FC<{ title: string }> = ({ title }) => {
   return (
-    <h2 className="text-center text-7xl capitalize md:text-8xl md:font-bold text-gray-900">
+    <h2 className="text-center text-7xl font-bold capitalize text-gray-900 md:text-8xl">
       {title}
     </h2>
   );

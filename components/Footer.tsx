@@ -2,8 +2,9 @@ import Image from "next/image";
 import { ContactIcons } from ".";
 import footerWaveImage from "@/public/background/footer-wave-dark.svg";
 import mailBallonsImage from "@/public/message-icon.svg";
+import { FC } from "react";
 
-const Footer = () => {
+const Footer: FC = () => {
   return (
     <footer>
       <Image

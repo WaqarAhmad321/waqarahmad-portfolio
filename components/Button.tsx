@@ -1,14 +1,13 @@
 import { cn } from "@/lib/utils";
 import { VariantProps, cva } from "class-variance-authority";
-import { ButtonHTMLAttributes, ReactNode } from "react";
+import { ButtonHTMLAttributes, FC, ReactNode } from "react";
 
 const buttonVariants = cva(
   "transition-colors duration-300 capitalize flex flex-row items-center justify-center gap-2 font-bold rounded-md",
   {
     variants: {
       variant: {
-        primary:
-          "bg-indigo-500 text-[#F4FFFD] hover:bg-indigo-600 text-xl",
+        primary: "bg-indigo-500 text-[#F4FFFD] hover:bg-indigo-600 text-xl",
         secondary:
           "bg-[#16A394] text-black hover:bg-[#187367] w-40 xs:w-52 md:w-40 text-white",
         outlined:
@@ -33,13 +32,13 @@ interface ButtonProps
   children: ReactNode;
 }
 
-export default function Button({
+const Button: FC<ButtonProps> = ({
   children,
   className,
   variant,
   size,
   ...props
-}: ButtonProps) {
+}) => {
   return (
     <button
       className={cn(buttonVariants({ className, variant, size, ...props }))}
@@ -47,4 +46,5 @@ export default function Button({
       {children}
     </button>
   );
-}
+};
+export default Button;

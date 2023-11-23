@@ -14,7 +14,6 @@ const NavItem = ({ link }: any) => {
         if (pathname === "/") {
           scroller.scrollTo(link.href, {
             smooth: "easeInOutQuad",
-            offset: -100,
             duration: 800,
             spy: true,
           });

@@ -4,6 +4,7 @@ import { TechIconProps } from "@/lib/types";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { FC } from "react";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -19,7 +20,7 @@ const fadeInAnimationVariants = {
   }),
 };
 
-const TechIcons = ({ index, label, src, displayLabel }: TechIconProps) => {
+const TechIcons: FC<TechIconProps> = ({ index, label, src, displayLabel }) => {
   const renderIcons = () => {
     return (
       <div className="group m-2 flex flex-col items-center">
@@ -69,7 +70,7 @@ const TechIcons = ({ index, label, src, displayLabel }: TechIconProps) => {
 
   return displayLabel ? (
     <motion.div
-      className="m-2 flex flex-col items-center will-change-transform"
+      className="m-2 flex flex-col items-center will-change-transform md:will-change-auto"
       variants={fadeInAnimationVariants}
       initial="initial"
       whileInView="animate"

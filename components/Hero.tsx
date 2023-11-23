@@ -1,13 +1,10 @@
-"use client";
-
 import Balancer from "react-wrap-balancer";
 
 import Link from "next/link";
 import Image from "next/image";
+import { Inter } from "next/font/google";
 import heroImage from "@/public/hero-image.svg";
 import { Button, ContactIcons, ScrollLink } from "@/components";
-import { Inter } from "next/font/google";
-import { motion } from "framer-motion";
 
 const inter = Inter({ weight: ["300"], subsets: ["latin"] });
 
@@ -16,7 +13,7 @@ const Hero = () => {
 
   return (
     <div
-      className="flex h-screen flex-col px-4 pt-10 will-change-transform lg:flex-row lg:px-24 lg:pt-20"
+      className="flex h-screen flex-col px-4 pt-10 lg:flex-row lg:px-24 lg:pt-20"
       style={{
         backgroundImage: `url(${path})`,
         backgroundRepeat: "no-repeat",
@@ -24,9 +21,6 @@ const Hero = () => {
         backgroundPosition: "left",
         minHeight: "100vh",
       }}
-      // initial={{ opacity: 0, x: -100 }}
-      // animate={{ opacity: 1, x: 0 }}
-      // exit={{ opacity: 0, x: -100 }}
     >
       <div className="lg:ml-10">
         <div className="flex flex-col justify-center">
@@ -43,7 +37,7 @@ const Hero = () => {
           </div>
 
           <p
-            className={`font-e mt-4 w-full text-xl leading-9 lg:mt-8 lg:w-3/4 lg:text-2xl lg:leading-9 xl:w-2/3 ${inter.className}`}
+            className={`font-e mt-4 w-full text-xl leading-8 lg:mt-8 lg:w-3/4 lg:text-2xl lg:leading-9 xl:w-2/3 ${inter.className}`}
           >
             <Balancer>
               I enjoy solving complex problems. Frequently praised as{" "}
@@ -66,7 +60,7 @@ const Hero = () => {
           </ScrollLink>
 
           <Link href="projects">
-            <Button variant="outlined" size="lg">
+            <Button variant="outlined" size="lg" className="focus:outline-4 focus:ring  focus: ring-indigo-500 focus:ring-offset-2">
               See my work
             </Button>
           </Link>

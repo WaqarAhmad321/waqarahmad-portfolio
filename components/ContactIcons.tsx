@@ -1,6 +1,7 @@
 import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
 import { IconLinksProps } from "@/lib/types";
 import Link from "next/link";
+import { FC } from "react";
 
 const icons: IconLinksProps[] = [
   {

@@ -1,28 +1,25 @@
-"use client";
-
 import ReactMarkdown from "react-markdown";
 
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { ProjectType } from "@/lib/projects";
+import { Button, TechIcons, Wave } from "@/components";
 import { RxExternalLink, RxGithubLogo } from "react-icons/rx";
-import { motion } from "framer-motion";
-import { Button, Wave } from "..";
-import { TechIcons } from "@/components";
+import { FC } from "react";
 
 interface ProjectProps extends ProjectType {
   index: number;
 }
 
-const Project = ({
+const Project: FC<ProjectProps> = ({
   index,
   title,
   description,
   image,
   links,
   stack,
-}: ProjectProps) => {
+}) => {
   const odd = index % 2 === 1 ? true : false;
 
   const renderDescription = () => {
@@ -41,7 +38,7 @@ const Project = ({
     return (
       <div className={cn("flex flex-col gap-6", odd && "bg-[#D8E6FC]")}>
         <div className="w-full">
-          <h3 className="text-center text-5xl font-semibold text-gray-900">
+          <h3 className="text-center text-5xl font-medium  text-gray-900 md:font-semibold">
             {title}
           </h3>
         </div>
@@ -77,7 +74,7 @@ const Project = ({
             </div>
           </div>
 
-          <motion.div className="order-first">
+          <div className="order-first">
             <Image
               src={image?.main?.src || "/main.webp"}
               alt="Project Image"
@@ -85,7 +82,7 @@ const Project = ({
               height={732}
               className="rounded-lg shadow-xl"
             />
-          </motion.div>
+          </div>
         </div>
       </div>
     );
