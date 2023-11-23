@@ -61,7 +61,7 @@ const Hero = () => {
             <Button
               variant="outlined"
               size="lg"
-              className="focus: ring-indigo-500  focus:outline-4 focus:ring focus:ring-offset-2"
+              className="focus:ring-indigo-500  focus:outline-4 focus:ring focus:ring-offset-2"
             >
               See my work
             </Button>
@@ -72,11 +72,11 @@ const Hero = () => {
       <div className="mt-10 hidden lg:mt-0 xl:block">
         <Image
           src={heroImage}
-          width={152}
-          height={101}
+          width={1200}
+          height={80}
           priority
           alt="hero image"
-          className="h-25 w-[75rem]"
+          loading="eager"
         />
       </div>
     </div>

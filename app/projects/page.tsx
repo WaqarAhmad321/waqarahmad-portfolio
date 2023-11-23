@@ -2,20 +2,20 @@
 
 import { Projects, ProjectsTitle } from "@/components";
 import allProjects, { ProjectType } from "@/lib/projects";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const variants = {
   initial: {
-    opacity: 0,
+    // opacity: 0,
     x: 100,
   },
   animate: {
-    opacity: 1,
+    // opacity: 1,
     x: 0,
   },
   exitState: {
-    opacity: 0,
-    x: 100,
+    // opacity: 0,
+    x: 1,
   },
 };
 
@@ -31,20 +31,18 @@ const allProjectsPage = () => {
   ];
 
   return (
-    <AnimatePresence>
-      <motion.section
-        className="mt-10 will-change-transform md:will-change-auto"
+    <motion.section
+      className="mt-10 will-change-transform md:will-change-auto"
         initial="initial"
         animate="animate"
         exit="exitState"
         variants={variants}
-      >
-        <ProjectsTitle title="Projects I have worked on" />
-        <div className="mt-24 md:mt-10">
-          <Projects projects={allProjectsArray} />
-        </div>
-      </motion.section>
-    </AnimatePresence>
+    >
+      <ProjectsTitle title="Projects I have worked on" />
+      <div className="mt-24 md:mt-10">
+        <Projects projects={allProjectsArray} />
+      </div>
+    </motion.section>
   );
 };
 

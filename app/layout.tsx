@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Waqar Ahmad, a professional web developer specializing in Next.js, React, and TypeScript",
   metadataBase: new URL("https://waqarahmad-portfolio.vercel.app"),
+  openGraph: {
+    
+  }
 };
 
 export default function RootLayout({
