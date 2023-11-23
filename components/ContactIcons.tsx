@@ -26,6 +26,7 @@ const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
           href={icon.href}
           target="__blank"
           className="transition-colors hover:rounded-full"
+          aria-label={`${icon.title} logo`}
         >
           {icon.icon}{" "}
           <span className="flex flex-row text-xl hover:text-blue-800">

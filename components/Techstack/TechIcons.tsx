@@ -37,22 +37,20 @@ const TechIcons: FC<TechIconProps> = ({ index, label, src, displayLabel }) => {
         <motion.div
           className="flex h-16 w-16 items-center justify-center"
           animate={
-            label?.toLowerCase() === "react"
-              ? {
-                  rotate: [0, 360],
-                  transition: {
-                    repeat: Infinity,
-                    duration: 15,
-                    ease: "linear",
-                    repeatType: "loop",
-                  },
-                }
-              : {}
+            label?.toLowerCase() === "react" && {
+              rotate: [0, 360],
+              transition: {
+                repeat: Infinity,
+                duration: 15,
+                ease: "linear",
+                repeatType: "loop",
+              },
+            }
           }
         >
           <Image
             src={src}
-            alt={`${label} icon`}
+            alt={`${label} logo`}
             width={60}
             height={60}
             className={cn(

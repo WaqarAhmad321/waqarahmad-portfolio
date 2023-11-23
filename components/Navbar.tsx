@@ -3,31 +3,16 @@
 import { FC, useState } from "react";
 
 import { motion } from "framer-motion";
-import { scroller } from "react-scroll";
 
-import Router from "next/router";
 import { barlow, cn } from "@/lib/utils";
 import { usePathname, useRouter } from "next/navigation";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 
 import { Logo } from ".";
-
-type NavLinksProps = {
-  href: string;
-  title: string;
-};
+import NavItems from "./NavItems";
 
 const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const router = useRouter();
-  const pathname = usePathname();
-
-  const links: NavLinksProps[] = [
-    { href: "home", title: "Home" },
-    { href: "techstack", title: "Skills" },
-    { href: "projects", title: "Projects" },
-    { href: "footer", title: "Contact Me" },
-  ];
 
   return (
     <header className={`${barlow.className} sticky top-0 z-10 text-gray-800`}>
@@ -45,40 +30,16 @@ const Navbar: FC = () => {
 
             <div className="hidden md:block">
               <div className="ml-4 flex items-center space-x-6 text-2xl">
-                {links.map((link) => (
-                  <button
-                    key={link.title}
-                    onClick={() => {
-                      if (pathname === "/") {
-                        scroller.scrollTo(link.href, {
-                          smooth: "easeInOutQuad",
-                          duration: 800,
-                          spy: true,
-                          offset: -60,
-                        });
-                      } else {
-                        Router.push("/").then(() => {
-                          scroller.scrollTo(link.href, {
-                            delay: 300,
-                            smooth: "easeInOutQuad",
-                            duration: 800,
-                          });
-                        });
-                      }
-                    }}
-                    className="duration-250 cursor-pointer transition-colors ease-linear hover:text-indigo-600"
-                  >
-                    {link.title}
-                  </button>
-                ))}
+                <NavItems setIsOpen={setIsOpen} isOpen={isOpen} />
               </div>
             </div>
 
             <div className="flex items-center text-2xl md:hidden">
               <motion.button
                 className="inline-flex items-center justify-center p-2 will-change-transform md:will-change-auto"
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen((isOpen) => !isOpen)}
                 animate={{ rotate: isOpen ? 90 : 0 }}
+                aria-label="navigation menu"
               >
                 {isOpen ? <RxCross1 /> : <RxHamburgerMenu />}
               </motion.button>
@@ -92,34 +53,7 @@ const Navbar: FC = () => {
               animate={{ opacity: 1, x: 0 }}
             >
               <div className="h-screen space-y-2 px-2 pb-3 pl-4 pt-2 text-2xl sm:px-3">
-                {links.map((link) => (
-                  <div key={link.title}>
-                    <button
-                      onClick={() => {
-                        setIsOpen(false);
-                        if (pathname === "/") {
-                          scroller.scrollTo(link.href, {
-                            smooth: "easeInOutQuad",
-                            duration: 800,
-                            spy: true,
-                            // offset: -770,
-                          });
-                        } else {
-                          router.push("/");
-
-                          scroller.scrollTo(link.href, {
-                            delay: 300,
-                            smooth: "easeInOutQuad",
-                          });
-                        }
-                      }}
-                      className="duration-250 cursor-pointer transition-colors ease-linear hover:text-indigo-600"
-                    >
-                      {link.title}
-                    </button>
-                    <hr className="mt-2" />
-                  </div>
-                ))}
+                <NavItems setIsOpen={setIsOpen} isOpen={isOpen} />
               </div>
             </motion.div>
           )}

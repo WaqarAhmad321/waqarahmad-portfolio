@@ -47,9 +47,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="footer">
+      {/* <section id="footer">
         <Footer />
-      </section>
+      </section> */}
     </main>
   );
 }

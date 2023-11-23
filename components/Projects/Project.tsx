@@ -38,9 +38,9 @@ const Project: FC<ProjectProps> = ({
     return (
       <div className={cn("flex flex-col gap-6", odd && "bg-[#D8E6FC]")}>
         <div className="w-full">
-          <h3 className="text-center text-5xl font-medium  text-gray-900 md:font-semibold">
+          <h4 className="text-center text-5xl font-medium text-gray-900 md:font-semibold">
             {title}
-          </h3>
+          </h4>
         </div>
 
         <div className="mx-6 flex flex-col lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-4">
@@ -49,13 +49,13 @@ const Project: FC<ProjectProps> = ({
 
             <div className="flex gap-3 sm:justify-normal">
               <Link href={links.github} target="__blank">
-                <Button variant="secondary" size="sm">
+                <Button variant="secondary" size="sm" aria-label="Source Code">
                   Source Code
                   <RxGithubLogo className="text-2xl" />
                 </Button>
               </Link>
               <Link href={links.demo} target="__blank">
-                <Button variant="secondary" size="sm">
+                <Button variant="secondary" size="sm" aria-label="Live Demo">
                   Live Demo
                   <RxExternalLink className="text-2xl" />
                 </Button>

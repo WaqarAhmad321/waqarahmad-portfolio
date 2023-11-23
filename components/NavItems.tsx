@@ -1,68 +1,63 @@
 "use client";
 
-import { useState } from "react";
+import { FC } from "react";
 
-import { motion } from "framer-motion";
 import { scroller } from "react-scroll";
-import Router from "next/router";
 import { cn } from "@/lib/utils";
-import { usePathname, useRouter } from "next/navigation";
-import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
-import NavItem from "./NavItem";
+import { useRouter } from "next/navigation";
+import { Router } from "next/router";
+import { usePathname } from "next/navigation";
 
 type NavLinksProps = {
   href: string;
   title: string;
 };
 
-const NavItems = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+type NavItemProps = {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  isOpen: boolean;
+};
 
-  const links: NavLinksProps[] = [
-    { href: "home", title: "Home" },
-    { href: "techstack", title: "Skills" },
-    { href: "projects", title: "Projects" },
-    { href: "footer", title: "Contact Me" },
-  ];
+const links: NavLinksProps[] = [
+  { href: "home", title: "Home" },
+  { href: "techstack", title: "Skills" },
+  { href: "projects", title: "Projects" },
+  { href: "footer", title: "Contact Me" },
+];
+
+const NavItems: FC<NavItemProps> = ({ setIsOpen, isOpen }) => {
+  const pathname = usePathname();
 
   return (
     <>
-      <div className="hidden md:block">
-        <div className="ml-4 flex items-center space-x-6 text-2xl">
-          {links.map((link) => (
-            <NavItem link={link} key={link.title} />
-          ))}
+      {links.map((link) => (
+        <div key={link.title}>
+          <button
+            onClick={() => {
+              setIsOpen(false);
+              if (pathname === "/") {
+                scroller.scrollTo(link.href, {
+                  smooth: "easeInOutQuad",
+                  duration: 800,
+                  spy: true,
+                  // offset: -770,
+                });
+              } else {
+                scroller.scrollTo(`/${link.href}`, {
+                  delay: 300,
+                  smooth: "easeInOutQuad",
+                });
+              }
+            }}
+            className="duration-250 cursor-pointer transition-colors ease-linear hover:text-indigo-600"
+            type="button"
+            aria-current={pathname === `/${link.href}` && "page"}
+          >
+            {link.title}
+          </button>
+          <hr className={cn("shadow-lg", isOpen || "hidden")} />
         </div>
-      </div>
-
-      <div className="flex items-center text-2xl md:hidden">
-        <motion.button
-          className="inline-flex items-center justify-center p-2"
-          onClick={() => setIsOpen(!isOpen)}
-          animate={{ rotate: isOpen ? 90 : 0 }}
-        >
-          {isOpen ? <RxCross1 /> : <RxHamburgerMenu />}
-        </motion.button>
-      </div>
-
-      {isOpen && (
-        <motion.div
-          className="md:hidden"
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-        >
-          <div className="h-screen space-y-2 px-2 pb-3 pl-4 pt-2 text-2xl sm:px-3">
-            {links.map((link) => (
-              <div key={link.title}>
-                <NavItem link={link} />
-                <hr className="mt-2" />
-              </div>
-            ))}
-          </div>
-        </motion.div>
-      )}
-
-      <hr className={cn("shadow-lg", isOpen && "hidden")} />
+      ))}
     </>
   );
 };
