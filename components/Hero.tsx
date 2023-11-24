@@ -73,8 +73,8 @@ const Hero = () => {
       <div className="mt-10 hidden lg:mt-0 xl:block">
         <Image
           src="/heroimage-transformed.png"
-          width={1600}
-          height={80}
+          width={564}
+          height={564}
           priority
           alt="hero image"
           loading="eager"
