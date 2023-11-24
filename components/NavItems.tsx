@@ -1,11 +1,8 @@
 "use client";
 
 import { FC } from "react";
-
 import { scroller } from "react-scroll";
 import { cn } from "@/lib/utils";
-import { useRouter } from "next/navigation";
-import { Router } from "next/router";
 import { usePathname } from "next/navigation";
 
 type NavLinksProps = {
