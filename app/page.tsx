@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <main className={`overflow-hidden ${barlow.className}`}>
-      <section id="home">
+      <section>
         <Hero />
       </section>
 
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="footer">
+      <section>
         <Footer />
       </section>
     </main>

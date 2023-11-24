@@ -2,7 +2,7 @@ import Balancer from "react-wrap-balancer";
 
 import Link from "next/link";
 import Image from "next/image";
-import heroImage from "@/public/hero-image.svg";
+import heroImage from "@/public/hero-image.png";
 import { Button, ContactIcons, ScrollLink } from "@/components";
 import { inter } from "@/lib/utils";
 
@@ -12,6 +12,7 @@ const Hero = () => {
   return (
     <div
       className="flex h-screen flex-col px-4 pt-10 lg:flex-row lg:px-24 lg:pt-20"
+      id="home"
       style={{
         backgroundImage: `url(${path})`,
         backgroundRepeat: "no-repeat",
@@ -71,15 +72,18 @@ const Hero = () => {
       </div>
 
       <div className="mt-10 hidden lg:mt-0 xl:block">
+        {/* <div className="h-[50rem] w-[75rem]"> */}
         <Image
-          src="/heroimage-transformed.png"
-          width={564}
-          height={564}
+          src={heroImage}
           priority
           alt="hero image"
           loading="eager"
+          width={3840}
+          height={3840}
+          className="w-[75rem] animate-bounce animate-delay-[3000ms] animate-normal animate-duration-[8000ms] animate-infinite"
         />
       </div>
+      {/* </div> */}
     </div>
   );
 };

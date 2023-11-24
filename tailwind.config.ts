@@ -9,11 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "special": "rgb(90, 103, 216)",
+        special: "rgb(90, 103, 216)",
         "heading-color": "#1A202C",
       },
     },
   },
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [require("tailwindcss-animated")],
 };
+
 export default config;

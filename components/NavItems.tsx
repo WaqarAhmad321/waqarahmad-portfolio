@@ -35,9 +35,9 @@ const NavItems: FC<NavItemProps> = ({ setIsOpen, isOpen }) => {
               if (pathname === "/") {
                 scroller.scrollTo(link.href, {
                   smooth: "easeInOutQuad",
-                  duration: 800,
-                  spy: true,
-                  // offset: -770,
+                  // duration: 800,
+                  // spy: true,
+                  offset: isOpen === true ? -100 : -1000,
                 });
               } else {
                 scroller.scrollTo(`/${link.href}`, {

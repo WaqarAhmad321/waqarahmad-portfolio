@@ -13,7 +13,10 @@ const Footer: FC = () => {
         className="h-52 md:h-96 md:w-full"
       />
 
-      <div className="m-4 flex flex-col gap-4 lg:flex-row lg:justify-around lg:gap-0">
+      <div
+        id="footer"
+        className="m-4 flex flex-col gap-4 lg:flex-row lg:justify-around lg:gap-0"
+      >
         <div className="flex flex-col gap-4 lg:gap-0">
           <h3 className="text-5xl font-bold">Connect through</h3>
           <div className="flex flex-row gap-4">

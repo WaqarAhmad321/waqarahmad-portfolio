@@ -5,7 +5,6 @@ import { FC, useState } from "react";
 import { motion } from "framer-motion";
 
 import { barlow, cn } from "@/lib/utils";
-import { usePathname, useRouter } from "next/navigation";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
 
 import { Logo } from ".";

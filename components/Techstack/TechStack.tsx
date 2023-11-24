@@ -26,7 +26,9 @@ const TechStack: FC = () => {
     <div id="techstack">
       <div className="flex flex-col items-center md:flex-row">
         <div className="w-full text-center text-6xl font-light leading-snug">
-          <h3 className="text-center font-bold text-gray-900">My Tech Stack</h3>
+          <h3 className="text-center font-bold text-heading-color">
+            My Tech Stack
+          </h3>
           <div className="lg:ml-26 mt-5 grid grid-cols-4 lg:grid lg:grid-cols-6">
             {iconsArray.map((icon, index) => (
               <TechIcons
