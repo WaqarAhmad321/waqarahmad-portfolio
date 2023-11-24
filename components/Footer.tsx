@@ -3,15 +3,14 @@ import { Button, ContactIcons } from ".";
 import footerWaveImage from "@/public/background/footer-wave.svg";
 import mailBallonsImage from "@/public/message-icon.svg";
 import { FC } from "react";
-import { RxArrowRight } from "react-icons/rx";
-
+import { LuSendHorizonal } from "react-icons/lu";
 const Footer: FC = () => {
   return (
     <footer className="md:w-full">
       <Image
         src={footerWaveImage}
         alt="Waves Image"
-        className="h-96 md:w-full"
+        className="h-52 md:h-96 md:w-full"
       />
 
       <div className="m-4 flex flex-col gap-4 lg:flex-row lg:justify-around lg:gap-0">
@@ -29,7 +28,7 @@ const Footer: FC = () => {
                 className="w-[20rem]"
               />
             </div>
-          </div>  
+          </div>
         </div>
 
         <div className="flex flex-col">
@@ -39,18 +38,18 @@ const Footer: FC = () => {
               type="text"
               required
               placeholder="Name"
-              className="rounded-md stroke-special border p-2 outline-special lg:w-[35rem]"
+              className="rounded-md border stroke-special p-2 outline-special lg:w-[35rem]"
             />
             <input
               type="email"
               placeholder="Email, So I can get back to you"
               required
-              className="rounded-md stroke-special border p-2 outline-special lg:w-[35rem]"
+              className="rounded-md border stroke-special p-2 outline-special lg:w-[35rem]"
             />
             <textarea
               required
               placeholder="Message"
-              className="rounded-md stroke-special border p-2 outline-special lg:w-[35rem]"
+              className="rounded-md border stroke-special p-2 outline-special lg:w-[35rem]"
               rows={5}
             />
 
@@ -59,7 +58,7 @@ const Footer: FC = () => {
               size="sm"
               className="flex w-28 items-center justify-center"
             >
-              Send <RxArrowRight />
+              Send <LuSendHorizonal />
             </Button>
           </form>
         </div>

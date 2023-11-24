@@ -1,7 +1,8 @@
 import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
-import { MdOutlineMessage } from "react-icons/md";
+import { BsEnvelopeAt, BsEnvelopeAtFill, BsEnvelopeFill } from "react-icons/bs";
 import { IconLinksProps } from "@/lib/types";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 const icons: IconLinksProps[] = [
   {
@@ -16,7 +17,7 @@ const icons: IconLinksProps[] = [
   },
   {
     href: "mailto:codewithwaqarahmad@gmail.com",
-    icon: <MdOutlineMessage />,
+    icon: <BsEnvelopeFill />,
     title: "Mail",
   },
 ];
@@ -29,7 +30,7 @@ const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
           key={icon.href}
           href={icon.href}
           target="__blank"
-          className="flex flex-row items-center gap-5"
+          className={cn("flex flex-row items-center", displayTitle ? "gap-5" : "gap-3")}
           aria-label={`${icon.title} logo`}
           rel="noopener noreferrer"
         >
