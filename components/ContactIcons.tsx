@@ -1,20 +1,24 @@
 import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
+import { MdOutlineMessage } from "react-icons/md";
 import { IconLinksProps } from "@/lib/types";
 import Link from "next/link";
-import { FC } from "react";
 
 const icons: IconLinksProps[] = [
   {
     href: "https://github.com/WaqarAhmad321",
     icon: <RxGithubLogo />,
-    title: "Github",
+    title: "github",
   },
   {
     href: "https://www.linkedin.com/in/waqar-ahmad321/",
     icon: <RxLinkedinLogo />,
-    title: "LinkedIn",
+    title: "linkedIn",
   },
-  { href: "/", icon: <RxTwitterLogo />, title: "Twitter" },
+  {
+    href: "mailto:codewithwaqarahmad@gmail.com",
+    icon: <MdOutlineMessage />,
+    title: "Mail",
+  },
 ];
 
 const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
@@ -25,11 +29,12 @@ const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
           key={icon.href}
           href={icon.href}
           target="__blank"
-          className="transition-colors hover:rounded-full"
+          className="flex flex-row items-center gap-5"
           aria-label={`${icon.title} logo`}
+          rel="noopener noreferrer"
         >
-          {icon.icon}{" "}
-          <span className="flex flex-row text-xl hover:text-blue-800">
+          <span className="text-4xl"> {icon.icon}</span>
+          <span className="flex flex-row text-xl capitalize hover:text-blue-800">
             {displayTitle && icon.title}
           </span>
         </Link>
