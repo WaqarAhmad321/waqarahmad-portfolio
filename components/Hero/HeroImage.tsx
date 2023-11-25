@@ -12,7 +12,7 @@ const HeroImage = () => {
         loading="eager"
         width={1920}
         height={1920}
-        className="animate-updown w-[90rem]"
+        className="animate-updown w-[90rem] drop-shadow-2xl"
       />
     </div>
   );

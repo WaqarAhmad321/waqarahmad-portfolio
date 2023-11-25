@@ -5,7 +5,7 @@ import Link from "next/link";
 const HeroContact = () => {
   return (
     <div>
-      <div className="mt-5 flex flex-row gap-5 text-4xl">
+      <div className="mt-5 flex flex-row gap-2 md:gap-4 text-4xl">
         <ContactIcons />
       </div>
 
@@ -20,7 +20,7 @@ const HeroContact = () => {
           <Button
             variant="outlined"
             size="lg"
-            className="focus:outline-4  focus:ring focus:ring-indigo-500 focus:ring-offset-2"
+            className="focus:outline-4 focus:ring focus:ring-indigo-500 focus:ring-offset-2"
             aria-label="See my work button"
           >
             See my work

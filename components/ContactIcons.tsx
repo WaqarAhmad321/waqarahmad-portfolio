@@ -1,5 +1,5 @@
-import { RxGithubLogo, RxLinkedinLogo, RxTwitterLogo } from "react-icons/rx";
-import { BsEnvelopeAt, BsEnvelopeAtFill, BsEnvelopeFill } from "react-icons/bs";
+import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
+import { BsEnvelopeFill } from "react-icons/bs";
 import { IconLinksProps } from "@/lib/types";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -20,6 +20,11 @@ const icons: IconLinksProps[] = [
     icon: <BsEnvelopeFill />,
     title: "Mail",
   },
+  {
+    href: "mailto:codewithwaqarahmad@gmail.com",
+    icon: <BsEnvelopeFill />,
+    title: "Mail",
+  },
 ];
 
 const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
@@ -30,7 +35,10 @@ const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
           key={icon.href}
           href={icon.href}
           target="__blank"
-          className={cn("flex flex-row items-center", displayTitle ? "gap-5" : "gap-3")}
+          className={cn(
+            "flex flex-row items-center",
+            displayTitle ? "gap-5" : "gap-3",
+          )}
           aria-label={`${icon.title} logo`}
           rel="noopener noreferrer"
         >

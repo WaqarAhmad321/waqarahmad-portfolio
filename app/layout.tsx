@@ -3,13 +3,11 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components";
 
 export const metadata: Metadata = {
-  title: "Waqar Ahmad - Web Developer",
+  title: "Waqar Ahmad",
   description:
     "Portfolio of Waqar Ahmad, a professional web developer specializing in Next.js, React, and TypeScript",
-  metadataBase: new URL("https://waqarahmad-portfolio.vercel.app"),
-  openGraph: {
-    
-  }
+  metadataBase: new URL("https://waqarcodes.tech/"),
+  
 };
 
 export default function RootLayout({
