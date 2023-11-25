@@ -6,7 +6,7 @@ import footerWaveImage from "@/public/background/footer-wave.svg";
 import mailBallonsImage from "@/public/message-icon.svg";
 import { FC } from "react";
 import { LuSendHorizonal } from "react-icons/lu";
-import sendEmail from "@/actions/sendEmail";
+// import sendEmail from "@/actions/sendEmail";
 
 const Footer: FC = () => {
   return (
@@ -40,7 +40,8 @@ const Footer: FC = () => {
 
         <div className="flex flex-col">
           <h3 className="text-5xl font-bold">Say Hi!</h3>
-          <form className="mt-4 flex flex-col gap-4" action={sendEmail}>
+          <form className="mt-4 flex flex-col gap-4">
+            {/* action={sendEmail} */}
             <input
               type="text"
               name="senderName"
