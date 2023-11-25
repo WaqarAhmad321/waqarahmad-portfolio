@@ -1,5 +1,8 @@
 import Logo from "./Logo";
-import Hero from "./Hero";
+import Hero from "./Hero/Hero";
+import HeroText from "./Hero/HeroText";
+import HeroContact from "./Hero/HeroContact";
+import HeroImage from "./Hero/HeroImage";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Button from "./Button";
@@ -17,6 +20,9 @@ export {
   Footer,
   Logo,
   Hero,
+  HeroText,
+  HeroContact,
+  HeroImage,
   TechStack,
   TechIcons,
   Projects,
