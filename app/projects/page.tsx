@@ -3,8 +3,9 @@
 import { motion } from "framer-motion";
 
 import { barlow } from "@/lib/fonts";
-import { Projects, ProjectsTitle } from "@/components";
+import { Button, Projects, ProjectsTitle } from "@/components";
 import allProjects, { ProjectType } from "@/lib/projects";
+import { RxArrowRight } from "react-icons/rx";
 
 const allProjectsPage = () => {
   const allProjectsArray: ProjectType[] = [
@@ -31,6 +32,10 @@ const allProjectsPage = () => {
       <ProjectsTitle title="Projects I have worked on" />
       <div className="mt-24 md:mt-10">
         <Projects projects={allProjectsArray} />
+        <Button variant="outlined" size="md" className="text-center">
+          Go Back Home
+          <RxArrowRight />
+        </Button>
       </div>
     </motion.section>
   );

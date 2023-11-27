@@ -12,21 +12,9 @@ const sendEmail = async (formData: FormData) => {
   const message = formData.get("message");
   const senderEmail = formData.get("senderEmail");
 
-  if (!senderEmail || typeof senderEmail !== "string") {
-    return {
-      error: "Invalid sender email",
-    };
-  }
-
   if (!senderName || typeof senderName !== "string") {
     return {
       error: "Invalid sender email",
-    };
-  }
-
-  if (!message || typeof message !== "string") {
-    return {
-      error: "Invalid message",
     };
   }
 

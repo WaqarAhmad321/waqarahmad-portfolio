@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Navbar } from "@/components";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Waqar Ahmad - Web devloper",
@@ -16,10 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#F7FAFC] text-gray-700 antialiased">
+      <body className="bg-[#F7FAFC] antialiased">
         <Navbar />
 
         {children}
+        <Toaster position="bottom-left" />
       </body>
     </html>
   );

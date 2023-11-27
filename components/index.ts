@@ -1,25 +1,29 @@
-import Logo from "./Logo";
-import Hero from "./Hero/Hero";
-import HeroText from "./Hero/HeroText";
-import HeroContact from "./Hero/HeroContact";
-import HeroImage from "./Hero/HeroImage";
-import Navbar from "./Navbar";
-import NavItems from "./NavItems";
-import Footer from "./Footer";
+import Logo from "./Navbar/Logo";
+import Navbar from "./Navbar/Navbar";
 import Button from "./Button";
-import Project from "./Projects/Project";
-import Projects from "./Projects/Projects";
-import ProjectsTitle from "./Projects/ProjectsTitle";
+import Hero from "./Hero/Hero";
+import NavItems from "./Navbar/NavItems";
 import Wave from "./Projects/Wave";
+import Footer from "./Footer/Footer";
+import ScrollLink from "./ScrollLink";
+import HeroText from "./Hero/HeroText";
+import HeroImage from "./Hero/HeroImage";
+import Project from "./Projects/Project";
+import ContactIcons from "./ContactIcons";
+import Projects from "./Projects/Projects";
+import HeroContact from "./Hero/HeroContact";
 import TechStack from "./Techstack/TechStack";
 import TechIcons from "./Techstack/TechIcons";
-import ContactIcons from "./ContactIcons";
-import ScrollLink from "./ScrollLink";
+import ContactForm from './Footer/ContactForm';
+import FormSubmitButton from "./Footer/FormSubmitButton";
+import ProjectsTitle from "./Projects/ProjectsTitle";
 
 export {
   Navbar,
   NavItems,
   Footer,
+  FormSubmitButton,
+  ContactForm,
   Logo,
   Hero,
   HeroText,
