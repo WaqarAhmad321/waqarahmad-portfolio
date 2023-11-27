@@ -1,6 +1,8 @@
 "use server";
 
+import EmailContactForm from "@/email/EmailContactForm";
 import { getErrorMessage } from "@/utils/utils";
+import React from "react";
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -34,7 +36,10 @@ const sendEmail = async (formData: FormData) => {
       to: "codewithwaqarahmad@gmail.com",
       subject: `New Message by ${senderName.toUpperCase()} from Portfolio`,
       reply_to: senderEmail as string,
-      text: message as string,
+      react: React.createElement(EmailContactForm, {
+        message: message as string,
+        senderEmail: senderEmail as string,
+      }),
     });
   } catch (error) {
     return {
