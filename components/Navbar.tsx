@@ -4,11 +4,10 @@ import { FC, useState } from "react";
 
 import { motion } from "framer-motion";
 
-import { barlow, cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
+import { barlow } from "@/lib/fonts";
+import { Logo, NavItems } from "@/components";
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx";
-
-import { Logo } from ".";
-import NavItems from "./NavItems";
 
 const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

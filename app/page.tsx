@@ -9,7 +9,8 @@ import {
   ProjectsTitle,
   TechStack,
 } from "@/components";
-import { barlow } from "@/lib/utils";
+import { barlow } from "@/lib/fonts";
+
 
 export default function Home() {
   const projectsArray: ProjectType[] = [

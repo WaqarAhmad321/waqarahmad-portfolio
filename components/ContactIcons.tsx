@@ -2,7 +2,7 @@ import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { IconLinksProps } from "@/lib/types";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 
 const icons: IconLinksProps[] = [
   {
@@ -14,11 +14,6 @@ const icons: IconLinksProps[] = [
     href: "https://www.linkedin.com/in/waqar-ahmad321/",
     icon: <RxLinkedinLogo />,
     title: "linkedIn",
-  },
-  {
-    href: "mailto:codewithwaqarahmad@gmail.com",
-    icon: <BsEnvelopeFill />,
-    title: "Mail",
   },
   {
     href: "mailto:codewithwaqarahmad@gmail.com",

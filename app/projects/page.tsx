@@ -1,9 +1,10 @@
 "use client";
 
+import { motion } from "framer-motion";
+
+import { barlow } from "@/lib/fonts";
 import { Projects, ProjectsTitle } from "@/components";
 import allProjects, { ProjectType } from "@/lib/projects";
-import { barlow } from "@/lib/utils";
-import { motion } from "framer-motion";
 
 const allProjectsPage = () => {
   const allProjectsArray: ProjectType[] = [

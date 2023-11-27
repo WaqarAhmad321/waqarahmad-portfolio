@@ -1,4 +1,4 @@
-import { inter } from "@/lib/utils";
+import { inter } from "@/lib/fonts";
 import React from "react";
 
 const HeroText = () => {

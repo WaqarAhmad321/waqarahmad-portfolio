@@ -2,7 +2,7 @@
 
 import { FC } from "react";
 import { scroller } from "react-scroll";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 import { usePathname } from "next/navigation";
 
 type NavLinksProps = {

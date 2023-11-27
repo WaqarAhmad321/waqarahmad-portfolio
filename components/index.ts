@@ -4,6 +4,7 @@ import HeroText from "./Hero/HeroText";
 import HeroContact from "./Hero/HeroContact";
 import HeroImage from "./Hero/HeroImage";
 import Navbar from "./Navbar";
+import NavItems from "./NavItems";
 import Footer from "./Footer";
 import Button from "./Button";
 import Project from "./Projects/Project";
@@ -17,6 +18,7 @@ import ScrollLink from "./ScrollLink";
 
 export {
   Navbar,
+  NavItems,
   Footer,
   Logo,
   Hero,

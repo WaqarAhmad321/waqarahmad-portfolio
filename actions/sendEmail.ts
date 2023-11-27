@@ -29,14 +29,16 @@ const sendEmail = async (formData: FormData) => {
 
   try {
     await resend.emails.send({
-      from: "onboading@resend.dev",
+      from: "Contact Form <onboading@resend.dev>",
       to: "codewithwaqarahmad@gmail.com",
-      subject: `New Message by ${senderName} from Portfolio`,
+      subject: `New Message by ${senderName.toUpperCase()} from Portfolio`,
       reply_to: senderEmail as string,
       text: message as string,
     });
   } catch (error) {
-    console.log(error);
+    return {
+      error: error.message,
+    };
   }
 };
 

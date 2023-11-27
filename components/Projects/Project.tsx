@@ -2,7 +2,7 @@ import ReactMarkdown from "react-markdown";
 
 import Link from "next/link";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/utils";
 import { ProjectType } from "@/lib/projects";
 import { Button, TechIcons, Wave } from "@/components";
 import { RxExternalLink, RxGithubLogo } from "react-icons/rx";

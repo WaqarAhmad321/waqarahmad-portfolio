@@ -1,4 +1,4 @@
-import { cn, poppins } from "@/lib/utils";
+import { cn, poppins } from "@/utils/utils";
 import Link from "next/link";
 
 const Logo = () => {
