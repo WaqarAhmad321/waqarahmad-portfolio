@@ -31,7 +31,7 @@ const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
           href={icon.href}
           target="__blank"
           className={cn(
-            "flex flex-row items-center",
+            "flex flex-row text-heading-color items-center",
             displayTitle ? "gap-5" : "gap-3",
           )}
           aria-label={`${icon.title} logo`}

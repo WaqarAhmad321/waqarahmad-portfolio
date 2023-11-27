@@ -4,6 +4,8 @@ import { FC } from "react";
 import { scroller } from "react-scroll";
 import { cn } from "@/utils/utils";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 type NavLinksProps = {
   href: string;
@@ -23,6 +25,7 @@ const links: NavLinksProps[] = [
 ];
 
 const NavItems: FC<NavItemProps> = ({ setIsOpen, isOpen }) => {
+  const router = useRouter();
   const pathname = usePathname();
 
   return (
@@ -35,15 +38,20 @@ const NavItems: FC<NavItemProps> = ({ setIsOpen, isOpen }) => {
               if (pathname === "/") {
                 scroller.scrollTo(link.href, {
                   smooth: "easeInOutQuad",
-                  // duration: 800,
-                  // spy: true,
-                  offset: isOpen === true ? -100 : -1000,
+                  duration: 800,
+                  spy: true,
+                  offset: -70,
                 });
               } else {
-                scroller.scrollTo(`/${link.href}`, {
-                  delay: 300,
-                  smooth: "easeInOutQuad",
-                });
+                router.push("/");
+                setTimeout(() => {
+                  scroller.scrollTo(link.href, {
+                    smooth: "easeInOutQuad",
+                    duration: 800,
+                    spy: true,
+                    offset: -70,
+                  });
+                }, 1000);
               }
             }}
             className="duration-250 cursor-pointer transition-colors ease-linear hover:text-indigo-600"

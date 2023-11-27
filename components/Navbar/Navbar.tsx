@@ -46,11 +46,11 @@ const Navbar: FC = () => {
 
           {isOpen && (
             <motion.div
-              className="will-change-transform md:hidden md:will-change-auto"
+              className="will-change-transform md:hidden md:will-change-auto h-screen w-screen fixed left-0 bg-white"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
             >
-              <div className="h-screen space-y-2 px-2 pb-3 pl-4 pt-2 text-2xl sm:px-3">
+              <div className={`space-y-2 px-2 pb-3 pl-4 pt-2 text-2xl sm:px-3`}>
                 <NavItems setIsOpen={setIsOpen} isOpen={isOpen} />
               </div>
             </motion.div>

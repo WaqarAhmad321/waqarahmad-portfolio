@@ -18,8 +18,9 @@ const sendEmail = async (formData: FormData) => {
     };
   }
 
+  let data;
   try {
-    await resend.emails.send({
+    data = await resend.emails.send({
       from: "Contact Form <onboading@resend.dev>",
       to: "codewithwaqarahmad@gmail.com",
       subject: `New Message by ${senderName.toUpperCase()} from Portfolio`,
@@ -34,6 +35,11 @@ const sendEmail = async (formData: FormData) => {
       error: getErrorMessage(error),
     };
   }
+
+  return {
+    data,
+    // error,
+  };
 };
 
 export default sendEmail;

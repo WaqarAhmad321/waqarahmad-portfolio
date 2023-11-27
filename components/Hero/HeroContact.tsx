@@ -5,7 +5,7 @@ import Link from "next/link";
 const HeroContact = () => {
   return (
     <div>
-      <div className="mt-5 flex flex-row gap-2 md:gap-4 text-4xl">
+      <div className="mt-5 flex flex-row gap-2 text-4xl md:gap-4">
         <ContactIcons />
       </div>
 

@@ -19,6 +19,7 @@ const ScrollLink: FC<ScrollLinkProps> = ({ children, ...props }) => {
     window.scrollTo({
       top: elem?.getBoundingClientRect().top,
       behavior: "smooth",
+      
     });
   };
   return (
