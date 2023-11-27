@@ -23,7 +23,7 @@ const fadeInAnimationVariants = {
 const TechIcons: FC<TechIconProps> = ({ index, label, src, displayLabel }) => {
   const renderIcons = () => {
     return (
-      <div className="group m-2 flex flex-col items-center">
+      <div className="group mb-2 flex flex-col items-center">
         <p
           className={cn(
             "mb-2 mt-2 whitespace-nowrap text-xs font-light sm:text-sm",

@@ -62,7 +62,7 @@ const Project: FC<ProjectProps> = ({
               </Link>
             </div>
 
-            <div className="mb-24 flex md:mb-0 md:gap-6">
+            <div className="mb-24 flex md:mb-0 md:gap-10">
               {stack.map((icon, index) => (
                 <TechIcons
                   key={index}

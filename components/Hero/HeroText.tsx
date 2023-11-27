@@ -5,11 +5,11 @@ const HeroText = () => {
   return (
     <div className="flex flex-col justify-center">
       <div className="font-bold text-gray-900">
-        <h1 className="text-4xl md:text-8xl">
+        <h1 className="text-5xl sm:text-6xl md:text-8xl">
           <span className="text-special">Hi, </span> I&apos;m Waqar
         </h1>
 
-        <h2 className="mt-4 text-3xl md:text-5xl lg:mt-8">
+        <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl lg:mt-8">
           A Front-End Developer.
         </h2>
       </div>

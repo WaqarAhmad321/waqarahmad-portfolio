@@ -42,7 +42,6 @@ const allProjects: Projects = {
       logos.react,
       logos.reactQuery,
       logos.supabase,
-      logos.reactRouter,
       logos.styledComponents,
     ],
     links: {
@@ -92,7 +91,7 @@ const allProjects: Projects = {
       "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
     ],
     image: { main: { src: "/main.webp", width: 800, height: 390 } },
-    stack: [logos.react, logos.redux, logos.reactRouter],
+    stack: [logos.react, logos.redux, logos.reactRouter, logos.tailwind],
     links: {
       github: "https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs",
       demo: "https://fast-react-pizza-react-js.vercel.app",
