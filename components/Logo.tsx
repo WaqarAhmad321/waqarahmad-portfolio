@@ -1,4 +1,5 @@
-import { cn, poppins } from "@/utils/utils";
+import { poppins } from "@/lib/fonts";
+import { cn } from "@/utils/utils";
 import Link from "next/link";
 
 const Logo = () => {
