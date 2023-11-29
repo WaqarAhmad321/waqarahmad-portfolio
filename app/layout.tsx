@@ -23,9 +23,9 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    site: "@waqar_ahmad16",
-  },
+  // twitter: {
+  //   site: "@waqar_ahmad16",
+  // },
 };
 
 export default function RootLayout({
