@@ -7,13 +7,26 @@ export const metadata: Metadata = {
   title: "Waqar Ahmad - Web devloper",
   description:
     "Portfolio of Waqar Ahmad, a professional web developer specializing in Next.js, React, and TypeScript",
-  metadataBase: new URL("https://waqarcodes.tech/"),
+  creator: "Waqar Ahmad",
+  verification: {
+    google: "r1BffMNTeOAvTrQdTXrrq9fEj1XHUaYQCiI8ltjQ2g8",
+  },
+  category: "Portfolio",
+  keywords: [
+    "Waqar Ahmad",
+    "Waqar",
+    "Ahmad",
+    "Waqar Ahmad Portfolio",
+    "frontend developer",
+    "frontend developer",
+    "React developer",
+  ],
   openGraph: {
     type: "website",
-    url: "https://waqarcodes.tech/",
     title: "Waqar Ahmad - Web devloper",
     description:
       "Portfolio of Waqar Ahmad, a professional web developer specializing in Next.js, React, and TypeScript",
+    locale: "en_IE",
   },
 };
 
