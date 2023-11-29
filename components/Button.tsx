@@ -9,9 +9,9 @@ const buttonVariants = cva(
       variant: {
         primary: "bg-special text-[#F4FFFD] hover:bg-indigo-600 text-xl",
         secondary:
-          "bg-heading-color hover:bg-gray-800 transition-colors w-36 xs:w-52 md:w-40 text-[#F4FFFD] shadow-md text-lg",
+          "bg-special hover:bg-indigo-600 transition-colors w-36 xs:w-52 md:w-40 text-[#F4FFFD] shadow-md text-lg",
         outlined:
-          "border border-indigo-500 text-indigo-500 ease-in-out md:ease-in hover:text-indigo-600 text-xl",
+          "border border-special text-special ease-in-out md:ease-in hover:text-special text-xl",
       },
       size: {
         sm: "p-1 md:p-2",
