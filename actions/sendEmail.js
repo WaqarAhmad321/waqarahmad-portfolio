@@ -40,7 +40,7 @@ const sendEmail = async (formData) => {
       //   message: message,
       //   senderEmail: senderEmail,
       // }),
-      text: message,
+      text: message
     });
   } catch (error) {
     return { error: getErrorMessage(error) };

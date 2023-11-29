@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
+        xss: "380px",
         xs: "470px",
       },
       colors: {

@@ -1,6 +1,6 @@
 "use client";
 
-import sendEmail from "@/actions/sendEmail";
+import sendEmail from "@/actions/sendEmail.js";
 import { FormSubmitButton } from "@/components";
 import { useRef } from "react";
 import toast from "react-hot-toast";

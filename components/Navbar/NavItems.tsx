@@ -5,7 +5,6 @@ import { scroller } from "react-scroll";
 import { cn } from "@/utils/utils";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 
 type NavLinksProps = {
   href: string;
