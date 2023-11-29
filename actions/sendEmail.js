@@ -7,7 +7,7 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const sendEmail = async (formData: FormData) => {
+const sendEmail = async (formData) => {
   const senderName = formData.get("senderName");
   const message = formData.get("message");
   const senderEmail = formData.get("senderEmail");
@@ -35,10 +35,10 @@ const sendEmail = async (formData: FormData) => {
       from: "Contact Form <onboarding.dev>",
       to: "codewithwaqarahmad@gmail.com",
       subject: `New Message by ${senderName.toUpperCase()} from Portfolio`,
-      reply_to: senderEmail as string,
+      reply_to: senderEmail,
       react: React.createElement(EmailContactForm, {
-        message: message as string,
-        senderEmail: senderEmail as string,
+        message: message,
+        senderEmail: senderEmail,
       }),
     });
   } catch (error) {
