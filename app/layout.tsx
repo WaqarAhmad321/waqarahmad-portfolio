@@ -15,10 +15,6 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Waqar Ahmad, a professional web developer specializing in Next.js, React, and TypeScript",
   },
-  twitter: {
-    site: "@waqar___",
-    card: "summary_large_image",
-  },
 };
 
 export default function RootLayout({
