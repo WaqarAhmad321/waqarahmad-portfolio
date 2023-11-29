@@ -4,7 +4,7 @@ import sendEmail from "@/actions/sendEmail";
 import { FormSubmitButton } from "@/components";
 import { useRef } from "react";
 import toast from "react-hot-toast";
-
+import { getErrorMessage } from "@/utils/utils";
 const ContactForm = () => {
   const ref = useRef<HTMLFormElement>(null);
 
@@ -12,27 +12,25 @@ const ContactForm = () => {
     <form
       ref={ref}
       className="mt-4 flex flex-col gap-4"
-      action={async (formData) => {
-        await sendEmail(formData);
-        ref.current?.reset();
+      action={async (formData: FormData) => {
+        const data = await sendEmail(formData);
 
-        // if (error) {
-        //   toast.error(error);
-        //   return;
-        // }
-
-        // toast.success("Look at my styles.", {
-        //   style: {
-        //     border: "1px solid #6366f1",
-        //     padding: "16px",
-        //     color: "#6366f1",
-        //   },
-        //   iconTheme: {
-        //     primary: "#6366f1",
-        //     secondary: "#FFFAEE",
-        //   },
-        // });
-        toast.success("Message sent!");
+        if (data?.error) {
+          toast.error(getErrorMessage(data.error));
+        } else {
+          toast.success("Message send successfully.", {
+            style: {
+              border: "1px solid #6366f1",
+              padding: "8px",
+              color: "#6366f1",
+            },
+            iconTheme: {
+              primary: "#6366f1",
+              secondary: "#F7FAFC",
+            },
+          });
+          ref.current?.reset();
+        }
       }}
     >
       <input

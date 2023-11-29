@@ -47,7 +47,7 @@ const Project: FC<ProjectProps> = ({
           <div className={cn("flex flex-col", odd && "lg:order-first")}>
             {renderDescription()}
 
-            <div className="flex gap-3 sm:justify-normal">
+            <div className="xs:justify-normal flex justify-between gap-3">
               <Link href={links.github} target="__blank">
                 <Button variant="secondary" size="sm" aria-label="Source Code">
                   Source Code
@@ -62,7 +62,7 @@ const Project: FC<ProjectProps> = ({
               </Link>
             </div>
 
-            <div className="mb-24 flex md:mb-0 md:gap-10">
+            <div className="xs:gap-6 xs:justify-normal mb-24 flex justify-between sm:gap-8 md:mb-0 md:gap-10">
               {stack.map((icon, index) => (
                 <TechIcons
                   key={index}

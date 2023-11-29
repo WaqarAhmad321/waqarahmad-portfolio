@@ -14,14 +14,25 @@ const sendEmail = async (formData: FormData) => {
 
   if (!senderName || typeof senderName !== "string") {
     return {
+      error: "Invalid sender name",
+    };
+  }
+
+  if (!message || typeof message !== "string") {
+    return {
+      error: "Invalid message",
+    };
+  }
+
+  if (!senderEmail || typeof senderEmail !== "string") {
+    return {
       error: "Invalid sender email",
     };
   }
 
-  let data;
   try {
-    data = await resend.emails.send({
-      from: "Contact Form <onboading@resend.dev>",
+    await resend.emails.send({
+      from: "Contact Form <onboarding.dev>",
       to: "codewithwaqarahmad@gmail.com",
       subject: `New Message by ${senderName.toUpperCase()} from Portfolio`,
       reply_to: senderEmail as string,
@@ -31,15 +42,8 @@ const sendEmail = async (formData: FormData) => {
       }),
     });
   } catch (error) {
-    return {
-      error: getErrorMessage(error),
-    };
+    return { error: getErrorMessage(error) };
   }
-
-  return {
-    data,
-    // error,
-  };
 };
 
 export default sendEmail;

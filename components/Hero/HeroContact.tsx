@@ -11,7 +11,11 @@ const HeroContact = () => {
 
       <div className="mt-6 flex gap-4">
         <ScrollLink href="#footer">
-          <Button variant="primary" size="lg" aria-label="Contact Me button">
+          <Button
+            variant="primary"
+            size="lg"
+            aria-label="Contact Me button"
+          >
             Contact Me
           </Button>
         </ScrollLink>

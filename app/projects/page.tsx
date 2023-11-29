@@ -32,7 +32,7 @@ const allProjectsPage = () => {
       <ProjectsTitle title="Projects I have worked on" />
       <div className="mt-24 md:mt-10">
         <Projects projects={allProjectsArray} />
-        <Button variant="outlined" size="md" className="text-center">
+        <Button variant="outlined" size="md">
           Go Back Home
           <RxArrowRight />
         </Button>

@@ -20,11 +20,11 @@ const Footer: FC = () => {
         <div className="flex flex-col gap-4 lg:gap-0">
           <h3 className="text-5xl font-bold text-heading-color">Connect through</h3>
           <div className="flex flex-row gap-4">
-            <div className="flex flex-grow flex-col justify-center gap-6 lg:gap-4">
+            <div className="flex flex-grow flex-col justify-center lg:justify-normal lg:mt-8 gap-6 lg:gap-4">
               <ContactIcons displayTitle={true} />
             </div>
 
-            <div className="hidden sm:block lg:flex lg:items-center lg:justify-center">
+            <div className="hidden xs:block lg:flex lg:items-center lg:justify-center">
               <Image
                 src={mailBallonsImage}
                 alt="A mail box flying through 3 baloons attacked to the top and a lot of small sized mails in the background"

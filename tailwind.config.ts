@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: "470px",
+      },
       colors: {
         special: "rgb(90, 103, 216)",
         "heading-color": "#1A202C",

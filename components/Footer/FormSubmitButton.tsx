@@ -12,10 +12,7 @@ const FormSubmitButton = () => {
       type="submit"
       variant="outlined"
       size="sm"
-      className={`flex w-28 items-center justify-center ${
-        pending ? "ring-offset-indigo-500" : ""
-      }`}
-      disabled={pending}
+      className={`w-28 ${pending ? "disabled:cursor" : ""}`}
     >
       Send <LuSendHorizonal />
     </Button>

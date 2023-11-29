@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RxArrowRight } from "react-icons/rx";
+import { MdOutlineArrowForwardIos } from "react-icons/md";
 import allProjects, { ProjectType } from "@/lib/projects";
 import {
   Button,
@@ -10,7 +10,6 @@ import {
   TechStack,
 } from "@/components";
 import { barlow } from "@/lib/fonts";
-
 
 export default function Home() {
   const projectsArray: ProjectType[] = [
@@ -38,11 +37,16 @@ export default function Home() {
 
       <section className="mt-24 md:mt-12">
         <Projects projects={projectsArray} />
-        <div className="mt-12 flex justify-center">
+        <div className="mb-2 mt-10 flex justify-center">
           <Link href="/projects">
-            <Button variant="outlined" size="md">
+            <Button
+              variant="outlined"
+              size="md"
+              className="focus:ring focus:ring-indigo-500 focus:ring-offset-2"
+              aria-label="View All Projects button"
+            >
               View All Projects
-              <RxArrowRight />
+              <span className="text-2xl"><MdOutlineArrowForwardIos /></span>
             </Button>
           </Link>
         </div>
