@@ -36,14 +36,12 @@ const sendEmail = async (formData) => {
       to: "codewithwaqarahmad@gmail.com",
       subject: `New Message by ${senderName.toUpperCase()} from Portfolio`,
       reply_to: senderEmail,
-      react: React.createElement(EmailContactForm, {
-        message: message,
-        senderEmail: senderEmail,
-      }),
-      // text: message
+      react: <EmailContactForm message={message} senderEmail={senderEmail} />,
     });
   } catch (error) {
-    return { error: getErrorMessage(error) };
+    return {
+      error: getErrorMessage(error),
+    };
   }
 };
 
