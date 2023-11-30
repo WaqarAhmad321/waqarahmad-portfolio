@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { memo } from "react";
 import Image from "next/image";
 
 type ProjectVideoProps = {
@@ -48,4 +48,4 @@ const ProjectVideo = ({ title, image }: ProjectVideoProps) => {
     );
 };
 
-export default ProjectVideo;
+export default memo(ProjectVideo);
