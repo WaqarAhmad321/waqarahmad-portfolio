@@ -1,13 +1,16 @@
 import { FC, memo } from "react";
 
 import ReactMarkdown from "react-markdown";
-
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { cn } from "@/utils/utils";
 import { ProjectType } from "@/lib/projects";
 import { Button, TechIcons, Wave } from "@/components";
 import { RxExternalLink, RxGithubLogo } from "react-icons/rx";
-import ProjectVideo from "./ProjectVideo";
+
+const ProjectVideo = dynamic(() => import("./ProjectVideo"), {
+  ssr: false,
+});
 
 interface ProjectProps extends ProjectType {
   index: number;
