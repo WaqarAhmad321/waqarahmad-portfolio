@@ -75,7 +75,7 @@ const allProjects: Projects = {
       "This was my first project using **Next.js** and **Typescript**. I learned a lot about **Next.js** and **Typescript** while working on this project.",
       "The application is fully **responsive** across all screen sizes.",
     ],
-    image: { main: { src: "/main.png", width: 800, height: 50 } },
+    image: { mp4: "/project/carhub.mp4" },
     stack: [logos.nextjs, logos.react, logos.typescript, logos.tailwind],
     links: {
       github: "https://github.com/WaqarAhmad321/nextcar",
@@ -89,7 +89,9 @@ const allProjects: Projects = {
       "It allows users to add pizzas to their cart, **search** their order and checkout. The users can also remove pizzas from their cart. The application also features a **cart** page where users can view their cart and also increase or decrease the **quantity** of pizzas.",
       "The state of the application is managed using **Redux Toolkit**. The application also features persist the state of the application in the **local storage** of the browser.",
     ],
-    image: { main: { src: "/main.png", width: 800, height: 390 } },
+    image: {
+      mp4: "/project/fast-react-pizza-co.mp4",
+    },
     stack: [logos.react, logos.redux, logos.reactRouter, logos.tailwind],
     links: {
       github: "https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs",
@@ -105,7 +107,7 @@ const allProjects: Projects = {
       "This description is typed as **markdown** in source code, the Project component takes in props for links, icons, title, images, etc; nothing is hard coded.",
     ],
     image: {
-      main: { src: "/project/this-website.png", width: 800, height: 120 },
+      mp4: "/project/this-website.png",
     },
     stack: [logos.nextjs, logos.typescript, logos.tailwind, logos.framerMotion],
     links: {
@@ -120,7 +122,9 @@ const allProjects: Projects = {
       "Users can search movies, add movies to a **watchlist**, rate them, and access details such as storyline, IMDb ratings, genre, and more. The watchlist is stored in the browser's **local storage**.",
       "The app utilizes the OMDB API to fetch movie data.",
     ],
-    image: { main: { src: "/main.png", width: 800, height: 390 } },
+    image: {
+      mp4: "/project/usepopcorn.mp4",
+    },
     stack: [logos.react, logos.javascript, logos.css],
     links: {
       github: "https://github.com/WaqarAhmad321/usePopcorn-ReactJs",
@@ -135,7 +139,7 @@ const allProjects: Projects = {
       "The application is built using **React** and styled using **pure CSS**.",
       "It was my first project using **React**. I learned a lot about **React** while working on this project.",
     ],
-    image: { main: { src: "/main.png", width: 800, height: 390 } },
+    image: { mp4: "/project/travel-list" },
     stack: [logos.react, logos.git, logos.css],
     links: {
       github: "https://github.com/WaqarAhmad321/travel-list-ReactJs",

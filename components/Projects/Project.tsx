@@ -87,6 +87,7 @@ const Project: FC<ProjectProps> = ({
             {image?.mp4 && (
               <video
                 autoPlay
+                playsInline
                 loop
                 preload="auto"
                 muted
