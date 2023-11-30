@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, memo } from "react";
 
 import ReactMarkdown from "react-markdown";
 
@@ -85,4 +85,4 @@ const Project: FC<ProjectProps> = ({
   return odd ? <Wave>{renderProjects()}</Wave> : renderProjects();
 };
 
-export default Project;
+export default memo(Project, () => true);
