@@ -107,7 +107,7 @@ const allProjects: Projects = {
     ],
     image: {
       main: {
-        src: "/project/this-website.png",
+        src: "/project/portfolio.png",
         width: 900,
         height: 191,
       },

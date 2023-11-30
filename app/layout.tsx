@@ -5,21 +5,15 @@ import { Toaster } from "react-hot-toast";
 import { barlow } from "@/lib/fonts";
 
 export const metadata: Metadata = {
-  title: "Waqar Ahmad - Web devloper",
+  title: "WaqarCodes",
   description:
-    "Portfolio of Waqar Ahmad, a professional web developer specializing in Next.js, React, and TypeScript",
+    "Hi, I'm Waqar. A Front-End Developer. I enjoy solving complex problems. Frequently praised as detail-oriented by my peers, I can be relied upon to help your company achieve its goals by providing sustainable and scalable solutions.",
   creator: "Waqar Ahmad",
   verification: {
     google: "r1BffMNTeOAvTrQdTXrrq9fEj1XHUaYQCiI8ltjQ2g8",
   },
   category: "Portfolio",
-  keywords: [
-    "Waqar Ahmad",
-    "Waqar Ahmad Portfolio",
-    "frontend developer",
-    "React developer",
-    "freelance frontend developer",
-  ],
+  keywords: ["Waqar codes", "waqarcodes", "w"],
   openGraph: {
     type: "website",
     title: "Waqar Ahmad - Web devloper",

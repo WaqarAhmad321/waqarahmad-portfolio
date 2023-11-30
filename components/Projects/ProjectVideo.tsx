@@ -26,7 +26,9 @@ const ProjectVideo = ({ title, image }: ProjectVideoProps) => {
             alt={`${title} image`}
             width={image?.main.width}
             height={image?.main.height}
-            className="mx-auto h-60 w-full rounded-lg shadow-lg"
+            className="mx-auto rounded-lg shadow-lg"
+            sizes="(max-width: 960px) 90vw, 40vw"
+            aria-label="Project image"
           />
         )}
         {hasMounted && image.mp4 && (
