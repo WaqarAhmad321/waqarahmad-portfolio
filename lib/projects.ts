@@ -31,13 +31,13 @@ const allProjects: Projects = {
   theWildOasis: {
     title: "The Wild Oasis",
     description: [
-      "Covid-19 tracker for India made using **React.**",
-      "This web app can be used to track current and historical data of India and its states and union territories. The web app shows a vector **map of India**, user may hover over any state and will be able to see the total confirmed, recovered, active and deceased for that state.",
-      "There is also a state-wise table of covid data which can be sorted by any column.",
-      "The app also features historical data using **charts** made using chartjs, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
-      "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
+      "The Wild Oasis is a hotel management web application built using React and utilizing **Supabase** as its backend.",
+      "This web app is made for the hotel employees, enabling them to efficiently **monitor** cabins, bookings, guests, and check-ins and check-outs. The homepage showcases daily guest activities, occupancy rates, check-ins, and bookings. Additionally, it features interactive **graphs** made using **recharts** allowing employees to view average stay durations and daily sales.",
+      "It fetches data from **Supabase** using **React Query**. Employees have **CRUD** (Create, Read, Update, Delete), **sorting**, and **filtering** functionalities for bookings, guests, and cabins. Furthermore, it includes **settings** for the hotel and users.",
+      "The application also comes with strong **authentication**, ensuring that only authorized employees can access the system.",
+      "For navigation, **React Router** is implemented, while **styled components** are used for styling. It also offers a dark mode option for users.",
     ],
-    image: { main: { src: "/main.webp", width: 800, height: 400 } },
+    image: { mp4: "/project/wild-oasis.mp4", vidHeight: 720, vidWidth: 1280 },
     stack: [
       logos.react,
       logos.reactQuery,
@@ -52,13 +52,14 @@ const allProjects: Projects = {
   worldWise: {
     title: "World Wise",
     description: [
-      "Covid-19 tracker for India made using **React.**",
-      "This web app can be used to track current and historical data of India and its states and union territories. The web app shows a vector **map of India**, user may hover over any state and will be able to see the total confirmed, recovered, active and deceased for that state.",
-      "There is also a state-wise table of covid data which can be sorted by any column.",
-      "The app also features historical data using **charts** made using chartjs, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
-      "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
+      "World Wise allows users to take notes of their tours and travels. It's a multipage web application built using **React** and **React Router**, styled using **CSS modules**.",
+      "The application features a world map allowing users to mark visited countries, with a primary focus on the **notes** section for users to add travel notes along with respective dates. These notes are stored in the browser's **local storage**. The map functionality is implemented using **Leaflet**.",
+      "Users can access their notes, visited countries, and cities through the sidebar.",
+      "The state of the application is managed using **React Context** and **useReducer**.",
     ],
-    image: { main: { src: "/main.webp", width: 800, height: 390 } },
+    image: {
+      mp4: "/project/world-wise.mp4",
+    },
     stack: [logos.react, logos.reactRouter, logos.javascript, logos.cssModules],
     links: {
       github: "https://github.com/WaqarAhmad321/world-wise-ReactJs",
@@ -68,13 +69,13 @@ const allProjects: Projects = {
   carHub: {
     title: "Car Hub",
     description: [
-      "Covid-19 tracker for India made using **React.**",
-      "This web app can be used to track current and historical data of India and its states and union territories. The web app shows a vector **map of India**, user may hover over any state and will be able to see the total confirmed, recovered, active and deceased for that state.",
-      "There is also a state-wise table of covid data which can be sorted by any column.",
-      "The app also features historical data using **charts** made using chartjs, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
-      "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
+      "CarHub is a car showroom web application built using **Next.js** and **Typescript**. The application is styled using **Tailwind CSS**. ",
+      "The main purpose of the application is to **showcase** cars and their details.",
+      "The users can search cars by **model** and **manufacturer**. The application also features a **filter** option, where users can filter cars by **fuel type**, and the year of manufacture.",
+      "This was my first project using **Next.js** and **Typescript**. I learned a lot about **Next.js** and **Typescript** while working on this project.",
+      "The application is fully **responsive** across all screen sizes.",
     ],
-    image: { main: { src: "/main.webp", width: 800, height: 390 } },
+    image: { main: { src: "/main.png", width: 800, height: 50 } },
     stack: [logos.nextjs, logos.react, logos.typescript, logos.tailwind],
     links: {
       github: "https://github.com/WaqarAhmad321/nextcar",
@@ -84,13 +85,11 @@ const allProjects: Projects = {
   fastReactPizza: {
     title: "Fast React Pizza Co.",
     description: [
-      "Covid-19 tracker for India made using **React.**",
-      "This web app can be used to track current and historical data of India and its states and union territories. The web app shows a vector **map of India**, user may hover over any state and will be able to see the total confirmed, recovered, active and deceased for that state.",
-      "There is also a state-wise table of covid data which can be sorted by any column.",
-      "The app also features historical data using **charts** made using chartjs, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
-      "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
+      "Fast React Pizza Co. is a pizza ordering web application where the users can order pizzas and checkout. The application is built using **React** and **Redux**. The application is styled using **Tailwind CSS**.",
+      "It allows users to add pizzas to their cart, **search** their order and checkout. The users can also remove pizzas from their cart. The application also features a **cart** page where users can view their cart and also increase or decrease the **quantity** of pizzas.",
+      "The state of the application is managed using **Redux Toolkit**. The application also features persist the state of the application in the **local storage** of the browser.",
     ],
-    image: { main: { src: "/main.webp", width: 800, height: 390 } },
+    image: { main: { src: "/main.png", width: 800, height: 390 } },
     stack: [logos.react, logos.redux, logos.reactRouter, logos.tailwind],
     links: {
       github: "https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs",
@@ -100,13 +99,14 @@ const allProjects: Projects = {
   thisWebsite: {
     title: "This Website",
     description: [
-      "Covid-19 tracker for India made using **React.**",
-      "This web app can be used to track current and historical data of India and its states and union territories. The web app shows a vector **map of India**, user may hover over any state and will be able to see the total confirmed, recovered, active and deceased for that state.",
-      "There is also a state-wise table of covid data which can be sorted by any column.",
-      "The app also features historical data using **charts** made using chartjs, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
-      "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
+      "My portfolio website build with **React** using **Next.js** framework.",
+      "The source code is writtin in **100% TypeScript** and the project is easy to maintain with the type safety provided by Typescript. The source code is very moduler allowing easy debugging.",
+      "This website is styled using **Tailwind CSS** and **Framer Motion** for animations. It is also fully responsive across all screen sizes.",
+      "This description is typed as **markdown** in source code, the Project component takes in props for links, icons, title, images, etc; nothing is hard coded.",
     ],
-    image: { main: { src: "/main.webp", width: 800, height: 390 } },
+    image: {
+      main: { src: "/project/this-website.png", width: 800, height: 120 },
+    },
     stack: [logos.nextjs, logos.typescript, logos.tailwind, logos.framerMotion],
     links: {
       github: "https://github.com/WaqarAhmad321/waqarahmad-portfolio",
@@ -116,14 +116,12 @@ const allProjects: Projects = {
   usePopCorn: {
     title: "usePopCorn",
     description: [
-      "Covid-19 tracker for India made using **React.**",
-      "This web app can be used to track current and historical data of India and its states and union territories. The web app shows a vector **map of India**, user may hover over any state and will be able to see the total confirmed, recovered, active and deceased for that state.",
-      "There is also a state-wise table of covid data which can be sorted by any column.",
-      "The app also features historical data using **charts** made using chartjs, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
-      "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
+      "usePopCorn enable the users to **search** for movies and tv shows and view their **details**. ",
+      "Users can search movies, add movies to a **watchlist**, rate them, and access details such as storyline, IMDb ratings, genre, and more. The watchlist is stored in the browser's **local storage**.",
+      "The app utilizes the OMDB API to fetch movie data.",
     ],
-    image: { main: { src: "/main.webp", width: 800, height: 390 } },
-    stack: [logos.react, logos.javascript],
+    image: { main: { src: "/main.png", width: 800, height: 390 } },
+    stack: [logos.react, logos.javascript, logos.css],
     links: {
       github: "https://github.com/WaqarAhmad321/usePopcorn-ReactJs",
       demo: "https://usepopcorn-reactjs.vercel.app",
@@ -132,14 +130,13 @@ const allProjects: Projects = {
   travelList: {
     title: "Travel List",
     description: [
-      "Covid-19 tracker for India made using **React.**",
-      "This web app can be used to track current and historical data of India and its states and union territories. The web app shows a vector **map of India**, user may hover over any state and will be able to see the total confirmed, recovered, active and deceased for that state.",
-      "There is also a state-wise table of covid data which can be sorted by any column.",
-      "The app also features historical data using **charts** made using chartjs, user may view data of any state and also choose the time frame and option between **daily** and **cumulative** data.",
-      "The application is styled using **material-ui** and is fully responsive for all screen sizes and has a **dark mode** toggle. ",
+      "Travel List is a travel list web application where the users can **list** their items, and the number of things they want need for the trip.",
+      "Users can **add**, **remove**, and **sort** items from the list. The list is stored in the browser's **local storage**.",
+      "The application is built using **React** and styled using **pure CSS**.",
+      "It was my first project using **React**. I learned a lot about **React** while working on this project.",
     ],
-    image: { main: { src: "/main.webp", width: 800, height: 390 } },
-    stack: [logos.react, logos.git],
+    image: { main: { src: "/main.png", width: 800, height: 390 } },
+    stack: [logos.react, logos.git, logos.css],
     links: {
       github: "https://github.com/WaqarAhmad321/travel-list-ReactJs",
       demo: "https://travel-list-react-js.vercel.app",

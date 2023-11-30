@@ -47,7 +47,7 @@ const Project: FC<ProjectProps> = ({
           <div className={cn("flex flex-col", odd && "lg:order-first")}>
             {renderDescription()}
 
-            <div className="xss:justify-around flex justify-between gap-3 xs:justify-normal">
+            <div className="flex justify-between gap-3 xss:justify-around xs:justify-normal">
               <Link href={links.github} target="__blank">
                 <Button variant="secondary" size="sm" aria-label="Source Code">
                   Source Code
@@ -75,13 +75,29 @@ const Project: FC<ProjectProps> = ({
           </div>
 
           <div className="order-first">
-            <Image
-              src={image?.main?.src || "/main.webp"}
-              alt="Project Image"
-              width={1440}
-              height={732}
-              className="rounded-lg shadow-xl"
-            />
+            {image?.main && (
+              <Image
+                src={image?.main.src}
+                alt={`${title} image`}
+                width={image?.main.width}
+                height={image?.main.height}
+                className="mx-auto w-full rounded-lg shadow-lg"
+              />
+            )}
+            {image?.mp4 && (
+              <video
+                autoPlay
+                loop
+                preload="auto"
+                muted
+                controls
+                width={300}
+                height={300}
+                className="mx-auto w-full rounded-lg shadow-lg"
+              >
+                <source src={image?.mp4} type="video/mp4" />
+              </video>
+            )}
           </div>
         </div>
       </div>
