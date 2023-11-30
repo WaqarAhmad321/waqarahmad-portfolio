@@ -10,9 +10,6 @@ type ProjectVideoProps = {
     main?: { src: string; width?: number; height?: number };
     mp4?: string;
     webm?: string;
-    poster?: string;
-    vidHeight?: number;
-    vidWidth?: number;
   };
 };
 
@@ -25,7 +22,7 @@ const ProjectVideo = ({ title, image }: ProjectVideoProps) => {
           alt={`${title} image`}
           width={image?.main.width}
           height={image?.main.height}
-          className="mx-auto h-full w-full rounded-lg shadow-lg"
+          className="mx-auto h-60 w-full rounded-lg shadow-lg"
         />
       )}
       {image?.mp4 && (

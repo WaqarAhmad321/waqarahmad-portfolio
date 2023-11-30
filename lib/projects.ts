@@ -16,11 +16,7 @@ export type ProjectType = {
   image?: {
     main?: { src: string; width?: number; height?: number };
     mp4?: string;
-    webm?: string;
-    poster?: string;
-    vidHeight?: number;
-    vidWidth?: number;
-  };
+};
   links: { github: string; demo: string };
   stack: TechStackProps[];
 };
@@ -36,7 +32,7 @@ const allProjects: Projects = {
       "It fetches data from **Supabase** using **React Query**. Employees have **CRUD**, **sorting**, and **filtering** functionalities for bookings, guests, and cabins.",
       "Furthermore, it includes **settings** for the hotel and users along with strong **authentication**, ensuring that only authorized employees can access the system.",
     ],
-    image: { mp4: "/project/wild-oasis.mp4", vidHeight: 720, vidWidth: 1280 },
+    image: { mp4: "/project/wild-oasis.mp4"},
     stack: [
       logos.react,
       logos.reactQuery,
