@@ -16,7 +16,7 @@ export type ProjectType = {
   image?: {
     main?: { src: string; width?: number; height?: number };
     mp4?: string;
-};
+  };
   links: { github: string; demo: string };
   stack: TechStackProps[];
 };
@@ -32,7 +32,9 @@ const allProjects: Projects = {
       "It fetches data from **Supabase** using **React Query**. Employees have **CRUD**, **sorting**, and **filtering** functionalities for bookings, guests, and cabins.",
       "Furthermore, it includes **settings** for the hotel and users along with strong **authentication**, ensuring that only authorized employees can access the system.",
     ],
-    image: { mp4: "/project/wild-oasis.mp4"},
+    image: {
+      mp4: "/project/wild-oasis.mp4",
+    },
     stack: [
       logos.react,
       logos.reactQuery,
@@ -70,7 +72,9 @@ const allProjects: Projects = {
       "This was my first project using **Next.js** and **Typescript**. I learned a lot about **Next.js** and **Typescript** while working on this project.",
       "The application is fully **responsive** across all screen sizes.",
     ],
-    image: { mp4: "/project/carhub.mp4" },
+    image: {
+      mp4: "/project/carhub.mp4",
+    },
     stack: [logos.nextjs, logos.react, logos.typescript, logos.tailwind],
     links: {
       github: "https://github.com/WaqarAhmad321/nextcar",

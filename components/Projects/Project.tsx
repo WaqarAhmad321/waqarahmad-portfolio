@@ -3,7 +3,6 @@ import { FC, memo } from "react";
 import ReactMarkdown from "react-markdown";
 
 import Link from "next/link";
-import Image from "next/image";
 import { cn } from "@/utils/utils";
 import { ProjectType } from "@/lib/projects";
 import { Button, TechIcons, Wave } from "@/components";

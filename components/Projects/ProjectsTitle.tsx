@@ -6,6 +6,6 @@ const ProjectsTitle: FC<{ title: string }> = ({ title }) => {
       {title}
     </h3>
   );
-};
+};  
 
 export default ProjectsTitle;

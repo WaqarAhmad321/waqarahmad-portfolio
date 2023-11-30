@@ -18,18 +18,18 @@ const ContactForm = () => {
         if (data?.error) {
           toast.error(getErrorMessage(data.error));
         } else {
+          ref.current?.reset();
           toast.success("Message send successfully.", {
             style: {
-              border: "1px solid #6366f1",
+              border: "1px solid #2C73F8",
               padding: "8px",
-              color: "#6366f1",
+              color: "#2C73F8",
             },
             iconTheme: {
-              primary: "#6366f1",
+              primary: "#2C73F8",
               secondary: "#F7FAFC",
             },
           });
-          ref.current?.reset();
         }
       }}
     >

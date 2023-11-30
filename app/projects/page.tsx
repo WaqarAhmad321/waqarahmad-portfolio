@@ -21,7 +21,7 @@ const allProjectsPage = () => {
 
   return (
     <motion.section
-      className={`overflow-hidden mt-10 will-change-transform md:will-change-auto ${barlow.className}`}
+      className={`mt-10 overflow-hidden will-change-transform md:will-change-auto ${barlow.className}`}
       initial={{ opacity: 0, x: +1000 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 1, x: +1000 }}
@@ -38,7 +38,7 @@ const allProjectsPage = () => {
             <Button
               variant="outlined"
               size="md"
-              className="focus:ring focus:ring-indigo-500 focus:ring-offset-2"
+              className="focus:ring focus:ring-special focus:ring-offset-2"
             >
               <span className="text-2xl">
                 <MdOutlineArrowBackIosNew />
