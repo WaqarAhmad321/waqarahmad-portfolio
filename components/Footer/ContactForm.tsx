@@ -1,10 +1,11 @@
 "use client";
 
-import sendEmail from "@/actions/sendEmail.js";
+import sendEmail from "@/actions/sendEmail";
 import { FormSubmitButton } from "@/components";
 import { useRef } from "react";
 import toast from "react-hot-toast";
 import { getErrorMessage } from "@/utils/utils";
+
 const ContactForm = () => {
   const ref = useRef<HTMLFormElement>(null);
 
