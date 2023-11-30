@@ -53,7 +53,7 @@ const NavItems: FC<NavItemProps> = ({ setIsOpen, isOpen }) => {
                 }, 1000);
               }
             }}
-            className="duration-250 cursor-pointer transition-colors ease-linear hover:text-indigo-600"
+            className="duration-250 cursor-pointer transition-colors ease-linear hover:text-blue-700"
             type="button"
             aria-current={pathname === `/${link.href}` && "page"}
           >

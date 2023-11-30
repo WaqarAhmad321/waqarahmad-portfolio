@@ -1,3 +1,5 @@
+import { FC } from "react";
+
 import ReactMarkdown from "react-markdown";
 
 import Link from "next/link";
@@ -6,7 +8,7 @@ import { cn } from "@/utils/utils";
 import { ProjectType } from "@/lib/projects";
 import { Button, TechIcons, Wave } from "@/components";
 import { RxExternalLink, RxGithubLogo } from "react-icons/rx";
-import { FC } from "react";
+import ProjectVideo from "./ProjectVideo";
 
 interface ProjectProps extends ProjectType {
   index: number;
@@ -74,32 +76,7 @@ const Project: FC<ProjectProps> = ({
             </div>
           </div>
 
-          <div className="order-first">
-            {image?.main && (
-              <Image
-                src={image?.main.src}
-                alt={`${title} image`}
-                width={image?.main.width}
-                height={image?.main.height}
-                className="mx-auto w-full rounded-lg shadow-lg"
-              />
-            )}
-            {image?.mp4 && (
-              <video
-                autoPlay
-                playsInline
-                loop
-                preload="auto"
-                muted
-                controls
-                width={300}
-                height={300}
-                className="mx-auto w-full rounded-lg shadow-lg"
-              >
-                <source src={image?.mp4} type="video/mp4" />
-              </video>
-            )}
-          </div>
+          <ProjectVideo title={title} image={image} />
         </div>
       </div>
     );

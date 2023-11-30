@@ -42,7 +42,7 @@ export default function Home() {
             <Button
               variant="outlined"
               size="md"
-              className="focus:ring focus:ring-indigo-500 focus:ring-offset-2"
+              className="focus:ring focus:ring-special focus:ring-offset-2"
               aria-label="View All Projects button"
             >
               View All Projects

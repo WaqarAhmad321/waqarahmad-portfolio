@@ -38,7 +38,7 @@ const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
           rel="noopener noreferrer"
         >
           <span className="text-4xl"> {icon.icon}</span>
-          <span className="flex flex-row text-xl capitalize hover:text-blue-800">
+          <span className="flex flex-row text-xl capitalize hover:text-blue-700">
             {displayTitle && icon.title}
           </span>
         </Link>

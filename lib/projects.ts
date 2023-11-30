@@ -14,7 +14,7 @@ export type ProjectType = {
   title: string;
   description: string[];
   image?: {
-    main?: { src: string; width: number; height: number };
+    main?: { src: string; width?: number; height?: number };
     mp4?: string;
     webm?: string;
     poster?: string;
@@ -102,11 +102,15 @@ const allProjects: Projects = {
     description: [
       "My portfolio website build with **React** using **Next.js** framework.",
       "The source code is writtin in **100% TypeScript** and the project is easy to maintain with the type safety provided by Typescript. The source code is very moduler allowing easy debugging.",
-      "This website is styled using **Tailwind CSS** and **Framer Motion** for animations. It is also fully responsive across all screen sizes.",
+      "This website is styled using **Tailwind CSS** and **Framer Motion** for animations. It is also fully **responsive** across all screen sizes.",
       "This description is typed as **markdown** in source code, the Project component takes in props for links, icons, title, images, etc; nothing is hard coded.",
     ],
     image: {
-      mp4: "/project/this-website.png",
+      main: {
+        src: "/project/this-website.png",
+        width: 900,
+        height: 191,
+      },
     },
     stack: [logos.nextjs, logos.typescript, logos.tailwind, logos.framerMotion],
     links: {
@@ -138,7 +142,13 @@ const allProjects: Projects = {
       "The application is built using **React** and styled using **pure CSS**.",
       "It was my first project using **React**. I learned a lot about **React** while working on this project.",
     ],
-    image: { mp4: "/project/travel-list" },
+    image: {
+      main: {
+        src: "/project/travel-list.png",
+        width: 1597,
+        height: 786,
+      },
+    },
     stack: [logos.react, logos.git, logos.css],
     links: {
       github: "https://github.com/WaqarAhmad321/travel-list-ReactJs",

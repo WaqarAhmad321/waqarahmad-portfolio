@@ -1,5 +1,5 @@
 import { ProjectType } from "@/lib/projects";
-import { Project } from "..";
+import { Project } from "@/components";
 
 const Projects = ({ projects }: { projects: ProjectType[] }) => {
   return (
