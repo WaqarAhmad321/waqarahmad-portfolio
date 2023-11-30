@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Navbar } from "@/components";
 import { Toaster } from "react-hot-toast";
+import { barlow } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Waqar Ahmad - Web devloper",
@@ -35,7 +36,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#F7FAFC] antialiased" suppressHydrationWarning={true}>
+      <body className="bg-[#F7FAFC] antialiased">
         <Navbar />
 
         {children}
