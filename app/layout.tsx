@@ -14,12 +14,10 @@ export const metadata: Metadata = {
   category: "Portfolio",
   keywords: [
     "Waqar Ahmad",
-    "Waqar",
-    "Ahmad",
     "Waqar Ahmad Portfolio",
     "frontend developer",
-    "frontend developer",
     "React developer",
+    "freelance frontend developer",
   ],
   openGraph: {
     type: "website",
@@ -37,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#F7FAFC] antialiased">
+      <body className="bg-[#F7FAFC] antialiased" suppressHydrationWarning={true}>
         <Navbar />
 
         {children}

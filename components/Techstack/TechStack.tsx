@@ -3,7 +3,7 @@ import logos from "@/lib/logos";
 import coderImage from "@/public/coder.svg";
 import { TechStackProps } from "@/lib/types";
 
-import TechIcons from "./TechIcons";
+import { TechIcons } from "@/components";
 import { FC } from "react";
 
 const iconsArray: TechStackProps[] = [
@@ -41,7 +41,7 @@ const TechStack: FC = () => {
             ))}
           </div>
         </div>
-        <div className="order-last mb-10 mt-4 lg:order-first md:mb-0">
+        <div className="order-last mb-10 mt-4 md:mb-0 lg:order-first">
           <Image
             src={coderImage}
             priority
