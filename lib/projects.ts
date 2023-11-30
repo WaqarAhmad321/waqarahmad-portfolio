@@ -33,8 +33,8 @@ const allProjects: Projects = {
     description: [
       "The Wild Oasis is a hotel management web application built using **React** and utilizing **Supabase** as its backend.",
       "This web app enables the hotel employees to efficiently **monitor** cabins, bookings, guests, and check-ins and check-outs. The homepage features interactive **graphs** made using **recharts** allowing employees to view average stay durations and daily sales.",
-      "It fetches data from **Supabase** using **React Query**. Employees have **CRUD**, **sorting**, and **filtering** functionalities for bookings, guests, and cabins." ,"Furthermore, it includes **settings** for the hotel and users along with strong **authentication**, ensuring that only authorized employees can access the system.",
-      // "For navigation, **React Router** is implemented, while **styled components** are used for styling. It also offers a dark mode.",
+      "It fetches data from **Supabase** using **React Query**. Employees have **CRUD**, **sorting**, and **filtering** functionalities for bookings, guests, and cabins.",
+      "Furthermore, it includes **settings** for the hotel and users along with strong **authentication**, ensuring that only authorized employees can access the system.",
     ],
     image: { mp4: "/project/wild-oasis.mp4", vidHeight: 720, vidWidth: 1280 },
     stack: [
