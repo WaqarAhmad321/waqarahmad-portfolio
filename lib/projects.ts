@@ -33,7 +33,7 @@ const allProjects: Projects = {
       "Furthermore, it includes **settings** for the hotel and users along with strong **authentication**, ensuring that only authorized employees can access the system.",
     ],
     image: {
-      mp4: "/project/wild-oasiss.mp4",
+      mp4: "/project/wild-oasis.mp4",
     },
     stack: [
       logos.react,
