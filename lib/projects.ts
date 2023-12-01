@@ -33,7 +33,7 @@ const allProjects: Projects = {
       "Furthermore, it includes **settings** for the hotel and users along with strong **authentication**, ensuring that only authorized employees can access the system.",
     ],
     image: {
-      mp4: "/project/wild-oasis.mp4",
+      mp4: "/public/project/wild-oasis.mp4",
     },
     stack: [
       logos.react,
@@ -100,8 +100,8 @@ const allProjects: Projects = {
   thisWebsite: {
     title: "This Website",
     description: [
-      "My portfolio website build with **React** using **Next.js** framework.",
-      "The source code is writtin in **100% TypeScript** and the project is easy to maintain with the type safety provided by Typescript. The source code is very moduler allowing easy debugging.",
+      "My portfolio website built with **React** using **Next.js** framework.",
+      "The source code is written in **100% TypeScript** and the project is easy to maintain with the type safety provided by Typescript. The source code is very moduler allowing easy debugging.",
       "This website is styled using **Tailwind CSS** and **Framer Motion** for animations. It is also fully **responsive** across all screen sizes.",
       "This description is typed as **markdown** in source code, the Project component takes in props for links, icons, title, images, etc; nothing is hard coded.",
     ],
