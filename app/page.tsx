@@ -15,7 +15,7 @@ export default function Home() {
   const projectsArray: ProjectType[] = [
     allProjects.theWildOasis,
     allProjects.worldWise,
-    allProjects.carHub,
+    allProjects.carHub, 
     allProjects.fastReactPizza,
     allProjects.thisWebsite,
     allProjects.usePopCorn,

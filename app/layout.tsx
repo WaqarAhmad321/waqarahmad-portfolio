@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Navbar } from "@/components";
 import { Toaster } from "react-hot-toast";
-import { barlow } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "WaqarCodes",

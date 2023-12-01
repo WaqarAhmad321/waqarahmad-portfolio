@@ -1,6 +1,6 @@
 "use client";
 
-import React, { memo } from "react";
+import React from "react";
 import Image from "next/image";
 
 type ProjectVideoProps = {
@@ -39,6 +39,7 @@ const ProjectVideo = ({ title, image }: ProjectVideoProps) => {
             preload="auto"
             muted
             controls
+            aria-label={`${title} video preview}`}
             width={300}
             height={300}
             className="mx-auto w-full rounded-lg shadow-lg"
@@ -50,4 +51,4 @@ const ProjectVideo = ({ title, image }: ProjectVideoProps) => {
     );
 };
 
-export default memo(ProjectVideo);
+export default ProjectVideo;
