@@ -1,6 +1,6 @@
 import { inter } from "@/lib/fonts";
 import React from "react";
-// import { GeistSans } from "geist/font/sans";
+
 
 const HeroText = () => {
   return (
