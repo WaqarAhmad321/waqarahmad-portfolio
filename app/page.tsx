@@ -35,7 +35,7 @@ export default function Home() {
         <ProjectsTitle title="featured projects" />
       </section>
 
-      <section className="mt-24 md:mt-12">
+      {/* <section className="mt-24 md:mt-12">
         <Projects projects={projectsArray} />
         <div className="mb-2 mt-10 flex justify-center">
           <Link href="/projects">
@@ -50,7 +50,7 @@ export default function Home() {
             </Button>
           </Link>
         </div>
-      </section>
+      </section> */}
 
       <section>
         <Footer />
