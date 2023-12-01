@@ -1,21 +1,18 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
+import { barlow } from "@/lib/fonts";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import allProjects, { ProjectType } from "@/lib/projects";
-import {
-  Button,
-  Footer,
-  Hero,
-  Projects,
-  ProjectsTitle,
-  TechStack,
-} from "@/components";
-import { barlow } from "@/lib/fonts";
+import { Button, Hero, Projects, ProjectsTitle } from "@/components";
+
+const Footer = dynamic(() => import("@/components/Footer/Footer"));
+const TechStack = dynamic(() => import("@/components/Techstack/TechStack"));
 
 export default function Home() {
   const projectsArray: ProjectType[] = [
     allProjects.theWildOasis,
     allProjects.worldWise,
-    allProjects.carHub, 
+    allProjects.carHub,
     allProjects.fastReactPizza,
     allProjects.thisWebsite,
     allProjects.usePopCorn,
@@ -46,7 +43,9 @@ export default function Home() {
               aria-label="View All Projects button"
             >
               View All Projects
-              <span className="text-2xl"><MdOutlineArrowForwardIos /></span>
+              <span className="text-2xl">
+                <MdOutlineArrowForwardIos />
+              </span>
             </Button>
           </Link>
         </div>

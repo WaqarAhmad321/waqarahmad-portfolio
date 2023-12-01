@@ -16,12 +16,12 @@ const ProjectVideo = ({ title, image }: ProjectVideoProps) => {
       <div className="order-first">
         {image.main && (
           <Image
-            src={image?.main.src}
+            src={image.main.src}
             alt={`${title} image`}
-            width={image?.main.width}
-            height={image?.main.height}
-            className="mx-auto rounded-lg shadow-lg"
-            sizes="(max-width: 960px) 90vw, 40vw"
+            width={image.main.width}
+            height={image.main.height}
+            className="mx-auto rounded-lg shadow-lg" 
+            // sizes="(max-width: 960px) 90vw, 40vw"
             aria-label="Project image"
           />
         )}
