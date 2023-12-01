@@ -2,12 +2,7 @@ import Link from "next/link";
 import { barlow } from "@/lib/fonts";
 import allProjects, { ProjectType } from "@/lib/projects";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
-import { Button, ProjectsTitle } from "@/components";
-import dynamic from "next/dynamic";
-
-const Projects = dynamic(() => import("@/components/Projects/Projects"), {
-  ssr: true,
-});
+import { Button, Projects, ProjectsTitle } from "@/components";
 
 const allProjectsPage = () => {
   const allProjectsArray: ProjectType[] = [
