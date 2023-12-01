@@ -9,6 +9,7 @@ const Footer: FC = () => {
     <footer className="text-heading-color md:w-full">
       <Image
         src={footerWaveImage}
+        priority={true}
         alt="Waves Image"
         className="h-52 md:h-96 md:w-full"
       />
@@ -29,7 +30,7 @@ const Footer: FC = () => {
             <div className="hidden xs:block lg:flex lg:items-center lg:justify-center">
               <Image
                 src={mailBallonsImage}
-                priority
+                priority={true}
                 alt="A mail box flying through 3 baloons attacked to the top and a lot of small sized mails in the background"
                 className="w-[20rem]"
               />

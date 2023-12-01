@@ -7,7 +7,7 @@ const HeroImage = () => {
     <div className="hidden lg:mt-0 xl:block">
       <Image
         src={heroImage}
-        priority
+        priority={true}
         alt="hero image"
         loading="eager"
         width={1920}

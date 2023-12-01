@@ -27,9 +27,9 @@ export default function Home() {
         <Hero />
       </section>
 
-      <section className="mt-16 px-6 sm:px-16">
+      {/* <section className="mt-16 px-6 sm:px-16">
         <TechStack />
-      </section>
+      </section> */}
 
       <section id="projects" className="mt-8">
         <ProjectsTitle title="featured projects" />
