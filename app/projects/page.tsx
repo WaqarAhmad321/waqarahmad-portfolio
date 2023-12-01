@@ -32,7 +32,7 @@ const allProjectsPage = () => {
     >
       <ProjectsTitle title="Projects I have worked on" />
       <div className="mt-24 md:mt-10">
-        {/* <Projects projects={allProjectsArray} /> */}
+        <Projects projects={allProjectsArray} />
         <div className="mb-24 flex w-screen items-center justify-center">
           <Link href="/" replace={false}>
             <Button

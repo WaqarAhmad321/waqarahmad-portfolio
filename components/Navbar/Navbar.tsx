@@ -13,7 +13,7 @@ const Navbar: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
-    <header className={`${barlow.className} sticky top-0 z-10 text-gray-800`}>
+    <header className={`${barlow.className} sticky top-0 z-20 text-gray-800`}>
       <nav className="bg-white">
         <div
           className="mx-auto w-full px-4 sm:px-6 lg:px-8
