@@ -2,7 +2,7 @@ import logos from "./logos";
 import { TechStackProps } from "./types";
 
 type ProjectNames =
-  | "theWildOasis"
+  // | "theWildOasis"
   | "worldWise"
   | "carHub"
   | "fastReactPizza"
@@ -13,7 +13,7 @@ type ProjectNames =
 export type ProjectType = {
   title: string;
   description: string[];
-  image?: {
+  image: {
     main?: { src: string; width?: number; height?: number };
     mp4?: string;
   };
@@ -24,28 +24,28 @@ export type ProjectType = {
 type Projects = { [K in ProjectNames]: ProjectType };
 
 const allProjects: Projects = {
-  theWildOasis: {
-    title: "The Wild Oasis",
-    description: [
-      "The Wild Oasis is a hotel management web application built using **React** and utilizing **Supabase** as its backend.",
-      "This web app enables the hotel employees to efficiently **monitor** cabins, bookings, guests, and check-ins and check-outs. The homepage features interactive **graphs** made using **recharts** allowing employees to view average stay durations and daily sales.",
-      "It fetches data from **Supabase** using **React Query**. Employees have **CRUD**, **sorting**, and **filtering** functionalities for bookings, guests, and cabins.",
-      "Furthermore, it includes **settings** for the hotel and users along with strong **authentication**, ensuring that only authorized employees can access the system.",
-    ],
-    image: {
-      mp4: "/project/wild-oasis.mp4",
-    },
-    stack: [
-      logos.react,
-      logos.reactQuery,
-      logos.supabase,
-      logos.styledComponents,
-    ],
-    links: {
-      github: "https://github.com/WaqarAhmad321/the-wild-oasis",
-      demo: "https://the-wild-oasis-project.vercel.app",
-    },
-  },
+  // theWildOasis: {
+  //   title: "The Wild Oasis",
+  //   description: [
+  //     "The Wild Oasis is a hotel management web application built using **React** and utilizing **Supabase** as its backend.",
+  //     "This web app enables the hotel employees to efficiently **monitor** cabins, bookings, guests, and check-ins and check-outs. The homepage features interactive **graphs** made using **recharts** allowing employees to view average stay durations and daily sales.",
+  //     "It fetches data from **Supabase** using **React Query**. Employees have **CRUD**, **sorting**, and **filtering** functionalities for bookings, guests, and cabins.",
+  //     "Furthermore, it includes **settings** for the hotel and users along with strong **authentication**, ensuring that only authorized employees can access the system.",
+  //   ],
+  //   image: {
+  //     mp4: "/project/first-project.mp4",
+  //   },
+  //   stack: [
+  //     logos.react,
+  //     logos.reactQuery,
+  //     logos.supabase,
+  //     logos.styledComponents,
+  //   ],
+  //   links: {
+  //     github: "https://github.com/WaqarAhmad321/the-wild-oasis",
+  //     demo: "https://the-wild-oasis-project.vercel.app",
+  //   },
+  // },
   worldWise: {
     title: "World Wise",
     description: [
