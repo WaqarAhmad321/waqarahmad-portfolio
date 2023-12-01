@@ -25,6 +25,9 @@ const config: Config = {
       animation: {
         updown: "updown 7s ease-in-out infinite",
       },
+      backgroundImage: {
+        "blob-image": "url('/background/blob-scene.svg')",
+      },
     },
   },
   plugins: [],
