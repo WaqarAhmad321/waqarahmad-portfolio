@@ -109,7 +109,7 @@ const allProjects: Projects = {
       main: {
         src: "/project/portfolio.png",
         width: 1432,
-        height: 704,
+        height: 600,
       },
     },
     stack: [logos.nextjs, logos.typescript, logos.tailwind, logos.framerMotion],
@@ -146,7 +146,7 @@ const allProjects: Projects = {
       main: {
         src: "/project/travel-list.png",
         width: 1600,
-        height: 746,
+        height: 900,
       },
     },
     stack: [logos.react, logos.git, logos.css],
