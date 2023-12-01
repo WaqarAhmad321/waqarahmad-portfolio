@@ -1,5 +1,4 @@
 import { HeroText, HeroContact, HeroImage } from "@/components";
-import Image from "next/image";
 
 const Hero = () => {
   return (
