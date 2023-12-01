@@ -2,11 +2,11 @@
 
 import { motion } from "framer-motion";
 
-import { barlow } from "@/lib/fonts";
-import { Button, Projects, ProjectsTitle } from "@/components";
-import allProjects, { ProjectType } from "@/lib/projects";
 import Link from "next/link";
+import { barlow } from "@/lib/fonts";
+import allProjects, { ProjectType } from "@/lib/projects";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
+import { Button, Projects, ProjectsTitle } from "@/components";
 
 const allProjectsPage = () => {
   const allProjectsArray: ProjectType[] = [
