@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 
@@ -13,10 +11,6 @@ type ProjectVideoProps = {
 };
 
 const ProjectVideo = ({ title, image }: ProjectVideoProps) => {
-  const [hasMounted, setHasMounted] = React.useState<boolean>(false);
-
-  React.useEffect(() => setHasMounted(true), []);
-
   if (image !== undefined)
     return (
       <div className="order-first">
@@ -31,7 +25,7 @@ const ProjectVideo = ({ title, image }: ProjectVideoProps) => {
             aria-label="Project image"
           />
         )}
-        {hasMounted && image.mp4 && (
+        {image.mp4 && (
           <video
             autoPlay
             playsInline
