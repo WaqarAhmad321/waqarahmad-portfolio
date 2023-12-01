@@ -10,7 +10,7 @@ import { MdOutlineArrowBackIosNew } from "react-icons/md";
 
 const allProjectsPage = () => {
   const allProjectsArray: ProjectType[] = [
-    // allProjects.theWildOasis,
+    allProjects.theWildOasis,
     allProjects.worldWise,
     allProjects.carHub,
     allProjects.fastReactPizza,

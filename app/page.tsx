@@ -13,7 +13,7 @@ import { barlow } from "@/lib/fonts";
 
 export default function Home() {
   const projectsArray: ProjectType[] = [
-    // allProjects.theWildOasis,
+    allProjects.theWildOasis,
     allProjects.worldWise,
     allProjects.carHub, 
     allProjects.fastReactPizza,
