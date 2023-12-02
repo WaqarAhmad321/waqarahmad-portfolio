@@ -17,10 +17,9 @@ const HeroText = () => {
       <p
         className={`mt-4 w-full text-xl font-extralight leading-8 lg:mt-8 lg:w-3/4 lg:text-2xl lg:leading-9 xl:w-2/3 ${inter.className} text-gray-600`}
       >
-        I enjoy solving problems. Being detailed-oriented and proficient
-        in modern frontend technologies, I can be relied upon to help your
-        company achieve its goals by providing sustainable and scalable
-        solutions.
+        I enjoy solving problems. Being detailed-oriented and proficient in
+        modern frontend technologies, I can be relied upon to help your company
+        achieve its goals by providing sustainable and scalable solutions.
       </p>
     </div>
   );

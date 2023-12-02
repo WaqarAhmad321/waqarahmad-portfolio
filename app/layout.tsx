@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Navbar } from "@/components";
 import { Toaster } from "react-hot-toast";
+import NextTopLoader from "nextjs-toploader";
 
 export const metadata: Metadata = {
   title: "WaqarCodes",
@@ -37,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#F7FAFC] antialiased">
+        <NextTopLoader color="#2C73F8" showSpinner={true} />
         <Navbar />
 
         {children}
