@@ -31,13 +31,15 @@ const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
           href={icon.href}
           target="__blank"
           className={cn(
-            "flex flex-row text-heading-color items-center",
+            "flex flex-row items-center text-heading-color",
             displayTitle ? "gap-5" : "gap-3",
           )}
           aria-label={`${icon.title} logo`}
           rel="noopener noreferrer"
         >
-          <span className="text-4xl"> {icon.icon}</span>
+          <span className="text-4xl transition-colors hover:text-slate-800">
+            {icon.icon}
+          </span>
           <span className="flex flex-row text-xl capitalize hover:text-blue-700">
             {displayTitle && icon.title}
           </span>

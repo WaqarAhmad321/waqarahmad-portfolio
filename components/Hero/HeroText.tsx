@@ -1,7 +1,6 @@
 import { inter } from "@/lib/fonts";
 import React from "react";
 
-
 const HeroText = () => {
   return (
     <div className="flex flex-col justify-center">
@@ -18,9 +17,10 @@ const HeroText = () => {
       <p
         className={`mt-4 w-full text-xl font-extralight leading-8 lg:mt-8 lg:w-3/4 lg:text-2xl lg:leading-9 xl:w-2/3 ${inter.className} text-gray-600`}
       >
-        I enjoy solving complex problems. Frequently praised as detail-oriented
-        by my peers, I can be relied upon to help your company achieve its goals
-        by providing sustainable and scalable solutions.
+        I enjoy solving problems. Being detailed-oriented and proficient
+        in modern frontend technologies, I can be relied upon to help your
+        company achieve its goals by providing sustainable and scalable
+        solutions.
       </p>
     </div>
   );

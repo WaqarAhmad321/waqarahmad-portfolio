@@ -12,7 +12,14 @@ export const metadata: Metadata = {
     google: "r1BffMNTeOAvTrQdTXrrq9fEj1XHUaYQCiI8ltjQ2g8",
   },
   category: "Portfolio",
-  keywords: ["Waqar codes", "waqarcodes", "Waqar Ahmad"],
+  keywords: [
+    "Waqar codes",
+    "waqarcodes",
+    "Waqar Ahmad",
+    "Waqar",
+    "Ahmad",
+    "Waqar Codes",
+  ],
   openGraph: {
     type: "website",
     title: "Waqar Ahmad - Web devloper",
