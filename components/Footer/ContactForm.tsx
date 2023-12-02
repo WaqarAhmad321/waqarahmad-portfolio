@@ -23,7 +23,7 @@ const ContactForm = () => {
           toast.success("Message send successfully.", {
             style: {
               border: "1px solid #2C73F8",
-              padding: "8px",
+              padding: "9px",
               color: "#2C73F8",
             },
             iconTheme: {

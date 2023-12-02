@@ -10,7 +10,7 @@ const FormSubmitButton = () => {
   return (
     <Button type="submit" variant="outlined" size="sm" className="w-28">
       {pending ? (
-        <div className="h-5 w-5 animate-spin rounded-full border-b-2 border-special"></div>
+        <div className="w-7 h-7 animate-spin rounded-full border-b-2 border-special"></div>
       ) : (
         <>
           Send <LuSendHorizonal />
