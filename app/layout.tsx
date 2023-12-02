@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description:
     "Hi, I'm Waqar. A Front-End Developer. I enjoy solving complex problems. Frequently praised as detail-oriented by my peers, I can be relied upon to help your company achieve its goals by providing sustainable and scalable solutions.",
   creator: "Waqar Ahmad",
+  metadataBase: new URL("https://waqarcodes.tech"),
   verification: {
     google: "r1BffMNTeOAvTrQdTXrrq9fEj1XHUaYQCiI8ltjQ2g8",
   },
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Waqar Ahmad, a professional web developer specializing in Next.js, React, and TypeScript",
     locale: "en_IE",
-    images: "/app/opengraph-image.png"
+    images: "/app/opengraph-image.png",
   },
 };
 

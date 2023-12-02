@@ -43,8 +43,8 @@ const Project: FC<ProjectProps> = ({
           </h4>
         </div>
 
-        <div className="mx-6 flex flex-col lg:mx-40 lg:grid lg:grid-cols-2 lg:gap-4">
-          <div className={cn("flex flex-col", odd && "lg:order-first")}>
+        <div className="mx-6 flex flex-col xl:mx-40 xl:grid xl:grid-cols-2 xl:gap-4">
+          <div className={cn("flex flex-col", odd && "xl:order-first")}>
             {renderDescription()}
 
             <div className="flex justify-between gap-3 xss:justify-around xs:justify-normal">

@@ -24,12 +24,12 @@ const iconsArray: TechStackProps[] = [
 const TechStack: FC = () => {
   return (
     <div id="techstack">
-      <div className="flex flex-col items-center lg:flex-row">
+      <div className="flex flex-col items-center xl:flex-row">
         <div className="w-full text-center text-6xl font-light leading-snug">
           <h3 className="text-center font-bold text-heading-color">
             My Tech Stack
           </h3>
-          <div className="lg:ml-26 mt-5 grid grid-cols-4 lg:grid lg:grid-cols-6">
+          <div className="xl:ml-26 mt-5 grid grid-cols-4 xl:grid xl:grid-cols-6">
             {iconsArray.map((icon, index) => (
               <TechIcons
                 index={index}
@@ -41,7 +41,7 @@ const TechStack: FC = () => {
             ))}
           </div>
         </div>
-        <div className="order-last mb-10 mt-4 md:mb-0 lg:order-first">
+        <div className="order-last mb-10 mt-4 md:mb-0 xl:order-first">
           <Image
             src={coderImage}
             priority={true}
