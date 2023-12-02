@@ -15,7 +15,7 @@ const HeroText = () => {
       </div>
 
       <p
-        className={`mt-4 w-full text-xl font-extralight leading-8 lg:mt-8 lg:w-3/4 lg:text-2xl lg:leading-9 xl:w-2/3 ${inter.className} text-gray-600`}
+        className={`mt-4 w-full text-xl font-extralight leading-8 lg:mt-8 lg:w-3/4 lg:text-2xl lg:leading-7 2xl:leading-9 xl:w-2/3 ${inter.className} text-gray-600`}
       >
         I enjoy solving problems. Being detailed-oriented and proficient in
         modern frontend technologies, I can be relied upon to help your company
