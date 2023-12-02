@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     description:
       "Portfolio of Waqar Ahmad, a professional web developer specializing in Next.js, React, and TypeScript",
     locale: "en_IE",
+    images: "/app/opengraph-image.png"
   },
 };
 
