@@ -20,8 +20,7 @@ const ProjectVideo = ({ title, image }: ProjectVideoProps) => {
             alt={`${title} image`}
             width={image.main.width}
             height={image.main.height}
-            className="mx-auto rounded-lg shadow-lg" 
-            // sizes="(max-width: 960px) 90vw, 40vw"
+            className="mx-auto rounded-lg shadow-lg"
             aria-label="Project image"
           />
         )}
