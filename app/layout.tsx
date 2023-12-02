@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#F7FAFC] antialiased">
-        <NextTopLoader color="#2C73F8" showSpinner={true} />
+        <NextTopLoader color="#2C73F8" showSpinner={false} />
         <Navbar />
 
         {children}

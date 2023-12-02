@@ -49,13 +49,13 @@ const Project: FC<ProjectProps> = ({
             {renderDescription()}
 
             <div className="flex justify-between gap-3 xss:justify-around xs:justify-normal">
-              <Link href={links.github} target="__blank">
+              <Link href={links.github} target="_blank">
                 <Button variant="secondary" size="sm" aria-label="Source Code">
                   Source Code
                   <RxGithubLogo className="text-2xl" />
                 </Button>
               </Link>
-              <Link href={links.demo} target="__blank">
+              <Link href={links.demo} target="_blank">
                 <Button variant="secondary" size="sm" aria-label="Live Demo">
                   Live Demo
                   <RxExternalLink className="text-2xl" />

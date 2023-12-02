@@ -1,3 +1,4 @@
+"use client";
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { IconLinksProps } from "@/lib/types";
@@ -6,7 +7,7 @@ import { cn } from "@/utils/utils";
 
 const icons: IconLinksProps[] = [
   {
-    href: "https://github.com/WaqarAhmad321",
+    href: "https://github.com/WaqarAhmad321/",
     icon: <RxGithubLogo />,
     title: "github",
   },
@@ -18,7 +19,7 @@ const icons: IconLinksProps[] = [
   {
     href: "mailto:codewithwaqarahmad@gmail.com",
     icon: <BsEnvelopeFill />,
-    title: "Mail",
+    title: "mail",
   },
 ];
 
@@ -29,7 +30,7 @@ const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
         <Link
           key={icon.href}
           href={icon.href}
-          target="__blank"
+          target="_blank"
           className={cn(
             "flex flex-row items-center text-heading-color",
             displayTitle ? "gap-5" : "gap-3",
