@@ -17,6 +17,7 @@ import TechIcons from "./Techstack/TechIcons";
 import ContactForm from "./Footer/ContactForm";
 import FormSubmitButton from "./Footer/FormSubmitButton";
 import ProjectsTitle from "./Projects/ProjectsTitle";
+import ProjectVideo from "./Projects/ProjectVideo";
 
 export {
   Navbar,
@@ -38,4 +39,5 @@ export {
   Wave,
   ContactIcons,
   ScrollLink,
+  ProjectVideo,
 };

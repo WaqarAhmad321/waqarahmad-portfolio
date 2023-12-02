@@ -1,9 +1,6 @@
 import { ProjectType } from "@/lib/projects";
 import dynamic from "next/dynamic";
-
-const Project = dynamic(() => import("@/components/Projects/Project"), {
-  ssr: true,
-});
+import { Project } from "@/components";
 
 const Projects = ({ projects }: { projects: ProjectType[] }) => {
   return (
