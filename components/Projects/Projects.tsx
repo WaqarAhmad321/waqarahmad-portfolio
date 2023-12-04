@@ -1,5 +1,4 @@
 import { ProjectType } from "@/lib/projects";
-import dynamic from "next/dynamic";
 import { Project } from "@/components";
 
 const Projects = ({ projects }: { projects: ProjectType[] }) => {
