@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components";
 import { Toaster } from "react-hot-toast";
 import NextTopLoader from "nextjs-toploader";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "WaqarCodes",
@@ -26,7 +27,6 @@ export const metadata: Metadata = {
     locale: "en_IE",
     images: "/app/opengraph-image.png",
   },
-  
 };
 
 export default function RootLayout({
@@ -41,7 +41,9 @@ export default function RootLayout({
         <Navbar />
 
         {children}
+
         <Toaster position="bottom-left" />
+        <Analytics />
       </body>
     </html>
   );
