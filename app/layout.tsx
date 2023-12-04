@@ -23,13 +23,10 @@ export const metadata: Metadata = {
     "Waqar Codes",
   ],
   openGraph: {
-    type: "website",
-    title: "Waqar Ahmad - Web devloper",
-    description:
-      "Portfolio of Waqar Ahmad, a professional web developer specializing in Next.js, React, and TypeScript",
     locale: "en_IE",
     images: "/app/opengraph-image.png",
   },
+  
 };
 
 export default function RootLayout({
