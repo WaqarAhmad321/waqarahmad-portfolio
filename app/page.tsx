@@ -3,10 +3,9 @@ import dynamic from "next/dynamic";
 import { barlow } from "@/lib/fonts";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import allProjects, { ProjectType } from "@/lib/projects";
-import { Button, Hero, Projects, ProjectsTitle } from "@/components";
+import { Button, Hero, Projects, ProjectsTitle, TechStack } from "@/components";
 
 const Footer = dynamic(() => import("@/components/Footer/Footer"));
-const TechStack = dynamic(() => import("@/components/Techstack/TechStack"));
 
 export default function Home() {
   const projectsArray: ProjectType[] = [
