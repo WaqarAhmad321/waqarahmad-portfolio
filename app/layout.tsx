@@ -17,11 +17,11 @@ export const metadata: Metadata = {
   category: "Portfolio",
   keywords: [
     "Waqar codes",
+    "Waqar Codes",
+    "WaqarCodes",
     "waqarcodes",
     "Waqar Ahmad",
-    "Waqar",
-    "Ahmad",
-    "Waqar Codes",
+    "Waqar Ahmed",
   ],
   openGraph: {
     locale: "en_IE",
