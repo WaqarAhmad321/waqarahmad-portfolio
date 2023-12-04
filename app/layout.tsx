@@ -22,6 +22,11 @@ export const metadata: Metadata = {
     "waqarcodes",
     "Waqar Ahmad",
     "Waqar Ahmed",
+    "Waqar Ahmad Codes",
+    "Waqar Coding",
+    "Waqar Codes Portfolio",
+    "Codingwithwaqar",
+    "Waqar Coder",
   ],
   openGraph: {
     locale: "en_IE",
