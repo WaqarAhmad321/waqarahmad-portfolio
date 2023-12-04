@@ -28,7 +28,7 @@ const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
     <>
       {icons.map((icon) => (
         <Link
-          key={icon.href}
+          key={icon.title}
           href={icon.href}
           target="_blank"
           className={cn(

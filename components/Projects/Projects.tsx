@@ -6,7 +6,7 @@ const Projects = ({ projects }: { projects: ProjectType[] }) => {
     <>
       {projects.map(({ title, description, image, links, stack }, index) => (
         <Project
-          key={index}
+          key={title}
           index={index + 1}
           title={title}
           description={description}
