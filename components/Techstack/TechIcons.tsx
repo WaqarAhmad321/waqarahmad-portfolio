@@ -20,51 +20,54 @@ const fadeInAnimationVariants = {
   }),
 };
 
-const TechIcons: FC<TechIconProps> = ({ index, label, src, displayLabel }) => {
-  const renderIcons = () => {
-    return (
-      <div className="group mb-2 flex flex-col items-center">
-        <p
-          className={cn(
-            "mb-2 mt-2 whitespace-nowrap text-xs font-light sm:text-sm",
-            displayLabel ||
-              "invisible transition-transform group-hover:visible",
-          )}
-        >
-          {label}
-        </p>
+const RenderIcons: FC<TechIconProps> = ({ label, src, displayLabel }) => {
+  return (
+    <div className="group mb-2 flex flex-col items-center">
+      <p
+        className={cn(
+          "mb-2 mt-2 whitespace-nowrap text-xs font-light sm:text-sm",
+          displayLabel || "invisible transition-transform group-hover:visible",
+        )}
+      >
+        {label}
+      </p>
 
-        <motion.div
-          className="flex h-16 w-16 items-center justify-center"
-          animate={
-            label?.toLowerCase() === "react" && {
-              rotate: [0, 360],
-              transition: {
-                repeat: Infinity,
-                duration: 15,
-                ease: "linear",
-                repeatType: "loop",
-              },
-            }
+      <motion.div
+        className="flex h-16 w-16 items-center justify-center"
+        animate={
+          label?.toLowerCase() === "react" && {
+            rotate: [0, 360],
+            transition: {
+              repeat: Infinity,
+              duration: 15,
+              ease: "linear",
+              repeatType: "loop",
+            },
           }
-        >
-          <Image
-            src={src}
-            alt={`${label} logo`}
-            width={60}
-            height={60}
-            className={cn(
-              "h-auto w-12 transition-transform group-hover:scale-125 sm:w-20",
-              {
-                "w-10 sm:w-14": label?.toLowerCase() === "css",
-                "w-24 sm:w-32": label?.toLowerCase() === "tailwind",
-              },
-            )}
-          />
-        </motion.div>
-      </div>
-    );
-  };
+        }
+      >
+        <Image
+          src={src}
+          alt={`${label} logo`}
+          width={60}
+          height={60}
+          className={cn(
+            "h-auto w-12 transition-transform group-hover:scale-125 sm:w-20",
+            {
+              "w-10 sm:w-14": label?.toLowerCase() === "css",
+              "w-24 sm:w-32": label?.toLowerCase() === "tailwind",
+            },
+          )}
+        />
+      </motion.div>
+    </div>
+  );
+};
+
+const TechIcons: FC<TechIconProps> = ({ index, label, src, displayLabel }) => {
+  const icons = (
+    <RenderIcons label={label} src={src} displayLabel={displayLabel} />
+  );
 
   return displayLabel ? (
     <motion.div
@@ -74,10 +77,10 @@ const TechIcons: FC<TechIconProps> = ({ index, label, src, displayLabel }) => {
       whileInView="animate"
       custom={index}
     >
-      {renderIcons()}
+      {icons}
     </motion.div>
   ) : (
-    renderIcons()
+    icons
   );
 };
 

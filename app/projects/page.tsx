@@ -4,17 +4,17 @@ import allProjects, { ProjectType } from "@/lib/projects";
 import { MdOutlineArrowBackIosNew } from "react-icons/md";
 import { Button, Projects, ProjectsTitle } from "@/components";
 
-const allProjectsPage = () => {
-  const allProjectsArray: ProjectType[] = [
-    allProjects.theWildOasis,
-    allProjects.worldWise,
-    allProjects.carHub,
-    allProjects.fastReactPizza,
-    allProjects.thisWebsite,
-    allProjects.usePopCorn,
-    allProjects.travelList,
-  ];
+const allProjectsArray: ProjectType[] = [
+  allProjects.theWildOasis,
+  allProjects.worldWise,
+  allProjects.carHub,
+  allProjects.fastReactPizza,
+  allProjects.thisWebsite,
+  allProjects.usePopCorn,
+  allProjects.travelList,
+];
 
+const allProjectsPage = () => {
   return (
     <section
       className={`mt-10 overflow-hidden will-change-transform md:will-change-auto ${barlow.className}`}

@@ -44,7 +44,6 @@ const TechStack: FC = () => {
         <div className="order-last mb-10 mt-4 md:mb-0 xl:order-first">
           <Image
             src={coderImage}
-            priority={true}
             width={1144}
             height={617}
             alt="A coder having headphones placed between his neck coding on computer placed on table with github's developers activity in background"

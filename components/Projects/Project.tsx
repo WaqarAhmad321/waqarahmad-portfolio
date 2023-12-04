@@ -52,10 +52,7 @@ const RenderProjects: FC<RenderProjectsProps> = ({
 
       <div className="mx-6 flex flex-col xl:mx-40 xl:grid xl:grid-cols-2 xl:gap-4">
         <div className={cn("flex flex-col", odd && "xl:order-first")}>
-          <RenderDescription
-            description={description}
-            title={title}
-          />
+          <RenderDescription description={description} title={title} />
 
           <div className="flex justify-between gap-3 xss:justify-around xs:justify-normal">
             <Link href={links.github} target="_blank">

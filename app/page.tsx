@@ -7,16 +7,16 @@ import { Button, Hero, Projects, ProjectsTitle, TechStack } from "@/components";
 
 const Footer = dynamic(() => import("@/components/Footer/Footer"));
 
-export default function Home() {
-  const projectsArray: ProjectType[] = [
-    allProjects.theWildOasis,
-    allProjects.worldWise,
-    allProjects.carHub,
-    allProjects.fastReactPizza,
-    allProjects.thisWebsite,
-    allProjects.usePopCorn,
-  ];
+const projectsArray: ProjectType[] = [
+  allProjects.theWildOasis,
+  allProjects.worldWise,
+  allProjects.carHub,
+  allProjects.fastReactPizza,
+  allProjects.thisWebsite,
+  allProjects.usePopCorn,
+];
 
+export default function Home() {
   return (
     <main className={`overflow-hidden ${barlow.className}`}>
       <section>
