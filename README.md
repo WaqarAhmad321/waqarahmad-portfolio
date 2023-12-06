@@ -21,10 +21,12 @@ The motive of this project is to showcase my current and future projects. This i
 
 ## Technologies used
 
-- ![react](https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs/assets/106612382/2ba927f0-da14-471f-b58b-6b6bc4ed38aa)
+- React Js
 
-- ![typescript](https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs/assets/106612382/73e0cba4-aa3a-40d9-9c8c-36c7d1b5f9fc)
+- Next.js
 
-- ![tailwind-css](https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs/assets/106612382/36f04b1a-f0f3-4f08-898d-0643e36c15e3)
+- Tailwind Css
 
-- ![nextjs](https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs/assets/106612382/facb0aa0-6109-447c-ae69-e94d96d9185a)
+- TypeScript
+
+- Framer Motion
