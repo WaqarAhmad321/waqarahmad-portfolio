@@ -9,6 +9,7 @@ const Footer: FC = () => {
     <footer className="text-heading-color md:w-full">
       <Image
         src={footerWaveImage}
+        priority={true}
         alt="Waves Image"
         className="h-52 md:h-96 md:w-full"
       />

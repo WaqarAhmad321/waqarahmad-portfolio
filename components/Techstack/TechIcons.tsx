@@ -49,6 +49,7 @@ const RenderIcons: FC<TechIconProps> = ({ label, src, displayLabel }) => {
         <Image
           src={src}
           alt={`${label} logo`}
+          priority={true}
           width={60}
           height={60}
           className={cn(
