@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Screen Shot
 
-## Getting Started
+![Screenshot 2023-12-07 001147](https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs/assets/106612382/5e40c1a2-a2b6-47c4-ab11-76e37a34b457)
 
-First, run the development server:
+## Motive
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The motive of this project is to showcase my current and future projects. This is the first version of my portfolio, more features will be added in future.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Hightlights
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 100% TypeScript code.
+- Static Site generated using Next.js
+- Modular code for easy maintenance and adding features in the future.
+- SEO Appears as 2nd or 3rd result when search waqarcodes on google.
+- Responsive for all screen sizes
+- Animations added using framer-motion
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Lighthouse Performance
 
-## Learn More
+![portfolio3](https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs/assets/106612382/6d64142f-1018-4d3b-942f-c39730af75ce)
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- ![react](https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs/assets/106612382/2ba927f0-da14-471f-b58b-6b6bc4ed38aa)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- ![typescript](https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs/assets/106612382/73e0cba4-aa3a-40d9-9c8c-36c7d1b5f9fc)
 
-## Deploy on Vercel
+- ![tailwind-css](https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs/assets/106612382/36f04b1a-f0f3-4f08-898d-0643e36c15e3)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- ![nextjs](https://github.com/WaqarAhmad321/fast-react-pizza-ReactJs/assets/106612382/facb0aa0-6109-447c-ae69-e94d96d9185a)
