@@ -8,12 +8,12 @@ The motive of this project is to showcase my current and future projects. This i
 
 ## Hightlights
 
-- 100% TypeScript code.
-- Static Site generated using Next.js
-- Modular code for easy maintenance and adding features in the future.
-- SEO Appears as 2nd or 3rd result when search waqarcodes on google.
-- Responsive for all screen sizes
-- Animations added using framer-motion
+- 100% **TypeScript** code.
+- Static Site generated using **Next.js**
+- **Modular code** for easy maintenance and adding features in the future.
+- SEO Appears as 2nd or 3rd result when search **waqarcodes** on google.
+- **Responsive** for all screen sizes
+- Animations added using **framer-motion**
 
 ## Lighthouse Performance
 
