@@ -17,6 +17,8 @@ const Hero = () => {
         alt="blob scene"
         fill
         className="absolute -z-10 object-cover"
+        priority
+        fetchPriority="high"
       />
     </section>
   );
