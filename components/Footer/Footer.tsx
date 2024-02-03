@@ -2,9 +2,8 @@ import Image from "next/image";
 import { ContactForm, ContactIcons } from "@/components";
 import footerWaveImage from "@/public/background/footer-wave.svg";
 import mailBallonsImage from "@/public/message-icon.svg";
-import { FC } from "react";
 
-const Footer: FC = () => {
+const Footer = () => {
   return (
     <footer className="text-heading-color md:w-full">
       <Image

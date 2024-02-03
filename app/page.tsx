@@ -19,9 +19,7 @@ const projectsArray: ProjectType[] = [
 export default function Home() {
   return (
     <main className={`overflow-hidden ${barlow.className}`}>
-      <section>
-        <Hero />
-      </section>
+      <Hero />
 
       <section className="mt-16 px-6 sm:px-16">
         <TechStack />
