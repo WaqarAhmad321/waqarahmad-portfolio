@@ -18,7 +18,7 @@ const iconsArray: TechStackProps[] = [
   logos.reactRouter,
   logos.git,
   logos.framerMotion,
-  logos.css,
+  logos.firebase,
 ];
 
 const TechStack: FC = () => {
@@ -30,12 +30,12 @@ const TechStack: FC = () => {
             My Tech Stack
           </h3>
           <div className="xl:ml-26 mt-5 grid grid-cols-4 xl:grid xl:grid-cols-6">
-            {iconsArray.map((icon, index) => (
+            {iconsArray.map(({ label, src }, index) => (
               <TechIcons
                 index={index}
-                label={icon.label}
-                src={icon.src}
-                key={icon.label}
+                label={label}
+                src={src}
+                key={label}
                 displayLabel={true}
               />
             ))}
@@ -44,7 +44,7 @@ const TechStack: FC = () => {
         <div className="order-last mb-10 mt-4 md:mb-0 xl:order-first">
           <Image
             src={coderImage}
-            priority={true}
+            priority
             width={1144}
             height={617}
             alt="A coder having headphones placed between his neck coding on computer placed on table with github's developers activity in background"

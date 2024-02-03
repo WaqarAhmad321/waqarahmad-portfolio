@@ -12,7 +12,8 @@ type logoNames =
   | "reactRouter"
   | "git"
   | "styledComponents"
-  | "cssModules";
+  | "cssModules"
+  | "firebase";
 
 type Logos = {
   [K in logoNames]: {
@@ -77,6 +78,10 @@ const logos: Logos = {
   cssModules: {
     label: "Css Modules",
     src: "/techstack/css-modules.webp",
+  },
+  firebase: {
+    label: "Firebase",
+    src: "/techstack/firebase-icon.svg",
   },
 };
 

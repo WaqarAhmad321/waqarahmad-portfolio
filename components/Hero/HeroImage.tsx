@@ -7,12 +7,11 @@ const HeroImage = () => {
     <div className="hidden lg:mt-0 xl:block">
       <Image
         src={heroImage}
-        priority={true}
         alt="hero image"
-        loading="eager"
+        priority
         width={1920}
         height={1920}
-        className="animate-updown w-[90rem] drop-shadow-2xl"
+        className="w-[90rem] animate-updown drop-shadow-2xl"
       />
     </div>
   );
