@@ -55,8 +55,8 @@ const RenderIcons: FC<TechIconProps> = ({ label, src, displayLabel }) => {
           className={cn(
             "h-auto w-12 transition-transform group-hover:scale-125 sm:w-20",
             {
-              "w-10 sm:w-14": label?.toLowerCase() === "css",
               "w-24 sm:w-32": label?.toLowerCase() === "tailwind",
+              "w-24 sm:w-36": label?.toLowerCase() === "nodejs",
             },
           )}
         />

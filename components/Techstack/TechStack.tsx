@@ -13,11 +13,11 @@ const iconsArray: TechStackProps[] = [
   logos.javascript,
   logos.tailwind,
   logos.reactQuery,
-  logos.supabase,
+  logos.nodejs,
+  logos.monogdb,
   logos.redux,
   logos.reactRouter,
   logos.git,
-  logos.framerMotion,
   logos.firebase,
 ];
 

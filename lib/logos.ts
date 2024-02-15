@@ -13,7 +13,9 @@ type logoNames =
   | "git"
   | "styledComponents"
   | "cssModules"
-  | "firebase";
+  | "firebase"
+  | "monogdb"
+  | "nodejs";
 
 type Logos = {
   [K in logoNames]: {
@@ -82,6 +84,14 @@ const logos: Logos = {
   firebase: {
     label: "Firebase",
     src: "/techstack/firebase-icon.svg",
+  },
+  monogdb: {
+    label: "MongoDB",
+    src: "/techstack/mongodb.svg",
+  },
+  nodejs: {
+    label: "nodejs",
+    src: "/techstack/nodejs.svg",
   },
 };
 
