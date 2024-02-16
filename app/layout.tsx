@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   description:
     "Hi, I'm Waqar. A Front-End Developer. I enjoy solving complex problems. Frequently praised as detail-oriented by my peers, I can be relied upon to help your company achieve its goals by providing sustainable and scalable solutions.",
   creator: "Waqar Ahmad",
-  metadataBase: new URL("https://waqarcodes.tech"),
   verification: {
     google: "r1BffMNTeOAvTrQdTXrrq9fEj1XHUaYQCiI8ltjQ2g8",
   },
@@ -28,8 +27,23 @@ export const metadata: Metadata = {
     "Waqar Coder",
   ],
   openGraph: {
-    locale: "en_IE",
-    images: "/app/opengraph-image.png",
+    type: "website",
+    locale: "en_US.utf-8",
+    title: "Smash Code",
+    description:
+      "Hi, I'm Waqar. A Front-End Developer. I enjoy solving complex problems. Frequently praised as detail-oriented by my peers, I can be relied upon to help your company achieve its goals by providing sustainable and scalable solutions.",
+    url: "https://waqarcodes.tech",
+    siteName: "WaqarCodes",
+    images: "https://www.waqarcodes.tech/opengraph-image.png",
+  },
+  authors: [{ name: "Waqar Ahmad", url: "https://waqarcodes.tech" }],
+  twitter: {
+    card: "summary_large_image",
+    site: "@WaqarCodestech",
+    title: "WaqarCodes",
+    description:
+      "Hi, I'm Waqar. A Front-End Developer. I enjoy solving complex problems. Frequently praised as detail-oriented by my peers, I can be relied upon to help your company achieve its goals by providing sustainable and scalable solutions.",
+    images: "https://www.waqarcodes.tech/opengraph-image.png",
   },
 };
 
