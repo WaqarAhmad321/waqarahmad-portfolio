@@ -33,7 +33,7 @@ const allProjects: Projects = {
       "Furthermore, it includes **settings** for the hotel and users along with strong **authentication**, ensuring that only authorized employees can access the system.",
     ],
     image: {
-      mp4: "/project/wild-oasis.mp4",
+      mp4: "https://res.cloudinary.com/dkky0lrvb/video/upload/v1708074983/portfolio-projects-videos/czspje4scf0swt82vu1g.mp4",
     },
     stack: [
       logos.react,
@@ -55,7 +55,7 @@ const allProjects: Projects = {
       "The state of the application is managed using **React Context** and **useReducer**.",
     ],
     image: {
-      mp4: "/project/world-wise.mp4",
+      mp4: "https://res.cloudinary.com/dkky0lrvb/video/upload/v1708074987/portfolio-projects-videos/gt92uinlf75sshd3hftl.mp4",
     },
     stack: [logos.react, logos.reactRouter, logos.javascript, logos.cssModules],
     links: {
@@ -73,7 +73,7 @@ const allProjects: Projects = {
       "The application is fully **responsive** across all screen sizes.",
     ],
     image: {
-      mp4: "/project/carhub.mp4",
+      mp4: "https://res.cloudinary.com/dkky0lrvb/video/upload/v1708074978/portfolio-projects-videos/hqazas1dl7xgo8nfew1q.mp4",
     },
     stack: [logos.nextjs, logos.react, logos.typescript, logos.tailwind],
     links: {
@@ -89,7 +89,7 @@ const allProjects: Projects = {
       "The state of the application is managed using **Redux Toolkit**. The application also features persist the state of the application in the **local storage** of the browser.",
     ],
     image: {
-      mp4: "/project/fast-react-pizza-co.mp4",
+      mp4: "https://res.cloudinary.com/dkky0lrvb/video/upload/v1708074971/portfolio-projects-videos/xpcfrbfcra1zzrnzp2vn.mp4",
     },
     stack: [logos.react, logos.redux, logos.reactRouter, logos.tailwind],
     links: {
@@ -107,7 +107,7 @@ const allProjects: Projects = {
     ],
     image: {
       main: {
-        src: "/project/portfolio.png",
+        src: "https://res.cloudinary.com/dkky0lrvb/image/upload/f_auto,q_auto/v1/portfolio-projects-videos/d1l50jlx6u9satfcdcmy",
         width: 1432,
         height: 600,
       },
@@ -126,7 +126,7 @@ const allProjects: Projects = {
       "The app utilizes the OMDB API to fetch movie data.",
     ],
     image: {
-      mp4: "/project/usepopcorn.mp4",
+      mp4: "https://res.cloudinary.com/dkky0lrvb/video/upload/v1708074978/portfolio-projects-videos/gsu36ylbi7hw8gbvgukx.mp4",
     },
     stack: [logos.react, logos.javascript, logos.css],
     links: {
@@ -144,7 +144,7 @@ const allProjects: Projects = {
     ],
     image: {
       main: {
-        src: "/project/travel-list.png",
+        src: "https://res.cloudinary.com/dkky0lrvb/image/upload/f_auto,q_auto/v1/portfolio-projects-videos/jcp5diqxxlh7xjhdzdoe",
         width: 1600,
         height: 900,
       },
