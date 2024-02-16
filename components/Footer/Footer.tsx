@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ContactForm, ContactIcons } from "@/components";
-import mailBallonsImage from "@/public/message-icon.svg";
 
 const Footer = () => {
   return (
@@ -28,7 +27,9 @@ const Footer = () => {
 
             <div className="hidden xs:block lg:flex lg:items-center lg:justify-center">
               <Image
-                src={mailBallonsImage}
+                src="https://res.cloudinary.com/dkky0lrvb/image/upload/f_auto,q_auto/v1/portfolio-images/b0he513slsu5e5uqav1s"
+                width={1144}
+                height={617}
                 alt="A mail box flying through 3 baloons attacked to the top and a lot of small sized mails in the background"
                 className="w-[20rem]"
               />
