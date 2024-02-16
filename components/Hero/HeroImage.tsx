@@ -6,7 +6,7 @@ const HeroImage = () => {
   return (
     <div className="hidden max-w-[90rem] lg:mt-0 xl:block">
       <Image
-        src={heroImage}
+        src="https://res.cloudinary.com/dkky0lrvb/image/upload/f_auto,q_auto/v1/portfolio-images/wrtckackgrxjrguy5iti"
         alt="hero image"
         priority
         fetchPriority="high"

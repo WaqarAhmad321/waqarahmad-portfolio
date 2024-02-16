@@ -1,14 +1,14 @@
 import Image from "next/image";
 import { ContactForm, ContactIcons } from "@/components";
-import footerWaveImage from "@/public/background/footer-wave.svg";
 import mailBallonsImage from "@/public/message-icon.svg";
 
 const Footer = () => {
   return (
     <footer className="text-heading-color md:w-full">
       <Image
-        src={footerWaveImage}
-        priority={true}
+        src="https://res.cloudinary.com/dkky0lrvb/image/upload/f_auto,q_auto/v1/portfolio-images/wimwutqpbkjxt5r9l0nd"
+        width={1920}
+        height={1080}
         alt="Waves Image"
         className="h-52 md:h-96 md:w-full"
       />

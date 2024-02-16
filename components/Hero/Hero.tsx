@@ -13,7 +13,7 @@ const Hero = () => {
         <HeroImage />
       </div>
       <Image
-        src="/background/blob-scene.svg"
+        src="https://res.cloudinary.com/dkky0lrvb/image/upload/f_auto,q_auto/v1/portfolio-images/um7qxuk1z7gn1wfxrivk"
         alt="blob scene"
         fill
         className="absolute -z-10 object-cover"
