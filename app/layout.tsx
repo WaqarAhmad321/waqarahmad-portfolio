@@ -26,10 +26,11 @@ export const metadata: Metadata = {
     "Codingwithwaqar",
     "Waqar Coder",
   ],
+  metadataBase: new URL("https://waqarcodes.tech"),
   openGraph: {
     type: "website",
     locale: "en_US.utf-8",
-    title: "Smash Code",
+    title: "WaqarCodes",
     description:
       "Hi, I'm Waqar. A Front-End Developer. I enjoy solving complex problems. Frequently praised as detail-oriented by my peers, I can be relied upon to help your company achieve its goals by providing sustainable and scalable solutions.",
     url: "https://waqarcodes.tech",
