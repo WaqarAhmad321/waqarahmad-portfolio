@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components";
 import { Toaster } from "react-hot-toast";
 import NextTopLoader from "nextjs-toploader";
-import AIChatButton from "@/components/AIChatButton";
 
 export const metadata: Metadata = {
   title: "WaqarCodes",
@@ -61,7 +60,6 @@ export default function RootLayout({
         <Navbar />
 
         {children}
-        <AIChatButton />
         <Toaster position="bottom-left" />
       </body>
     </html>
