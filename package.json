@@ -24,6 +24,7 @@
     "langchain": "^0.2.5",
     "lucide-react": "^0.390.0",
     "next": "14.0.1",
+    "next-themes": "^0.3.0",
     "nextjs-toploader": "^1.6.6",
     "openai": "^4.49.1",
     "react": "^18.2.0",

@@ -16,17 +16,11 @@ interface RenderProjectsProps extends ProjectType {
   odd: boolean;
 }
 
-const RenderDescription = ({
-  description,
-  title,
-}: {
-  description: string[];
-  title: string;
-}) => {
+const RenderDescription = ({ description }: { description: string[] }) => {
   return (
     <div className={`mb-2 mt-5 text-lg lg:mt-0`}>
-      {description.map((desc) => (
-        <ReactMarkdown key={title} className="mb-3">
+      {description.map((desc, index) => (
+        <ReactMarkdown key={index} className="mb-3">
           {desc}
         </ReactMarkdown>
       ))}
@@ -43,16 +37,20 @@ const RenderProjects: FC<RenderProjectsProps> = ({
   image,
 }) => {
   return (
-    <div className={cn("flex flex-col gap-6", odd && "bg-[#D8E6FC]")}>
+    <div
+      className={cn("flex flex-col gap-6", {
+        "bg-[#D8E6FC] dark:bg-black": odd,
+      })}
+    >
       <div className="w-full">
-        <h4 className="text-center text-5xl font-medium text-gray-900 md:font-semibold">
+        <h4 className="text-center text-5xl font-medium text-gray-900 dark:text-white md:font-semibold">
           {title}
         </h4>
       </div>
 
       <div className="mx-6 flex flex-col xl:mx-40 xl:grid xl:grid-cols-2 xl:gap-4">
         <div className={cn("flex flex-col", odd && "xl:order-first")}>
-          <RenderDescription description={description} title={title} />
+          <RenderDescription description={description} />
 
           <div className="flex justify-between gap-3 xss:justify-around xs:justify-normal">
             <Link href={links.github} target="_blank">

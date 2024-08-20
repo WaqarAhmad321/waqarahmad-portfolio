@@ -1,5 +1,4 @@
 "use client";
-
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { IconLinksProps } from "@/lib/types";
@@ -33,16 +32,14 @@ const ContactIcons = ({ displayTitle }: { displayTitle?: boolean }) => {
           href={icon.href}
           target="_blank"
           className={cn(
-            "flex flex-row items-center text-heading-color",
+            "flex flex-row items-center text-heading-color transition-colors hover:text-slate-800 dark:text-gray-400 dark:hover:text-gray-300",
             displayTitle ? "gap-5" : "gap-3",
           )}
           aria-label={`${icon.title} logo`}
           rel="noopener noreferrer"
         >
-          <span className="text-4xl transition-colors hover:text-slate-800">
-            {icon.icon}
-          </span>
-          <span className="flex flex-row text-xl capitalize hover:text-blue-700">
+          <span className="text-4xl">{icon.icon}</span>
+          <span className="flex flex-row text-xl capitalize hover:text-blue-700 dark:hover:text-gray-300">
             {displayTitle && icon.title}
           </span>
         </Link>

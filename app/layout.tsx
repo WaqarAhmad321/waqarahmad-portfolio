@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components";
 import { Toaster } from "react-hot-toast";
 import NextTopLoader from "nextjs-toploader";
+import { ThemeProvider } from "@/components/ThemesProvider";
 
 export const metadata: Metadata = {
   title: "WaqarCodes",
@@ -54,14 +55,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className="bg-[#F7FAFC] antialiased">
-        <NextTopLoader color="#2C73F8" showSpinner={false} />
-        <Navbar />
+    <html lang="en" suppressHydrationWarning>
+      <ThemeProvider attribute="class" defaultTheme="dark" >
+        <body className="bg-[#F7FAFC] antialiased dark:bg-rich-black">
+          <NextTopLoader color="#2C73F8" showSpinner={false} />
+          <Navbar />
 
-        {children}
-        <Toaster position="bottom-left" />
-      </body>
+          {children}
+
+          <Toaster position="bottom-left" />
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

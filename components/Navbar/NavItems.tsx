@@ -53,13 +53,13 @@ const NavItems: FC<NavItemProps> = ({ setIsOpen, isOpen }) => {
                 }, 1000);
               }
             }}
-            className="duration-250 cursor-pointer transition-colors ease-linear hover:text-blue-700"
+            className="duration-250 cursor-pointer transition-colors ease-linear hover:text-blue-700 dark:text-white p-2 rounded-md hover:bg-white/5"
             type="button"
             aria-current={pathname === `/${link.href}` && "page"}
           >
             {link.title}
           </button>
-          <hr className={cn("shadow-lg", isOpen || "hidden")} />
+          <hr className={cn("shadow-lg border-t-cherry", isOpen || "hidden")} />
         </div>
       ))}
     </>
