@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run generate && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "generate": "npx ts-node ./scripts/generate.ts"
+    "lint": "next lint"
   },
   "dependencies": {
     "@datastax/astra-db-ts": "^1.2.1",
